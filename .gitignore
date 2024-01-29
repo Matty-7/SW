@@ -1,0 +1,45 @@
+# LaTeX intermediate files
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+*.lb
+*.bcf
+*.run.xml
+*.synctex.gz
+*.blg
+*.bbl
+
+# BibTeX intermediate files
+*.bbl
+*.blg
+
+# LaTeX auxiliary files
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.ist
+*.slg
+*.syi
+*.syg
+*.wrt
+
+# Others
+*.tdo
+*.toc
+*.gz
+
+# Backup files
+*.bak
+
+

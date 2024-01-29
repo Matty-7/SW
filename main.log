@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.29)  29 JAN 2024 22:09
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.29)  29 JAN 2024 22:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1149,7 +1149,8 @@ LaTeX Info: Redefining \addtolength on input line 81.
 )
 \@quotelevel=\count461
 \@quotereset=\count462
- (./main.aux)
+
+No file main.aux.
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
@@ -1172,7 +1173,6 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
 LaTeX Font Info:    ... okay on input line 50.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 50.
 LaTeX Font Info:    ... okay on input line 50.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -1229,6 +1229,9 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 50.
 Package hyperref Info: Link coloring ON on input line 50.
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
 LaTeX Info: Redefining \microtypecontext on input line 50.
 Package microtype Info: Applying patch `item' on input line 50.
 Package microtype Info: Applying patch `toc' on input line 50.
@@ -1404,11 +1407,12 @@ Package microtype Info: Character `textquotedblleft ' is missing
 Package microtype Info: Character `textquotedblright ' is missing
 (microtype)             in font `TU/SourceSansPro-Regular(0)/b/n/20.74'.
 (microtype)             Ignoring protrusion settings for this character.
- (./main.toc)
+
+No file main.toc.
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [1
+[1
 
 
 ]
@@ -1439,7 +1443,68 @@ LaTeX Font Warning: Font shape `TU/NotoSansSC(0)/m/it' undefined
 
 ] [3
 
-] (./main.lof (/usr/local/texlive/2023/texmf-dist/tex/latex/microtype/mt-Palatino.cfg
+]
+No file main.lof.
+\tf@lof=\write5
+\openout5 = `main.lof'.
+
+[4
+
+]
+No file main.lot.
+\tf@lot=\write6
+\openout6 = `main.lot'.
+
+[5
+
+]
+Chapter 1.
+Package microtype Info: Character `textendash ' is missing
+(microtype)             in font `TU/SourceSansPro-Regular(0)/b/n/14.4'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textemdash ' is missing
+(microtype)             in font `TU/SourceSansPro-Regular(0)/b/n/14.4'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteleft ' is missing
+(microtype)             in font `TU/SourceSansPro-Regular(0)/b/n/14.4'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteright ' is missing
+(microtype)             in font `TU/SourceSansPro-Regular(0)/b/n/14.4'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblleft ' is missing
+(microtype)             in font `TU/SourceSansPro-Regular(0)/b/n/14.4'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblright ' is missing
+(microtype)             in font `TU/SourceSansPro-Regular(0)/b/n/14.4'.
+(microtype)             Ignoring protrusion settings for this character.
+[1
+
+
+]
+Chapter 2.
+[2
+
+]
+Chapter 3.
+Package microtype Info: Character `textendash ' is missing
+(microtype)             in font `TU/SourceSansPro-Regular(0)/m/n/14.4'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textemdash ' is missing
+(microtype)             in font `TU/SourceSansPro-Regular(0)/m/n/14.4'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteleft ' is missing
+(microtype)             in font `TU/SourceSansPro-Regular(0)/m/n/14.4'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquoteright ' is missing
+(microtype)             in font `TU/SourceSansPro-Regular(0)/m/n/14.4'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblleft ' is missing
+(microtype)             in font `TU/SourceSansPro-Regular(0)/m/n/14.4'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textquotedblright ' is missing
+(microtype)             in font `TU/SourceSansPro-Regular(0)/m/n/14.4'.
+(microtype)             Ignoring protrusion settings for this character.
+(/usr/local/texlive/2023/texmf-dist/tex/latex/microtype/mt-Palatino.cfg
 File: mt-Palatino.cfg 2012/03/10 v1.0 microtype config. file: Palatino and similar fonts (LBD)
 )
 Package microtype Info: Character `Ā' is missing
@@ -2886,7 +2951,7 @@ Package microtype Info: Character `‒' is missing
 (microtype)             in font `\TU/AsanaMath(1)/m/n/6.57'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `TU/AsanaMath(2)/m/n' will be
-(Font)              scaled to size 10.95116pt on input line 4.
+(Font)              scaled to size 10.95116pt on input line 247.
 Package microtype Info: Character `ﬆ' is missing
 (microtype)             in font `\TU/AsanaMath(2)/m/n/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -2936,7 +3001,7 @@ Package microtype Info: Character `‒' is missing
 (microtype)             in font `\TU/AsanaMath(2)/m/n/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `TU/AsanaMath(2)/m/n' will be
-(Font)              scaled to size 7.99434pt on input line 4.
+(Font)              scaled to size 7.99434pt on input line 247.
 Package microtype Info: Character `ﬆ' is missing
 (microtype)             in font `\TU/AsanaMath(2)/m/n/7.9935'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -2986,7 +3051,7 @@ Package microtype Info: Character `‒' is missing
 (microtype)             in font `\TU/AsanaMath(2)/m/n/7.9935'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `TU/AsanaMath(2)/m/n' will be
-(Font)              scaled to size 6.5707pt on input line 4.
+(Font)              scaled to size 6.5707pt on input line 247.
 Package microtype Info: Character `ﬆ' is missing
 (microtype)             in font `\TU/AsanaMath(2)/m/n/6.57'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -3036,7 +3101,7 @@ Package microtype Info: Character `‒' is missing
 (microtype)             in font `\TU/AsanaMath(2)/m/n/6.57'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `TU/AsanaMath(3)/m/n' will be
-(Font)              scaled to size 10.94882pt on input line 4.
+(Font)              scaled to size 10.94882pt on input line 247.
 Package microtype Info: Character `ﬆ' is missing
 (microtype)             in font `\TU/AsanaMath(3)/m/n/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -3086,7 +3151,7 @@ Package microtype Info: Character `‒' is missing
 (microtype)             in font `\TU/AsanaMath(3)/m/n/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `TU/AsanaMath(3)/m/n' will be
-(Font)              scaled to size 7.99265pt on input line 4.
+(Font)              scaled to size 7.99265pt on input line 247.
 Package microtype Info: Character `ﬆ' is missing
 (microtype)             in font `\TU/AsanaMath(3)/m/n/7.9935'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -3136,7 +3201,7 @@ Package microtype Info: Character `‒' is missing
 (microtype)             in font `\TU/AsanaMath(3)/m/n/7.9935'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `TU/AsanaMath(3)/m/n' will be
-(Font)              scaled to size 6.5693pt on input line 4.
+(Font)              scaled to size 6.5693pt on input line 247.
 Package microtype Info: Character `ﬆ' is missing
 (microtype)             in font `\TU/AsanaMath(3)/m/n/6.57'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -3185,76 +3250,18 @@ Package microtype Info: Character `‑' is missing
 Package microtype Info: Character `‒' is missing
 (microtype)             in font `\TU/AsanaMath(3)/m/n/6.57'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 247.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 247.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-))
-\tf@lof=\write5
-\openout5 = `main.lof'.
-
- [4
-
-] (./main.lot)
-\tf@lot=\write6
-\openout6 = `main.lot'.
-
- [5
-
-]
-Chapter 1.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/SourceSansPro-Regular(0)/b/n/14.4'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `TU/SourceSansPro-Regular(0)/b/n/14.4'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteleft ' is missing
-(microtype)             in font `TU/SourceSansPro-Regular(0)/b/n/14.4'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteright ' is missing
-(microtype)             in font `TU/SourceSansPro-Regular(0)/b/n/14.4'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `TU/SourceSansPro-Regular(0)/b/n/14.4'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `TU/SourceSansPro-Regular(0)/b/n/14.4'.
-(microtype)             Ignoring protrusion settings for this character.
-[1
-
-
-]
-Chapter 2.
-[2
-
-]
-Chapter 3.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `TU/SourceSansPro-Regular(0)/m/n/14.4'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `TU/SourceSansPro-Regular(0)/m/n/14.4'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteleft ' is missing
-(microtype)             in font `TU/SourceSansPro-Regular(0)/m/n/14.4'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquoteright ' is missing
-(microtype)             in font `TU/SourceSansPro-Regular(0)/m/n/14.4'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `TU/SourceSansPro-Regular(0)/m/n/14.4'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `TU/SourceSansPro-Regular(0)/m/n/14.4'.
-(microtype)             Ignoring protrusion settings for this character.
+)
 
 LaTeX Warning: Citation 'Zhang2021' on page 3 undefined on input line 251.
 
@@ -3291,6 +3298,9 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                main
 (biblatex)                and rerun LaTeX afterwards.
@@ -3300,10 +3310,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28121 strings out of 476683
- 554484 string characters out of 5804047
+ 28112 strings out of 476683
+ 554397 string characters out of 5804047
  1852018 words of memory out of 5000000
- 48013 multiletter control sequences out of 15000+600000
+ 48012 multiletter control sequences out of 15000+600000
  516641 words of font info for 91 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  61i,8n,114p,1212b,1150s stack positions out of 10000i,1000n,20000p,200000b,200000s

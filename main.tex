@@ -13,14 +13,14 @@
   {\Large \chaptertitlename\ \thechapter}
   {2ex}
   {\titlerule
-   \vspace{1ex}%
-   \filright\MakeUppercase}
+  \vspace{1ex}%
+  \filright\MakeUppercase}
   [\vspace{1ex}%
 \titlerule]
-\titleformat{\section}{\normalfont\sffamily\Large\bfseries}{\thesection}{1em}{}
-\titleformat{\subsection}{\normalfont\sffamily\large\bfseries}{\thesubsection}{1em}{}
-\titleformat{\subsubsection}{\normalfont\sffamily\normalsize\bfseries}{\thesubsubsection}{1em}{}
-\usepackage[style=numeric-comp, url=false]{biblatex}
+\titleformat{\section} {\normalfont\sffamily\Large\bfseries} {\thesection}{1em}{}
+\titleformat{\subsection} {\normalfont\sffamily\large\bfseries} {\thesubsection}{1em}{}
+\titleformat{\subsubsection} {\normalfont\sffamily\normalsize\bfseries} {\thesubsubsection}{1em}{}
+\usepackage[backend=biber, style=numeric-comp]{biblatex}
 \addbibresource{bibfile.bib}
 
 \usepackage[no-math]{fontspec}
@@ -28,7 +28,7 @@
 \defaultfontfeatures{Ligatures=TeX, Numbers=Lining}
 \setmainfont{Source Serif Pro}[BoldFont={Source Serif Pro Semibold}]
 \setsansfont{SourceSansPro-Regular}[BoldFont={SourceSansPro-Semibold}]
-\IfFontExistsTF{Cambria Math}{\setmathfont{Cambria Math}[Scale=1]}{\setmathfont{Asana Math}}
+\IfFontExistsTF{Cambria Math} {\setmathfont{Cambria Math}[Scale=1]} {\setmathfont{Asana Math}}
 
 \usepackage{xeCJK}
 \setCJKmainfont{Noto Sans SC}
@@ -57,7 +57,7 @@
 
 % Title (cannot exceed three lines)
 % You can insert manual linebreaks with \\
-\newcommand{\thetitle}{A CASE STUDY OF AI IN VISION AND SOUND GENERATION: THE EVOLUTION, APPLICATIONS, AND ETHICS}
+\newcommand{\thetitle}{A CASE STUDY OF AI IN VISION AND SOUND GENERATION: THE EVOLUTION, APPLICATIONS, AND ETHICAL CONSIDERATIONS}
 
 % Date of submission with normal capitalization. 
 % Use the format January 29, 2022.
@@ -201,6 +201,7 @@ Finally, I would like to thank my family and friends for their support and encou
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Main matter
+
 \clearpage
 \pagenumbering{arabic}
 
@@ -216,7 +217,7 @@ including healthcare and entertainment.
 Central to AI technologies is the concept of learning from data—often large and multi-dimensional to adapt to new situations, make decisions, and perform tasks that traditionally require human intelligence. 
 This core principle has evolved through a spectrum of models and algorithms, from basic machine learning. 
 Techniques for tasks like classification and regression [8], to more intricate frameworks such as neural networks for pattern recognition. 
-Recent advancements have given rise to specialized architectures like Generative Adversarial Networks (GANs) \cite{granot2022drop}, which excel in data generation, and Diffusion Models which specialize in high-fidelity data generation [2]. 
+Recent advancements have given rise to specialized architectures like Generative Adversarial Networks (GANs) \cite{granot2022drop}, which excel in data generation, and Diffusion Models which specialize in high-fidelity data generation \cite{rombach2022high}. 
 These advancements have been particularly transformative in the field of image and video generation, offering unprecedented capabilities in digital content creation [9]. 
 
 \section{Overview of the Application of AI in Image and Video Generation}
@@ -231,7 +232,7 @@ Furthermore, there is a growing awareness and inclusion of ethical consideration
 Lastly, the domain is also seeing a trend in the unification of different techniques for a more seamless and integrated solution, as evident in the research towards unified keyframe propagation models [12]. These trends underscore the evolving nature of AI technologies in the field of image and video generation. The growth is not just unidimensional, focusing solely on technological advancements; rather, it is multi-faceted, encapsulating ethical, efficiency, and quality considerations. As AI models continue to become more sophisticated, these trends are expected to not only persist but to further evolve, shaping the future landscape of digital content creation. 
 \section{Roadmap for Future Development}
 As we navigate through the ever-evolving landscape of AI in image and video generation, it's crucial to outline a developmental roadmap that captures both the historical context and the future trajectory of AI techniques in this domain. The roadmap can be broadly categorized into the following stages: Foundational Models: The initial phase of development was marked by the emergence of foundational models like basic machine learning algorithms and neural networks. These models served as the steppingstones for more complex architectures [8]. 
-Specialized Architectures: The next leap came with the introduction of specialized architectures like Generative Adversarial Networks (GANs) and Diffusion Models. These models opened up new avenues for high-quality image synthesis and video manipulation [1]. 
+Specialized Architectures: The next leap came with the introduction of specialized architectures like Generative Adversarial Networks (GANs) and Diffusion Models. These models opened up new avenues for high-quality image synthesis and video manipulation \cite{granot2022drop}. 
 Ethical and Societal Considerations: As the technologies matured, the community began focusing on the ethical and societal implications of AI-generated images and videos. Efforts were geared toward mitigating biases and preventing the malicious use of AI technologies [5]. 
 Efficiency and Scalability: The current stage of development emphasizes efficiency and scalability, with algorithms being optimized for real-time processing and large-scale applications [7]. 
 Future Directions: Looking ahead, the focus is likely to shift toward the unification of different techniques for integrated solutions, as well as the extension of AI capabilities into areas like 3D object generation and even simulating functional machines [12]. 
@@ -275,7 +276,6 @@ Here is some inline math, $x^2 > 1$, and some display math
 \begin{equation}
   \int_0^1 x^2 \, dx
 \end{equation}
-And this is how to cite an article \cite{Zhang2021} or a book \cite{Axler2020}.
 
 \begin{table}[htbp]
 \centering
@@ -289,7 +289,7 @@ And this is how to cite an article \cite{Zhang2021} or a book \cite{Axler2020}.
 \end{tabular}
 \caption{Parameters for the optimization of the principal component analysis for
 olive oil adulteration.}
-\label{tbl:2}  
+\label{tbl:2}
 \end{table}
 
 

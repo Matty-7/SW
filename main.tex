@@ -20,13 +20,12 @@
 \titleformat{\section}{\normalfont\sffamily\Large\bfseries}{\thesection}{1em}{}
 \titleformat{\subsection}{\normalfont\sffamily\large\bfseries}{\thesubsection}{1em}{}
 \titleformat{\subsubsection}{\normalfont\sffamily\normalsize\bfseries}{\thesubsubsection}{1em}{}
-
 \usepackage[style=numeric-comp, url=false]{biblatex}
 \addbibresource{bibfile.bib}
 
 \usepackage[no-math]{fontspec}
 \usepackage{unicode-math}
-\defaultfontfeatures{Ligatures=TeX,Numbers=Lining}
+\defaultfontfeatures{Ligatures=TeX, Numbers=Lining}
 \setmainfont{Source Serif Pro}[BoldFont={Source Serif Pro Semibold}]
 \setsansfont{SourceSansPro-Regular}[BoldFont={SourceSansPro-Semibold}]
 \IfFontExistsTF{Cambria Math}{\setmathfont{Cambria Math}[Scale=1]}{\setmathfont{Asana Math}}
@@ -173,8 +172,9 @@ This abstract, a synthesis of the comprehensive document, ensures a precise over
 
 \instructions{I would like to express my sincere gratitude to my SW mentor, Prof. Peng Sun, 
 for his invaluable guidance throughout this research. 
-I am also grateful to the other members of the SW team for their support and guidance. 
-I also extend my thanks to the generous funding provided by SW grants, ¥1800, which made the experiential learning part possible. 
+Also, I am grateful to the other members of the SW team for their support and guidance. 
+In the end, I would like to thank the SW office for their support and guidance, 
+and also extend my thanks to the generous funding provided by SW grants, ¥1800, which made the experiential learning part possible. 
 Finally, I would like to thank my family and friends for their support and encouragement. 
 }
 
@@ -208,23 +208,14 @@ Finally, I would like to thank my family and friends for their support and encou
 
 \chapter{Introduction}
 \label{introduction}
-
-\instructions{This section includes a clear statement of the problem and the
-reasons for studying it.~Provide a detailed yet concise background
-discussion of the problem and the significance, scope, and limits of the
-work. Outline what has been done previously by citing truly pertinent
-literature but do not include a general survey of semi-relevant
-literature.~ State how your work differs from earlier work in the field
-and demonstrate the continuity from the previous work to your own.
-
 \section{Understanding of Artificial Intelligence (AI)}
 Artificial Intelligence (AI) is an amalgamation of various technologies designed to simulate human cognitive functions. 
 Originating at the crossroads of computer science, mathematics, psychology, and even philosophy, 
 AI has grown from a theoretical construct into a practical tool that permeates diverse sectors, 
 including healthcare and entertainment. 
-Central to AI technologies is the concept of learning from data—often large and multi-dimensional—to adapt to new situations, make decisions, and perform tasks that traditionally require human intelligence. 
+Central to AI technologies is the concept of learning from data—often large and multi-dimensional to adapt to new situations, make decisions, and perform tasks that traditionally require human intelligence. 
 This core principle has evolved through a spectrum of models and algorithms, from basic machine learning. 
-techniques for tasks like classification and regression [8], to more intricate frameworks such as neural networks for pattern recognition. 
+Techniques for tasks like classification and regression [8], to more intricate frameworks such as neural networks for pattern recognition. 
 Recent advancements have given rise to specialized architectures like Generative Adversarial Networks (GANs) \cite{granot2022drop}, which excel in data generation, and Diffusion Models which specialize in high-fidelity data generation [2]. 
 These advancements have been particularly transformative in the field of image and video generation, offering unprecedented capabilities in digital content creation [9]. 
 
@@ -246,7 +237,6 @@ Efficiency and Scalability: The current stage of development emphasizes efficien
 Future Directions: Looking ahead, the focus is likely to shift toward the unification of different techniques for integrated solutions, as well as the extension of AI capabilities into areas like 3D object generation and even simulating functional machines [12]. 
 As AI continues to evolve, this roadmap is expected to expand and adapt, reflecting the dynamic nature of innovations in the field of image and video generation. It serves as a guide for researchers and practitioners alike, offering a structured framework for understanding the development and potential future directions of AI technologies in this domain. 
 
-}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -261,17 +251,6 @@ As AI continues to evolve, this roadmap is expected to expand and adapt, reflect
 4: Edit the visuals to create the desired effect. \\
 5: Post-production to clean up the video and add music and sound effects. \\
 6: Publish the video on social media and other platforms. \\
-
-This section should include a detailed description of the materials and
-methods used in the project. It should include the equipment, techniques,
-and procedures used to create the video. It is important to include
-details such as the software used, the hardware used, and the process
-used to create the video. It is also important to describe the
-constraints and limitations of the project, such as the time and
-resources available to complete the project. Finally, it is important
-to describe the ethical considerations of the project, such as the
-potential for bias and discrimination in the content generated by the
-AI-generated content.
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -346,6 +325,11 @@ the evidence presented.}
 \chapter*{References}
 \label{references}
 \addcontentsline{toc}{chapter}{References}
+
+
+\instructions{Many bibliographic styles are acceptable for publications 
+in the natural sciences. This template uses a numeric style defined in biblatex
+and that is common in Physics, Mathematics, and Computer Science papers.}
 
 \printbibliography[heading=none]
 

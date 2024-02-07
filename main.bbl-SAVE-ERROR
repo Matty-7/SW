@@ -1,0 +1,113 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{granot2022drop}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=2ffa11e48e9e3f5d8b7978cde1f53fcc}{%
+           family={Granot},
+           familyi={G\bibinitperiod},
+           given={Niv},
+           giveni={N\bibinitperiod}}}%
+        {{hash=c12c5f9c1d99b985b575fc9680c5f4eb}{%
+           family={Feinstein},
+           familyi={F\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod}}}%
+        {{hash=c0cf2936db293db956df52ec67e8a1fd}{%
+           family={Shocher},
+           familyi={S\bibinitperiod},
+           given={Assaf},
+           giveni={A\bibinitperiod}}}%
+        {{hash=dc064ec00f18ad5efa4a0c5c97033ec9}{%
+           family={Bagon},
+           familyi={B\bibinitperiod},
+           given={Shai},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1de8853d596bc22d3525b68a85d6938b}{%
+           family={Irani},
+           familyi={I\bibinitperiod},
+           given={Michal},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{c1b9ba05adc39a707ce1556d2004273d}
+      \strng{fullhash}{c412863e8f019a25186e8f1e3e48f274}
+      \strng{bibnamehash}{c1b9ba05adc39a707ce1556d2004273d}
+      \strng{authorbibnamehash}{c1b9ba05adc39a707ce1556d2004273d}
+      \strng{authornamehash}{c1b9ba05adc39a707ce1556d2004273d}
+      \strng{authorfullhash}{c412863e8f019a25186e8f1e3e48f274}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}
+      \field{title}{Drop the gan: In defense of patches nearest neighbors as single image generative models}
+      \field{year}{2022}
+      \field{pages}{13460\bibrangedash 13469}
+      \range{pages}{10}
+    \endentry
+    \entry{rombach2022high}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=0921e3810ca1ba112b5f374d82f0735f}{%
+           family={Rombach},
+           familyi={R\bibinitperiod},
+           given={Robin},
+           giveni={R\bibinitperiod}}}%
+        {{hash=43a95cf5d0fe271fe6d6d0e5803cbfc9}{%
+           family={Blattmann},
+           familyi={B\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=809ae73566d8d76e9931ffde3969f1dc}{%
+           family={Lorenz},
+           familyi={L\bibinitperiod},
+           given={Dominik},
+           giveni={D\bibinitperiod}}}%
+        {{hash=e61c1cb5e29d764299a12d1ab334cdc2}{%
+           family={Esser},
+           familyi={E\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=030fdbe4b0bf5c4210fa2e50c87b9ff1}{%
+           family={Ommer},
+           familyi={O\bibinitperiod},
+           given={Björn},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{b5bfcd95459df0d66c58a299cbec3e9a}
+      \strng{fullhash}{c1e635e3f33ee547be2644eb3d687673}
+      \strng{bibnamehash}{b5bfcd95459df0d66c58a299cbec3e9a}
+      \strng{authorbibnamehash}{b5bfcd95459df0d66c58a299cbec3e9a}
+      \strng{authornamehash}{b5bfcd95459df0d66c58a299cbec3e9a}
+      \strng{authorfullhash}{c1e635e3f33ee547be2644eb3d687673}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}
+      \field{title}{High-resolution image synthesis with latent diffusion models}
+      \field{year}{2022}
+      \field{pages}{10684\bibrangedash 10695}
+      \range{pages}{12}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

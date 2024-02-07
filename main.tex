@@ -156,13 +156,12 @@ This abstract, a synthesis of the comprehensive document, ensures a precise over
 
 % Abstract in Chinese
 
-\instructions{本研究深入探讨了人工智能驱动的生成技术的变革领域，研究了这些技术在图像和视频合成中的发展和应用。
+\paragraph{\textnormal{本研究深入探讨了人工智能驱动的生成技术的变革领域，研究了这些技术在图像和视频合成中的发展和应用。
 通过对生成对抗网络（GANs）、扩散模型和神经细胞自动机的比较分析，研究探讨了它们的基础理论框架和实验应用。
 主要发现揭示了这些算法在生成逼真输出方面的功效及其在各行各业的潜力。
 研究还对伦理环境进行了批判性评估，强调了人工智能生成内容的安全性和公平性的重要性。
 主要结论表明，人工智能系统的发展轨迹将更加自主、更具创造性，同时倡导制定严格的伦理准则来规范人工智能系统的使用。
-本摘要是对综合文件的综述，确保准确概述研究范围及其对人工智能和生成式媒体领域的主要贡献。}
-
+本摘要是对综合文件的综述，确保准确概述研究范围及其对人工智能和生成式媒体领域的主要贡献}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -210,15 +209,18 @@ Finally, I would like to thank my family and friends for their support and encou
 \chapter{Introduction}
 \label{introduction}
 \section{Understanding of Artificial Intelligence (AI)}
-Artificial Intelligence (AI) is an amalgamation of various technologies designed to simulate human cognitive functions. 
+\paragraph{Artificial Intelligence (AI) is an amalgamation of various technologies designed to simulate human cognitive functions. 
 Originating at the crossroads of computer science, mathematics, psychology, and even philosophy, 
 AI has grown from a theoretical construct into a practical tool that permeates diverse sectors, 
 including healthcare and entertainment. 
-Central to AI technologies is the concept of learning from data—often large and multi-dimensional to adapt to new situations, make decisions, and perform tasks that traditionally require human intelligence. 
+Central to AI technologies is the concept of learning from data—often large and multi-dimensional to adapt to new situations, 
+make decisions, and perform tasks that traditionally require human intelligence. 
 This core principle has evolved through a spectrum of models and algorithms, from basic machine learning. 
 Techniques for tasks like classification and regression [8], to more intricate frameworks such as neural networks for pattern recognition. 
-Recent advancements have given rise to specialized architectures like Generative Adversarial Networks (GANs) \cite{granot2022drop}, which excel in data generation, and Diffusion Models which specialize in high-fidelity data generation \cite{rombach2022high}. 
-These advancements have been particularly transformative in the field of image and video generation, offering unprecedented capabilities in digital content creation [9]. 
+Recent advancements have given rise to specialized architectures like Generative Adversarial Networks (GANs) \cite{granot2022drop}, 
+which excel in data generation, and Diffusion Models which specialize in high-fidelity data generation \cite{rombach2022high}. 
+These advancements have been particularly transformative in the field of image and video generation, 
+offering unprecedented capabilities in digital content creation [9].}
 
 \section{Overview of the Application of AI in Image and Video Generation}
 The application of Artificial Intelligence (AI) in the field of image and video generation has been nothing short of transformative. AI algorithms have found use-cases in a plethora of sub-domains, ranging from the automated generation of high-quality images to real-time video editing and enhancement. For instance, Generative Adversarial Networks (GANs) have been pivotal in synthesizing images that are virtually indistinguishable from real ones, thereby finding applications in sectors like healthcare for medical imaging [1], and in the entertainment industry for the creation of realistic virtual worlds [4]. Another significant advancement has been the application of Diffusion Models. These models excel in tasks like video prediction and infilling, effectively filling in the gaps in video sequences or predicting future frames based on historical data [10]. Neural Cellular Automata models have shown promise in generating 3D artifacts and functional machines, pushing the boundaries of traditional image and video generation techniques [3]. 
@@ -227,9 +229,20 @@ The overarching theme across these applications is the leveraging of sophisticat
 
 \section{Current Development Trends}
 
-The current development trends in the application of AI for image and video generation signal both depth and breadth of innovations. One of the most compelling trends is the movement toward high-fidelity and high-resolution image synthesis. Models like Latent Diffusion Models are being developed to generate high-resolution images with incredible detail [2]. Additionally, the advent of models like Neural Cellular Automata suggests that AI's capability is extending beyond 2D image manipulation into the realm of 3D objects and even functional machine generation [3]. A noteworthy trend is the focus on real-time processing and efficiency. The development of algorithms like Skip-Colutions aims to make video processing tasks faster without significant loss of quality [7]. 
-Furthermore, there is a growing awareness and inclusion of ethical considerations in AI development. Initiatives are being taken to mitigate biases in text-to-image generative systems, and research is ongoing to find ways to prevent the malicious use of AI-generated deepfakes [5]. Another emerging trend is the incorporation of AI in enhancing the photorealism of generated images and videos. Advanced algorithms are now capable of augmenting computer-generated images to a level of realism that is almost indistinguishable from actual photographs [4]. 
-Lastly, the domain is also seeing a trend in the unification of different techniques for a more seamless and integrated solution, as evident in the research towards unified keyframe propagation models [12]. These trends underscore the evolving nature of AI technologies in the field of image and video generation. The growth is not just unidimensional, focusing solely on technological advancements; rather, it is multi-faceted, encapsulating ethical, efficiency, and quality considerations. As AI models continue to become more sophisticated, these trends are expected to not only persist but to further evolve, shaping the future landscape of digital content creation. 
+The current development trends in the application of AI for image and video generation signal both depth and breadth of innovations. 
+One of the most compelling trends is the movement toward high-fidelity and high-resolution image synthesis. 
+Models like Latent Diffusion Models are being developed to generate high-resolution images with incredible detail [2]. 
+Additionally, the advent of models like Neural Cellular Automata suggests that AI's capability is extending beyond 2D image manipulation into the realm of 3D objects and even functional machine generation [3]. 
+A noteworthy trend is the focus on real-time processing and efficiency. The development of algorithms like Skip-Colutions aims to make video processing tasks faster without significant loss of quality [7]. 
+Furthermore, there is a growing awareness and inclusion of ethical considerations in AI development. 
+Initiatives are being taken to mitigate biases in text-to-image generative systems, and research is ongoing to find ways to prevent the malicious use of AI-generated deepfakes [5]. 
+Another emerging trend is the incorporation of AI in enhancing the photorealism of generated images and videos. Advanced algorithms are now capable of augmenting computer-generated images to a level of realism that is almost indistinguishable from actual photographs [4]. 
+Lastly, the domain is also seeing a trend in the unification of different techniques for a more seamless and integrated solution, 
+as evident in the research towards unified keyframe propagation models [12]. 
+These trends underscore the evolving nature of AI technologies in the field of image and video generation. 
+The growth is not just unidimensional, focusing solely on technological advancements; rather, it is multi-faceted, 
+encapsulating ethical, efficiency, and quality considerations. As AI models continue to become more sophisticated, 
+these trends are expected to not only persist but to further evolve, shaping the future landscape of digital content creation. 
 \section{Roadmap for Future Development}
 As we navigate through the ever-evolving landscape of AI in image and video generation, it's crucial to outline a developmental roadmap that captures both the historical context and the future trajectory of AI techniques in this domain. The roadmap can be broadly categorized into the following stages: Foundational Models: The initial phase of development was marked by the emergence of foundational models like basic machine learning algorithms and neural networks. These models served as the steppingstones for more complex architectures [8]. 
 Specialized Architectures: The next leap came with the introduction of specialized architectures like Generative Adversarial Networks (GANs) and Diffusion Models. These models opened up new avenues for high-quality image synthesis and video manipulation \cite{granot2022drop}. 
@@ -327,9 +340,6 @@ the evidence presented.}
 \addcontentsline{toc}{chapter}{References}
 
 
-\instructions{Many bibliographic styles are acceptable for publications 
-in the natural sciences. This template uses a numeric style defined in biblatex
-and that is common in Physics, Mathematics, and Computer Science papers.}
 
 \printbibliography[heading=none]
 

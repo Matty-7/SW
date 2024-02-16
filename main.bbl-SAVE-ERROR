@@ -63,6 +63,102 @@
       \field{pages}{13460\bibrangedash 13469}
       \range{pages}{10}
     \endentry
+    \entry{huang2022large}{article}{}
+      \name{author}{7}{}{%
+        {{hash=3d08ed196428f32f600b8d5f953c8241}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Jiaxin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c6ad9b4948652ebe5c60d3cf11dfc28d}{%
+           family={Gu},
+           familyi={G\bibinitperiod},
+           given={Shixiang\bibnamedelima Shane},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=282bfce1c7742d02980b9b4b7c1cd1bf}{%
+           family={Hou},
+           familyi={H\bibinitperiod},
+           given={Le},
+           giveni={L\bibinitperiod}}}%
+        {{hash=f28e8df4ed82187263a8cdb3e328b099}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Yuexin},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=27d22d8f05f44b47f7dcfe9b7fb85584}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xuezhi},
+           giveni={X\bibinitperiod}}}%
+        {{hash=d786db015e447eb2c388ebc3893d3424}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Hongkun},
+           giveni={H\bibinitperiod}}}%
+        {{hash=7cacfe272c4d395c979d6aecd2f5ec9c}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Jiawei},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{a254fa1b687d9d72c26d2a9eda59fc40}
+      \strng{fullhash}{017db0b2a47d1a06c1b4bc6f738441c3}
+      \strng{bibnamehash}{a254fa1b687d9d72c26d2a9eda59fc40}
+      \strng{authorbibnamehash}{a254fa1b687d9d72c26d2a9eda59fc40}
+      \strng{authornamehash}{a254fa1b687d9d72c26d2a9eda59fc40}
+      \strng{authorfullhash}{017db0b2a47d1a06c1b4bc6f738441c3}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2210.11610}
+      \field{title}{Large language models can self-improve}
+      \field{year}{2022}
+    \endentry
+    \entry{patashnik2021styleclip}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=6a8a6c7970ab6d02e599d62882543861}{%
+           family={Patashnik},
+           familyi={P\bibinitperiod},
+           given={Or},
+           giveni={O\bibinitperiod}}}%
+        {{hash=2667334fda6761b980e17ad88157c4e9}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Zongze},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=739ef881fb9e0c2c8d7110c90325d960}{%
+           family={Shechtman},
+           familyi={S\bibinitperiod},
+           given={Eli},
+           giveni={E\bibinitperiod}}}%
+        {{hash=cdf44d78713bc27a81394749a9d8bbdc}{%
+           family={Cohen-Or},
+           familyi={C\bibinithyphendelim O\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=5efdafaa0ac0d2a845edb7db0c1f18f6}{%
+           family={Lischinski},
+           familyi={L\bibinitperiod},
+           given={Dani},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{9e03ccc03163bd6ca60919f0b3629bc0}
+      \strng{fullhash}{6a13b4c14e4177b6cd16ca6d59b68a83}
+      \strng{bibnamehash}{9e03ccc03163bd6ca60919f0b3629bc0}
+      \strng{authorbibnamehash}{9e03ccc03163bd6ca60919f0b3629bc0}
+      \strng{authornamehash}{9e03ccc03163bd6ca60919f0b3629bc0}
+      \strng{authorfullhash}{6a13b4c14e4177b6cd16ca6d59b68a83}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE/CVF International Conference on Computer Vision}
+      \field{title}{Styleclip: Text-driven manipulation of stylegan imagery}
+      \field{year}{2021}
+      \field{pages}{2085\bibrangedash 2094}
+      \range{pages}{10}
+    \endentry
     \entry{rombach2022high}{inproceedings}{}
       \name{author}{5}{}{%
         {{hash=0921e3810ca1ba112b5f374d82f0735f}{%

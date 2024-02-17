@@ -41,8 +41,8 @@
       \strng{authorbibnamehash}{a4f50258a14156905c8d2b1b4704be30}
       \strng{authornamehash}{a4f50258a14156905c8d2b1b4704be30}
       \strng{authorfullhash}{a4f50258a14156905c8d2b1b4704be30}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Artificial intelligence a modern approach}
@@ -75,8 +75,8 @@
       \strng{authorbibnamehash}{c6c75bd00ce5a488e91a749d8383b3df}
       \strng{authornamehash}{c6c75bd00ce5a488e91a749d8383b3df}
       \strng{authorfullhash}{c6c75bd00ce5a488e91a749d8383b3df}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{nature}
@@ -114,8 +114,8 @@
       \strng{authorbibnamehash}{3ae53fe582e8a815b118d26947eaa326}
       \strng{authornamehash}{3ae53fe582e8a815b118d26947eaa326}
       \strng{authorfullhash}{3ae53fe582e8a815b118d26947eaa326}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Deep learning}
@@ -165,8 +165,8 @@
       \strng{authorbibnamehash}{a254fa1b687d9d72c26d2a9eda59fc40}
       \strng{authornamehash}{a254fa1b687d9d72c26d2a9eda59fc40}
       \strng{authorfullhash}{017db0b2a47d1a06c1b4bc6f738441c3}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2210.11610}
@@ -190,8 +190,8 @@
       \strng{authorbibnamehash}{288bdbcfe1b91ad7484d7a24f74f99ed}
       \strng{authornamehash}{288bdbcfe1b91ad7484d7a24f74f99ed}
       \strng{authorfullhash}{288bdbcfe1b91ad7484d7a24f74f99ed}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Neural networks}
@@ -250,8 +250,8 @@
       \strng{authorbibnamehash}{d17e6557c5836d2d978179999ea1037f}
       \strng{authornamehash}{d17e6557c5836d2d978179999ea1037f}
       \strng{authorfullhash}{fa2b4fb373e75fcf07b4b987e4507545}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Advances in neural information processing systems}
@@ -283,8 +283,8 @@
       \strng{authorbibnamehash}{5add33d4d9145184803ebc591df79b4d}
       \strng{authornamehash}{5add33d4d9145184803ebc591df79b4d}
       \strng{authorfullhash}{5add33d4d9145184803ebc591df79b4d}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Advances in neural information processing systems}
@@ -321,8 +321,8 @@
       \strng{authorbibnamehash}{e7f0b8a77ab17a56248d0bbab9cbf6d2}
       \strng{authornamehash}{e7f0b8a77ab17a56248d0bbab9cbf6d2}
       \strng{authorfullhash}{d644a0c202c884f9465967f7070a170a}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the IEEE conference on computer vision and pattern recognition}
@@ -355,8 +355,8 @@
       \strng{authorbibnamehash}{c1edb85ed4b83cbcf3ad8a2c5a7feeb4}
       \strng{authornamehash}{c1edb85ed4b83cbcf3ad8a2c5a7feeb4}
       \strng{authorfullhash}{c1edb85ed4b83cbcf3ad8a2c5a7feeb4}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:1907.06571}
@@ -1182,6 +1182,100 @@
       \field{title}{World models}
       \field{year}{2018}
     \endentry
+    \entry{yan2021videogpt}{article}{}
+      \name{author}{4}{}{%
+        {{hash=dfb86030c8cc64f7744459cec94fbb55}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Wilson},
+           giveni={W\bibinitperiod}}}%
+        {{hash=de2a5a63574716bf0df277d3532da65b}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yunzhi},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=e28d4ee199593959d8c29980a64f1974}{%
+           family={Abbeel},
+           familyi={A\bibinitperiod},
+           given={Pieter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=09fed423ccdd83193718e9e7e2c70481}{%
+           family={Srinivas},
+           familyi={S\bibinitperiod},
+           given={Aravind},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{c69b4edeadac179da54049718f881a6f}
+      \strng{fullhash}{b6376cec9ca01f734ea17eb243744d58}
+      \strng{bibnamehash}{c69b4edeadac179da54049718f881a6f}
+      \strng{authorbibnamehash}{c69b4edeadac179da54049718f881a6f}
+      \strng{authornamehash}{c69b4edeadac179da54049718f881a6f}
+      \strng{authorfullhash}{b6376cec9ca01f734ea17eb243744d58}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2104.10157}
+      \field{title}{Videogpt: Video generation using vq-vae and transformers}
+      \field{year}{2021}
+    \endentry
+    \entry{wu2022nuwa}{inproceedings}{}
+      \name{author}{7}{}{%
+        {{hash=57ea9971d957d9310881088073aea5e3}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Chenfei},
+           giveni={C\bibinitperiod}}}%
+        {{hash=1de74db71a4d1b32e65f7e99b492ba92}{%
+           family={Liang},
+           familyi={L\bibinitperiod},
+           given={Jian},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e7d4c03746725f19289a740e1211ec52}{%
+           family={Ji},
+           familyi={J\bibinitperiod},
+           given={Lei},
+           giveni={L\bibinitperiod}}}%
+        {{hash=bac6a7a5d8c835c2ebe5288a6fe722b4}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Fan},
+           giveni={F\bibinitperiod}}}%
+        {{hash=ddb5b0df0af68583f7b7b5c8b76fdd5a}{%
+           family={Fang},
+           familyi={F\bibinitperiod},
+           given={Yuejian},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=fffb2e1d40009032d73404c4f8e287ec}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Daxin},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d487976fc92039fa50b07a190b1f5e49}{%
+           family={Duan},
+           familyi={D\bibinitperiod},
+           given={Nan},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{53e10737a94d55b063c2ecf951f9e7a2}
+      \strng{fullhash}{ab52bc336d1c868a91216520b1335154}
+      \strng{bibnamehash}{53e10737a94d55b063c2ecf951f9e7a2}
+      \strng{authorbibnamehash}{53e10737a94d55b063c2ecf951f9e7a2}
+      \strng{authornamehash}{53e10737a94d55b063c2ecf951f9e7a2}
+      \strng{authorfullhash}{ab52bc336d1c868a91216520b1335154}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{European conference on computer vision}
+      \field{title}{Nüwa: Visual synthesis pre-training for neural visual world creation}
+      \field{year}{2022}
+      \field{pages}{720\bibrangedash 736}
+      \range{pages}{17}
+    \endentry
     \entry{briot2021artificial}{article}{}
       \name{author}{1}{}{%
         {{hash=84898617ee952f11d2b52ff06b3661f4}{%
@@ -1199,8 +1293,8 @@
       \strng{authorbibnamehash}{84898617ee952f11d2b52ff06b3661f4}
       \strng{authornamehash}{84898617ee952f11d2b52ff06b3661f4}
       \strng{authorfullhash}{84898617ee952f11d2b52ff06b3661f4}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Neural Computing and Applications}
@@ -1342,6 +1436,29 @@
       \field{pages}{1420\bibrangedash 1433}
       \range{pages}{14}
     \endentry
+    \entry{a16zAI2023}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=66af7b0a342d302921c8bf61fc538ddb}{%
+           family={Moore},
+           familyi={M\bibinitperiod},
+           given={Justine},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{66af7b0a342d302921c8bf61fc538ddb}
+      \strng{fullhash}{66af7b0a342d302921c8bf61fc538ddb}
+      \strng{bibnamehash}{66af7b0a342d302921c8bf61fc538ddb}
+      \strng{authorbibnamehash}{66af7b0a342d302921c8bf61fc538ddb}
+      \strng{authornamehash}{66af7b0a342d302921c8bf61fc538ddb}
+      \strng{authorfullhash}{66af7b0a342d302921c8bf61fc538ddb}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://a16z.com/why-2023-was-ai-videos-breakout-year-and-what-to-expect-in-2024/}}
+      \field{note}{Accessed: 2024-02-17}
+      \field{title}{Why 2023 Was AI Video's Breakout Year and What to Expect in 2024}
+      \field{year}{2023}
+    \endentry
     \entry{esser2022towards}{article}{}
       \name{author}{3}{}{%
         {{hash=e61c1cb5e29d764299a12d1ab334cdc2}{%
@@ -1366,8 +1483,8 @@
       \strng{authorbibnamehash}{e5b7b352cc66063b1c1793bdb61ac011}
       \strng{authornamehash}{e5b7b352cc66063b1c1793bdb61ac011}
       \strng{authorfullhash}{e5b7b352cc66063b1c1793bdb61ac011}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2205.09731}

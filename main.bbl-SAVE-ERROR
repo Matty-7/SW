@@ -1081,6 +1081,107 @@
       \field{pages}{2695\bibrangedash 2704}
       \range{pages}{10}
     \endentry
+    \entry{srivastava2015unsupervised}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=6a147afa4569ce6cf23c0436e65d8486}{%
+           family={Srivastava},
+           familyi={S\bibinitperiod},
+           given={Nitish},
+           giveni={N\bibinitperiod}}}%
+        {{hash=b0fae27fc29b16fb79580f913e6c8e5a}{%
+           family={Mansimov},
+           familyi={M\bibinitperiod},
+           given={Elman},
+           giveni={E\bibinitperiod}}}%
+        {{hash=a4cfbd5d09c24f350cab6033efc92863}{%
+           family={Salakhudinov},
+           familyi={S\bibinitperiod},
+           given={Ruslan},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {PMLR}%
+      }
+      \strng{namehash}{e014422884ce13dadd24d0680c295f64}
+      \strng{fullhash}{e014422884ce13dadd24d0680c295f64}
+      \strng{bibnamehash}{e014422884ce13dadd24d0680c295f64}
+      \strng{authorbibnamehash}{e014422884ce13dadd24d0680c295f64}
+      \strng{authornamehash}{e014422884ce13dadd24d0680c295f64}
+      \strng{authorfullhash}{e014422884ce13dadd24d0680c295f64}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International conference on machine learning}
+      \field{title}{Unsupervised learning of video representations using lstms}
+      \field{year}{2015}
+      \field{pages}{843\bibrangedash 852}
+      \range{pages}{10}
+    \endentry
+    \entry{chiappa2017recurrent}{article}{}
+      \name{author}{4}{}{%
+        {{hash=7be343845f20ae7e5afb043f78f991fe}{%
+           family={Chiappa},
+           familyi={C\bibinitperiod},
+           given={Silvia},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f8e1c03f20456a054e49f3e6a4a4d2b4}{%
+           family={Racaniere},
+           familyi={R\bibinitperiod},
+           given={Sébastien},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d7805381550fb5f8360345f7f72c0b49}{%
+           family={Wierstra},
+           familyi={W\bibinitperiod},
+           given={Daan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=b520f2e46ec8803dd4c66bf1d6059482}{%
+           family={Mohamed},
+           familyi={M\bibinitperiod},
+           given={Shakir},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{a42098d587b3921b37e2fda2579a0060}
+      \strng{fullhash}{9cd54a934c8963d72b95ef46dee224c5}
+      \strng{bibnamehash}{a42098d587b3921b37e2fda2579a0060}
+      \strng{authorbibnamehash}{a42098d587b3921b37e2fda2579a0060}
+      \strng{authornamehash}{a42098d587b3921b37e2fda2579a0060}
+      \strng{authorfullhash}{9cd54a934c8963d72b95ef46dee224c5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1704.02254}
+      \field{title}{Recurrent environment simulators}
+      \field{year}{2017}
+    \endentry
+    \entry{ha2018world}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4467056eb9d0a44c1ec21bbb4d6152c5}{%
+           family={Ha},
+           familyi={H\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=288bdbcfe1b91ad7484d7a24f74f99ed}{%
+           family={Schmidhuber},
+           familyi={S\bibinitperiod},
+           given={Jürgen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{ac33097a207e3840f68fa6e4bd34710c}
+      \strng{fullhash}{ac33097a207e3840f68fa6e4bd34710c}
+      \strng{bibnamehash}{ac33097a207e3840f68fa6e4bd34710c}
+      \strng{authorbibnamehash}{ac33097a207e3840f68fa6e4bd34710c}
+      \strng{authornamehash}{ac33097a207e3840f68fa6e4bd34710c}
+      \strng{authorfullhash}{ac33097a207e3840f68fa6e4bd34710c}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1803.10122}
+      \field{title}{World models}
+      \field{year}{2018}
+    \endentry
     \entry{briot2021artificial}{article}{}
       \name{author}{1}{}{%
         {{hash=84898617ee952f11d2b52ff06b3661f4}{%
@@ -1164,8 +1265,8 @@
       \strng{authorbibnamehash}{d5a17822de636ff8de45307e236e0824}
       \strng{authornamehash}{d5a17822de636ff8de45307e236e0824}
       \strng{authorfullhash}{8782a9f24977c37151479f44b75f9f94}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:1609.03499}
@@ -1196,8 +1297,8 @@
       \strng{authorbibnamehash}{7702d41144501c666778a70d9f6a0e03}
       \strng{authornamehash}{7702d41144501c666778a70d9f6a0e03}
       \strng{authorfullhash}{7702d41144501c666778a70d9f6a0e03}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Advances in Neural Information Processing Systems}
@@ -1229,8 +1330,8 @@
       \strng{authorbibnamehash}{9ca3102f222d9d002e9f18589911cf2b}
       \strng{authornamehash}{9ca3102f222d9d002e9f18589911cf2b}
       \strng{authorfullhash}{9ca3102f222d9d002e9f18589911cf2b}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE/ACM Transactions on Audio, Speech, and Language Processing}

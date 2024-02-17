@@ -727,6 +727,198 @@
       \field{pages}{2695\bibrangedash 2704}
       \range{pages}{10}
     \endentry
+    \entry{briot2021artificial}{article}{}
+      \name{author}{1}{}{%
+        {{hash=84898617ee952f11d2b52ff06b3661f4}{%
+           family={Briot},
+           familyi={B\bibinitperiod},
+           given={Jean-Pierre},
+           giveni={J\bibinithyphendelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{84898617ee952f11d2b52ff06b3661f4}
+      \strng{fullhash}{84898617ee952f11d2b52ff06b3661f4}
+      \strng{bibnamehash}{84898617ee952f11d2b52ff06b3661f4}
+      \strng{authorbibnamehash}{84898617ee952f11d2b52ff06b3661f4}
+      \strng{authornamehash}{84898617ee952f11d2b52ff06b3661f4}
+      \strng{authorfullhash}{84898617ee952f11d2b52ff06b3661f4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Neural Computing and Applications}
+      \field{number}{1}
+      \field{title}{From artificial neural networks to deep learning for music generation: history, concepts and trends}
+      \field{volume}{33}
+      \field{year}{2021}
+      \field{pages}{39\bibrangedash 65}
+      \range{pages}{27}
+    \endentry
+    \entry{oord2016wavenet}{article}{}
+      \name{author}{9}{}{%
+        {{hash=705a5ed355c190be3a39e0a5134d2ae5}{%
+           family={Oord},
+           familyi={O\bibinitperiod},
+           given={Aaron\bibnamedelimb van\bibnamedelima den},
+           giveni={A\bibinitperiod\bibinitdelim v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+        {{hash=a133b469b21b870786119a47b1b691eb}{%
+           family={Dieleman},
+           familyi={D\bibinitperiod},
+           given={Sander},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1b8c874ca3304dce43ffbe24d5affe62}{%
+           family={Zen},
+           familyi={Z\bibinitperiod},
+           given={Heiga},
+           giveni={H\bibinitperiod}}}%
+        {{hash=9d16b7284df92c9adaee86c37ab992df}{%
+           family={Simonyan},
+           familyi={S\bibinitperiod},
+           given={Karen},
+           giveni={K\bibinitperiod}}}%
+        {{hash=494b568c5dc85ba8f3f409635f9c5f25}{%
+           family={Vinyals},
+           familyi={V\bibinitperiod},
+           given={Oriol},
+           giveni={O\bibinitperiod}}}%
+        {{hash=dfca94b0427da7f9088af596e23b46c0}{%
+           family={Graves},
+           familyi={G\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d2d0778c1cdd451c75b874b58eec7564}{%
+           family={Kalchbrenner},
+           familyi={K\bibinitperiod},
+           given={Nal},
+           giveni={N\bibinitperiod}}}%
+        {{hash=99e8963f52f6bfb1af553a6a8823718a}{%
+           family={Senior},
+           familyi={S\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=481308b301166b521c74fde6566e97e6}{%
+           family={Kavukcuoglu},
+           familyi={K\bibinitperiod},
+           given={Koray},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{d5a17822de636ff8de45307e236e0824}
+      \strng{fullhash}{8782a9f24977c37151479f44b75f9f94}
+      \strng{bibnamehash}{d5a17822de636ff8de45307e236e0824}
+      \strng{authorbibnamehash}{d5a17822de636ff8de45307e236e0824}
+      \strng{authornamehash}{d5a17822de636ff8de45307e236e0824}
+      \strng{authorfullhash}{8782a9f24977c37151479f44b75f9f94}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1609.03499}
+      \field{title}{Wavenet: A generative model for raw audio}
+      \field{year}{2016}
+    \endentry
+    \entry{greshler2021catch}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b36cc18e43589b5efd009bfc63847b85}{%
+           family={Greshler},
+           familyi={G\bibinitperiod},
+           given={Gal},
+           giveni={G\bibinitperiod}}}%
+        {{hash=84005b4fd331c2b7b02830e0019556e4}{%
+           family={Shaham},
+           familyi={S\bibinitperiod},
+           given={Tamar},
+           giveni={T\bibinitperiod}}}%
+        {{hash=7a20f965a29ab60ffefed7fc106e2719}{%
+           family={Michaeli},
+           familyi={M\bibinitperiod},
+           given={Tomer},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{7702d41144501c666778a70d9f6a0e03}
+      \strng{fullhash}{7702d41144501c666778a70d9f6a0e03}
+      \strng{bibnamehash}{7702d41144501c666778a70d9f6a0e03}
+      \strng{authorbibnamehash}{7702d41144501c666778a70d9f6a0e03}
+      \strng{authornamehash}{7702d41144501c666778a70d9f6a0e03}
+      \strng{authorfullhash}{7702d41144501c666778a70d9f6a0e03}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advances in Neural Information Processing Systems}
+      \field{title}{Catch-a-waveform: Learning to generate audio from a single short example}
+      \field{volume}{34}
+      \field{year}{2021}
+      \field{pages}{20916\bibrangedash 20928}
+      \range{pages}{13}
+    \endentry
+    \entry{valentini2018speech}{article}{}
+      \name{author}{2}{}{%
+        {{hash=cf375a6ed3da9d1c93ed089a89a6de73}{%
+           family={Valentini-Botinhao},
+           familyi={V\bibinithyphendelim B\bibinitperiod},
+           given={Cassia},
+           giveni={C\bibinitperiod}}}%
+        {{hash=64bfb2b1761cc3077e7b25f2eaa562ee}{%
+           family={Yamagishi},
+           familyi={Y\bibinitperiod},
+           given={Junichi},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{9ca3102f222d9d002e9f18589911cf2b}
+      \strng{fullhash}{9ca3102f222d9d002e9f18589911cf2b}
+      \strng{bibnamehash}{9ca3102f222d9d002e9f18589911cf2b}
+      \strng{authorbibnamehash}{9ca3102f222d9d002e9f18589911cf2b}
+      \strng{authornamehash}{9ca3102f222d9d002e9f18589911cf2b}
+      \strng{authorfullhash}{9ca3102f222d9d002e9f18589911cf2b}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE/ACM Transactions on Audio, Speech, and Language Processing}
+      \field{number}{8}
+      \field{title}{Speech enhancement of noisy and reverberant speech for text-to-speech}
+      \field{volume}{26}
+      \field{year}{2018}
+      \field{pages}{1420\bibrangedash 1433}
+      \range{pages}{14}
+    \endentry
+    \entry{esser2022towards}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e61c1cb5e29d764299a12d1ab334cdc2}{%
+           family={Esser},
+           familyi={E\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=02fceba970ef61f83ea68faec287b8b4}{%
+           family={Michael},
+           familyi={M\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=cc47e417434372368ba183c1ffb435a1}{%
+           family={Sengupta},
+           familyi={S\bibinitperiod},
+           given={Soumyadip},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{e5b7b352cc66063b1c1793bdb61ac011}
+      \strng{fullhash}{e5b7b352cc66063b1c1793bdb61ac011}
+      \strng{bibnamehash}{e5b7b352cc66063b1c1793bdb61ac011}
+      \strng{authorbibnamehash}{e5b7b352cc66063b1c1793bdb61ac011}
+      \strng{authornamehash}{e5b7b352cc66063b1c1793bdb61ac011}
+      \strng{authorfullhash}{e5b7b352cc66063b1c1793bdb61ac011}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2205.09731}
+      \field{title}{Towards Unified Keyframe Propagation Models}
+      \field{year}{2022}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

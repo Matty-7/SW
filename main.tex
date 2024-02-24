@@ -7,6 +7,7 @@
 \usepackage[a4paper,margin=1in]{geometry}
 \usepackage{longtable,booktabs,array}
 \usepackage{float}
+\usepackage[margin=1in]{geometry}
 
 \usepackage{titlesec}
 \titleformat{\chapter}[display]
@@ -266,21 +267,18 @@ Recent years have witnessed the emergence of specialized architectures that have
   \centering
   \includegraphics[width=\textwidth]{timeline.png}
   \caption{The development of generative AI Video Timeline in 2023, the most updates were launched in the 4th quarter. \cite{a16zAI2023}}
-  \label{fig:1}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=\textwidth]{products.png}
   \caption{The comparison of 21 public AI Video Products as of December 2023 in terms of Generation Type, Max Length of clips, Scalability, Controllability, and Usage. \cite{a16zAI2023}}
-  \label{fig:2}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=\textwidth]{models.png}
   \caption{Evolutionary Timeline of TTI Models: Distinguished by parameter size and colors. An asterisk next to a model indicates its parameter count excludes text encoders. \cite{bie2023renaissance}}
-  \label{fig:3}
 \end{figure}
 
 \paragraph{Ethical considerations have also come to the forefront, with initiatives aimed at mitigating biases in text-to-image generation and developing safeguards against the misuse of AI-generated deepfakes \cite{esposito2023mitigating}. The push towards photorealism sees advanced algorithms augmenting computer-generated imagery to levels indistinguishable from actual photographs, enhancing the authenticity of digital creations \cite{richter2022enhancing}. Moreover, the trend towards unification of different AI techniques for seamless and integrated content creation solutions is evident, promising a more cohesive approach to digital media production \cite{esser2022towards}.}
@@ -297,6 +295,7 @@ Recent years have witnessed the emergence of specialized architectures that have
 \chapter{Material and Methods}
 \label{material-and-methods}
 
+\section{Workflow}
 \paragraph{The workflow of this video-creating project is shown below: \\
 1: Write the storyline of the video, including the description prompt of each scene and the narrative flow. I used ChatGPT to polish them to make them more concise and coherent.\\
 2: Generate and edit the image stills by using Mid Journey. \\
@@ -307,21 +306,62 @@ Recent years have witnessed the emergence of specialized architectures that have
 6: Use Topaz Video AI to improve the video quality like (change the frame rate from 60 FPS to 120 FPS)
 6: Publish the video on social media. (like YouTube and Instagram)\\}
 
+
+\section{ChatGPT}
+\paragraph{}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{ChatGPT.png}
+  \caption{Using ChatGPT to generate vivid description prompt and prepare for creating the image stills.}
+\end{figure}
+
+\section{Mid Journey}
+\paragraph{}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{mj.png}
+  \caption{Using ChatGPT's prompts to generate good quality image stills using Mid Journey, and then upload them as the key framesto Runway Gen-2 for video clip generation.}
+\end{figure}
+
+\section{Runway Gen-2}
 \paragraph{}
 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=\textwidth]{Runway.png}
   \caption{Using the "Image + Text" mode in Runway Gen-2 to generate the video, with the help of motion brush function to control how the characters move}
-  \label{fig:4}
 \end{figure}
 
+
+\section{ElevenLabs}
+\paragraph{}
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=\textwidth]{Voice Cloning.png}
   \caption{Using Professinal Voice Cloning from ElevenLabs to apply text to speech and add the voice over to the video}
-  \label{fig:5}
 \end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{ElevenLabs.png}
+  \caption{Using my clone voice to generate the voice over for the video, I recorded the training set by reading one chapter from the book Elon Musk, the audio file is 14 mins.}
+\end{figure}
+
+\section{Topaz AI}
+\paragraph{}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{TopazPhoto.png}
+  \caption{Using Topaz AI to upscale and improve the video quality, like changing the frame rate from 60 FPS to 120 FPS, removing noise, and sharpen the subject.}
+\end{figure}
+
+
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Results}

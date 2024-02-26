@@ -821,6 +821,83 @@
       \field{pages}{484\bibrangedash 489}
       \range{pages}{6}
     \endentry
+    \entry{leiter2023chatgpt}{article}{}
+      \name{author}{7}{}{%
+        {{hash=50cb9908cc26dcade655d00a5de9efc9}{%
+           family={Leiter},
+           familyi={L\bibinitperiod},
+           given={Christoph},
+           giveni={C\bibinitperiod}}}%
+        {{hash=90a19aa2fbf7fc18c6cc07430ece08f3}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Ran},
+           giveni={R\bibinitperiod}}}%
+        {{hash=30717ede2d21b5a7862551306e710d18}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Yanran},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=37c15372abce0d239428781dd0e54d02}{%
+           family={Belouadi},
+           familyi={B\bibinitperiod},
+           given={Jonas},
+           giveni={J\bibinitperiod}}}%
+        {{hash=cc6293b5cd526fae2bc6a154eba95277}{%
+           family={Larionov},
+           familyi={L\bibinitperiod},
+           given={Daniil},
+           giveni={D\bibinitperiod}}}%
+        {{hash=78d1d08b9b0cbaa190389d3d77eac115}{%
+           family={Fresen},
+           familyi={F\bibinitperiod},
+           given={Vivian},
+           giveni={V\bibinitperiod}}}%
+        {{hash=fa4a8f2209aafcafe807835e7d616b7b}{%
+           family={Eger},
+           familyi={E\bibinitperiod},
+           given={Steffen},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{62289facb776d266bb151779b46ffc1c}
+      \strng{fullhash}{c5437470dd34aeb0d823736d8821e1f1}
+      \strng{bibnamehash}{62289facb776d266bb151779b46ffc1c}
+      \strng{authorbibnamehash}{62289facb776d266bb151779b46ffc1c}
+      \strng{authornamehash}{62289facb776d266bb151779b46ffc1c}
+      \strng{authorfullhash}{c5437470dd34aeb0d823736d8821e1f1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2302.13795}
+      \field{title}{Chatgpt: A meta-analysis after 2.5 months}
+      \field{year}{2023}
+    \endentry
+    \entry{openai2023gpt}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f516051d73434fcc17483bfac7031223}{%
+           family={OpenAI},
+           familyi={O\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{f516051d73434fcc17483bfac7031223}
+      \strng{fullhash}{f516051d73434fcc17483bfac7031223}
+      \strng{bibnamehash}{f516051d73434fcc17483bfac7031223}
+      \strng{authorbibnamehash}{f516051d73434fcc17483bfac7031223}
+      \strng{authornamehash}{f516051d73434fcc17483bfac7031223}
+      \strng{authorfullhash}{f516051d73434fcc17483bfac7031223}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{View in Article}
+      \field{title}{Gpt-4 technical report. arxiv 2303.08774}
+      \field{volume}{2}
+      \field{year}{2023}
+      \field{pages}{13}
+      \range{pages}{1}
+    \endentry
     \entry{richter2022enhancing}{article}{}
       \name{author}{3}{}{%
         {{hash=132cc1bc90af33fd4c9cbf6c7f6ca36a}{%
@@ -1071,8 +1148,8 @@
       \strng{authorbibnamehash}{8bfe81841d52c8c08ff73de8d529b94b}
       \strng{authornamehash}{8bfe81841d52c8c08ff73de8d529b94b}
       \strng{authorfullhash}{488c0c5bb21d237379d8f21da69b2cac}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}
@@ -1108,8 +1185,8 @@
       \strng{authorbibnamehash}{e014422884ce13dadd24d0680c295f64}
       \strng{authornamehash}{e014422884ce13dadd24d0680c295f64}
       \strng{authorfullhash}{e014422884ce13dadd24d0680c295f64}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{International conference on machine learning}
@@ -1552,8 +1629,8 @@
       \strng{authorbibnamehash}{e5b7b352cc66063b1c1793bdb61ac011}
       \strng{authornamehash}{e5b7b352cc66063b1c1793bdb61ac011}
       \strng{authorfullhash}{e5b7b352cc66063b1c1793bdb61ac011}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2205.09731}
@@ -1785,8 +1862,8 @@
       \strng{authorbibnamehash}{59c8902722d20b85a1949951ce3800a1}
       \strng{authornamehash}{59c8902722d20b85a1949951ce3800a1}
       \strng{authorfullhash}{d955e31caa535f6c670ae18aa4cfb349}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Advances in neural information processing systems}
@@ -1823,8 +1900,8 @@
       \strng{authorbibnamehash}{6edb98fe38401d2fe4a026f5ce6e8451}
       \strng{authornamehash}{6edb98fe38401d2fe4a026f5ce6e8451}
       \strng{authorfullhash}{42c4b52dc3a62cebabbc11c73e1afb53}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the IEEE conference on computer vision and pattern recognition}

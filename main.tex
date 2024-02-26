@@ -235,6 +235,31 @@ The combination of these AI models—ChatGPT, MidJourney, Runway, and ElevenLabs
 
 \subsection{Variational Autoencoders (VAE)}
 
+Variational Autoencoders (VAEs) are a subclass of autoencoders that are foundational for generative models. They are composed of an encoder and a decoder \cite{cho2014properties}. The encoder transforms input data into a latent space, whereas the decoder reconstructs the input data from this space. The latent space is typically modeled as a Gaussian distribution, with the encoder providing the parameters—mean $\mu$ and variance $\sigma^2$—for this distribution.
+
+The encoder part of a VAE is responsible for compressing the input data into a latent representation. For a given data element $x_i$, the encoder produces a mean $\mu_i$ and a variance $\sigma^2_i$ that define a Gaussian distribution in the latent space. The encoding process can be represented by the following equation:
+\begin{equation}
+\log q_{\phi} \left( z^{(i)} | x^{(i)} \right) = \log \mathcal{N} \left( z^{(i)}; \mu^{(i)}, \sigma^{2(i)} I \right).
+\end{equation}
+
+To allow for gradient descent methods to work, VAEs employ a reparameterization trick. This trick involves sampling a noise vector $\epsilon$ from a standard Gaussian distribution and then constructing the latent vector $z_i$ by scaling the noise with the standard deviation and shifting by the mean:
+\begin{equation}
+z_i = \mu_i + \epsilon \times \sigma_i,
+\end{equation}
+where $\epsilon \sim \mathcal{N}(0, I)$.
+
+The decoder's goal is to reconstruct the input data from the latent representation. It tries to generate data that is as close as possible to the original input by maximizing the likelihood of the data given the latent space representation.
+
+The training of VAEs involves maximizing the evidence lower bound (ELBO) on the marginal likelihood of the observed data. The ELBO can be represented as follows:
+\begin{equation}
+\mathcal{L}_b = -D_{KL}(q(z|x)||p(z)) + \frac{1}{L} \sum_{i=1}^{L}(\log P(x|z)).
+\end{equation}
+Furthermore, the ELBO can be decomposed into two terms: the first being the Kullback-Leibler divergence between the encoder's distribution and the prior distribution of the latent variables, and the second term being the expected log-likelihood of the data given the latent variables. For a latent space with dimensionality $d$, and assuming a standard Gaussian prior, the loss function simplifies to:
+\begin{equation}
+\mathcal{L}(\theta, x^i) = -\frac{1}{2} \sum_{i=1}^{d} \left( \mu^{2}_{(i)} + \sigma^{2}_{(i)} - \log \sigma^{2}_{(i)} - 1 \right) + \frac{1}{L} \sum_{i=1}^{L} \left( \log P(x^{i} | z) \right).
+\end{equation}
+
+Despite their advantages for generative tasks, VAEs have limitations, particularly for image generation. Directly sampling from the Gaussian distribution often results in blurred images. Moreover, there is an information loss when projecting the data to a lower-dimensional latent space, which affects the quality of the reconstruction. However, VAEs find extensive applications in feature extraction and dimensionality reduction, and they can be particularly effective when combined with other generative models such as Generative Adversarial Networks (GANs) or diffusion models.
 
 
 \subsection{Generative Adversarial Networks (GAN)}
@@ -257,7 +282,8 @@ and the gradient descent step for $G$:
 \end{align}
 for a minibatch of $m$ samples.
 
-GANs have been utilized to generate high-fidelity images, outperforming other generative models in visual quality. However, they often struggle with mode collapse -- a phenomenon where the generator produces a limited variety of outputs. Despite these challenges, GANs have shown impressive results in tasks beyond image generation, such as image super-resolution and object detection \cite{goodfellow2014generative}.
+\paragraph{}
+GANs have been utilized to generate high-fidelity images, outperforming other generative models in visual quality. However, they often struggle with mode collapse -- a phenomenon where the generator produces a limited variety of outputs. Despite these challenges, GANs have shown impressive results in tasks beyond image generation, such as image super-resolution \cite{denton2015deep}and object detection \cite{goodfellow2014generative}.
 
 \subsection{Diffusion Models in Video Prediction and Infilling}
 \paragraph{Diffusion models represent a significant advancement in the field of artificial intelligence, particularly in their application to video processing tasks, where they have demonstrated exceptional proficiency. These sophisticated models harness the power of historical data to predict future frames and infill missing segments in video sequences, a process that is crucial for creating a seamless narrative flow. By iteratively refining the generated content through a process that gradually reduces noise, diffusion models are capable of producing highly coherent and visually plausible outcomes. This ability not only enhances the realism and continuity of video footage but also offers transformative potential in the realms of video editing and post-production. Editors and filmmakers can now mend discontinuities in footage, extend narrative sequences without original content, or even generate entirely new scenes that blend indistinguishably with real footage, thereby overcoming traditional limitations imposed by incomplete or imperfect source material \cite{hoppe2022diffusion}. The application of diffusion models in these contexts underscores their pivotal role in advancing the art of video production, where the demand for high-quality, realistic content continues to grow. Their integration into video processing workflows signifies a leap forward in our ability to manipulate and enhance visual media, promising a future where the boundaries between the created and the real become increasingly blurred.

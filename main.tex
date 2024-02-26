@@ -263,7 +263,6 @@ Furthermore, the ELBO can be decomposed into two terms: the first being the Kull
 
 Despite their advantages for generative tasks, VAEs have limitations, particularly for image generation. Directly sampling from the Gaussian distribution often results in blurred images. Moreover, there is an information loss when projecting the data to a lower-dimensional latent space, which affects the quality of the reconstruction. However, VAEs find extensive applications in feature extraction and dimensionality reduction, and they can be particularly effective when combined with other generative models such as Generative Adversarial Networks (GANs) or diffusion models.
 
-
 \subsection{Generative Adversarial Networks (GAN)}
 
 Generative Adversarial Networks (GANs) represent a class of generative models that has significantly impacted the field of synthetic image generation. A GAN is composed of two distinct neural network models: a \textit{generator} ($G$) and a \textit{discriminator} ($D$). The generator attempts to produce data that is indistinguishable from genuine data, while the discriminator evaluates the authenticity of the data, distinguishing between actual and generated samples.
@@ -294,15 +293,7 @@ A diffusion model typically consists of two main components: the forward process
 \begin{equation}
 q(\mathbf{x}_t | \mathbf{x}_{t-1}) = \mathcal{N}(\mathbf{x}_t; \sqrt{1-\beta_t} \mathbf{x}_{t-1}, \beta_t \mathbf{I}),
 \end{equation}
-where $\beta_t$ is a variance schedule over discrete timesteps $t = 1, 2, ..., T$. The reverse process involves learning a model to reverse this noise addition:
-\begin{equation}
-p_{\theta}(\mathbf{x}_{t-1} | \mathbf{x}_t) = \mathcal{N}(\mathbf{x}_{t-1}; \mu_{\theta}(\mathbf{x}_t, t), \Sigma_{\theta}(\mathbf{x}_t, t)),
-\end{equation}
-where $\mu_{\theta}(\mathbf{x}_t, t)$ and $\Sigma_{\theta}(\mathbf{x}_t, t)$ are functions parameterized by a neural network.
-
-The training of diffusion models, as outlined in Algorithm 1, involves adjusting the parameters of the neural network to maximize the likelihood of the data under the reverse process. Similarly, the inference procedure, as outlined in Algorithm 2, utilizes the trained model to generate new data samples by reversing the noise process.
-
-Diffusion models have been applied to a variety of tasks beyond image generation, such as super-resolution and inpainting, demonstrating their versatility and potential in numerous domains of generative modeling.
+where $\beta_t$ is a variance schedule over discrete timesteps $t = 1, 2, ..., T$. 
 
 \begin{algorithm}
 \caption{Diffusion model training \cite{bie2023renaissance}}
@@ -317,6 +308,12 @@ Diffusion models have been applied to a variety of tasks beyond image generation
 \label{alg:diffusion_model_training}
 \end{algorithm}
 
+The reverse process involves learning a model to reverse this noise addition:
+\begin{equation}
+p_{\theta}(\mathbf{x}_{t-1} | \mathbf{x}_t) = \mathcal{N}(\mathbf{x}_{t-1}; \mu_{\theta}(\mathbf{x}_t, t), \Sigma_{\theta}(\mathbf{x}_t, t)),
+\end{equation}
+where $\mu_{\theta}(\mathbf{x}_t, t)$ and $\Sigma_{\theta}(\mathbf{x}_t, t)$ are functions parameterized by a neural network.
+
 \begin{algorithm}
 \caption{Diffusion model Inference \cite{bie2023renaissance}}
 \begin{algorithmic}[1]
@@ -330,11 +327,29 @@ Diffusion models have been applied to a variety of tasks beyond image generation
 \label{alg:diffusion_model_inference}
 \end{algorithm}
 
-\subsection{Neural Cellular Automata for 3D Generation}
-\paragraph{The introduction of Neural Cellular Automata (NCA) models marks a groundbreaking expansion in the capabilities of Artificial Intelligence (AI), particularly in the realm of generating three-dimensional artifacts and functional machinery. Mirroring the growth dynamics of natural systems, these models employ a set of simple, local rules that guide the evolution of cells in a discrete grid space, allowing for the emergence of complex, self-organizing structures from minimal initial states. Such a bio-inspired approach facilitates the synthesis of intricate 3D models and mechanisms, embodying both form and function, which can be further refined or evolved to meet specific design criteria. This innovative methodology has profound implications for digital manufacturing and virtual simulation, offering a novel paradigm for creating and experimenting with 3D designs in a manner that transcends the limitations of traditional CAD tools and image generation techniques. By enabling the procedural generation of objects and systems that can adapt, repair, or even replicate, Neural Cellular Automata models herald a new era in digital design and fabrication, promising to revolutionize industries ranging from aerospace to biomedical engineering \cite{sudhakaran2021growing}. This adaptive and potentially autonomous creation process not only enhances the efficiency and flexibility of design and manufacturing but also paves the way for developing more resilient and sustainable technological solutions.}
+The training of diffusion models, as outlined in Algorithm 1, involves adjusting the parameters of the neural network to maximize the likelihood of the data under the reverse process. Similarly, the inference procedure, as outlined in Algorithm 2, utilizes the trained model to generate new data samples by reversing the noise process.
+
+Diffusion models have been applied to a variety of tasks beyond image generation, such as super-resolution and inpainting, demonstrating their versatility and potential in numerous domains of generative modeling.
+
 
 \subsection{Mitigating Biases in Generative Systems}
-\paragraph{The capacity of Artificial Intelligence (AI) to transcend mere technical prowess and address pressing societal issues is exemplified in its application to bias mitigation in text-to-image generation systems. This critical area of research focuses on the development of AI algorithms capable of recognizing and rectifying biases in the content they generate, a challenge that is paramount in promoting equity and diversity within digital media landscapes. Such initiatives are driven by the imperative to dismantle systemic prejudices that may be inadvertently encoded into AI models through biased training data sets. By implementing mechanisms for the detection and correction of these biases, researchers, and developers are laying the groundwork for the creation of digital environments that reflect a wide spectrum of human experiences and perspectives, thereby fostering inclusivity. This endeavor not only highlights the ethical responsibilities incumbent upon those at the forefront of AI development but also signals a shift towards more socially conscious technology practices. Efforts to engineer AI systems with the inherent ability to audit and adjust their output for bias represent a significant step forward in the pursuit of creating digital spaces that are truly representative and inclusive of all users \cite{esposito2023mitigating}. Through such advancements, AI is positioned not only as a tool for innovation but also as a catalyst for social change, challenging and reshaping our interactions with digital content in an ethically responsible manner.}
+
+\paragraph{The development of generative text-to-image models has brought forth the challenge of mitigating social biases that these models may perpetuate. 
+Notably, biases towards certain genders or skin tones have been observed in the outcomes of these image generation models. 
+To offset this, a novel approach has been proposed \cite{esposito2023mitigating}, which involves fine-tuning text-to-image models on synthetic data constructed from diverse text prompts. 
+These prompts include a variety of perceived skin tones, genders, ethnicities, professions, and age groups, resulting in a more inclusive synthetic dataset. 
+Fine-tuning models with this diverse data has shown to substantially improve group fairness metrics, reducing biases by significant margins.
+The process begins with the construction of text prompts through multiplicative combinations of various social qualifiers, which are then used to synthesize images that showcase a broad spectrum of human diversity. 
+This method has proven to be effective, with diversity-finetuned models not only generating content that is more representative of darker skin tones and female genders but also improving overall fairness in model outcomes.}
+
+\paragraph{Furthermore, the evaluation of biases in text-to-image models is formulated within a group fairness framework, which assesses whether model outputs unfairly favor certain subgroups over others. 
+By adopting this framework, the research moves beyond merely measuring bias to actively promoting fairness in AI-generated content. 
+This is complemented by user studies that validate the absence of undesirable visual artifacts in finetuned models' outputs.
+This approach not only showcases the capability to generate more inclusive content but also highlights the potential for AI to serve as a tool for social change. 
+By actively mitigating biases, AI models can foster digital environments that are reflective of a wide spectrum of human experiences and perspectives, thereby promoting inclusivity and diversity.
+Future work need to address additional forms of biases and explore the applicability of mitigative strategies in video models, thereby extending the principles of fairness and inclusivity to broader multimedia contexts.
+}
+
 
 \subsection{Ethical Considerations and Deepfakes}
 \paragraph{The advent of Artificial Intelligence (AI) in generating deepfakes and other manipulated media forms has precipitated a complex ethical quandary, underscoring the imperative for judicious utilization of this potent technology. Deepfakes, which are synthetic media in which a person's likeness is replaced with someone else's, leveraging advanced AI and machine learning techniques, have demonstrated the dual-edged nature of AI capabilities. While offering significant advancements in content creation, these technologies also pose substantial risks by enabling the creation of misleading or harmful content, thus blurring the lines between reality and fabrication. This paradox has catalyzed the development of sophisticated AI-driven detection systems aimed at identifying and neutralizing such manipulations to safeguard the veracity of digital media. The ethical imperative to maintain digital content integrity has led to an arms race between the creation of increasingly realistic artificial content and the countermeasures designed to detect and deter its misuse. This dynamic landscape necessitates continuous research and innovation in AI to develop robust methodologies that ensure the authenticity of digital content, thereby preserving public trust and preventing the potential for disinformation. The critical challenge lies in balancing the benefits of AI in creative and communicative expressions against the risks posed by its misuse, advocating for a regulatory and technological framework that promotes responsible AI use while protecting individuals and societies from its potential harm \cite{kasten2021layered}.}
@@ -381,9 +396,6 @@ Diffusion models have been applied to a variety of tasks beyond image generation
 \paragraph{Expanding into the auditory domain, AI's influence on sound generation mirrors these trends, with significant advancements in creating and modifying sounds with high precision. AI-driven technologies are now capable of synthesizing music, voice, and sound effects with unprecedented realism, catering to diverse applications from virtual assistants to immersive game environments. In music composition, AI algorithms harness vast datasets to produce compositions across genres, democratizing music creation \cite{briot2021artificial}. Voice synthesis technologies like WaveNet and Tacotron are refining speech generation to include emotional inflections and accents, broadening the horizon for interactive media \cite{oord2016wavenet}. Moreover, in sound effects generation, AI models trained on sound libraries are crafting unique auditory experiences, enhancing the realism of virtual spaces \cite{greshler2021catch}.}
 
 \paragraph{These developments signify not merely a technological evolution but a comprehensive transformation of the digital content landscape. The integration of sophisticated AI in image, video, and sound generation is not only pushing the boundaries of creativity and realism but also addressing efficiency, ethical, and accessibility concerns. As these trends continue to unfold, they herald a future where AI's role in digital media production becomes increasingly central, shaping the way content is created, consumed, and perceived across various platforms.}
-
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

@@ -1,15 +1,17 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'main.blg'
-[37] biber-darwin:340> INFO - === Mon Feb 26, 2024, 19:39:33
-[46] Biber.pm:419> INFO - Reading 'main.bcf'
-[92] Biber.pm:979> INFO - Found 54 citekeys in bib section 0
-[99] Biber.pm:4419> INFO - Processing section 0
-[105] Biber.pm:4610> INFO - Looking for bibtex file 'bibfile.bib' for section 0
-[107] bibtex.pm:1713> INFO - LaTeX decoding ...
-[128] bibtex.pm:1519> INFO - Found BibTeX data source 'bibfile.bib'
-[331] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[331] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[331] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[331] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[347] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[364] bbl.pm:763> INFO - Output to main.bbl
+[34] biber-darwin:340> INFO - === Mon Feb 26, 2024, 20:32:11
+[42] Biber.pm:419> INFO - Reading 'main.bcf'
+[90] Biber.pm:979> INFO - Found 54 citekeys in bib section 0
+[97] Biber.pm:4419> INFO - Processing section 0
+[102] Biber.pm:4610> INFO - Looking for bibtex file 'bibfile.bib' for section 0
+[104] bibtex.pm:1713> INFO - LaTeX decoding ...
+[125] bibtex.pm:1519> INFO - Found BibTeX data source 'bibfile.bib'
+[315] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[315] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[315] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[315] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[330] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[346] bbl.pm:763> INFO - Output to main.bbl
+[346] Biber.pm:131> WARN - I didn't find a database entry for 'sudhakaran2021growing' (section 0)
+[346] Biber.pm:133> INFO - WARNINGS: 1

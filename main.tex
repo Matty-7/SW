@@ -7,6 +7,8 @@
 \usepackage[a4paper,margin=1in]{geometry}
 \usepackage{longtable,booktabs,array}
 \usepackage{float}
+\usepackage{algorithm}
+\usepackage{algorithmic}
 
 \usepackage{titlesec}
 \titleformat{\chapter}[display]
@@ -282,12 +284,51 @@ and the gradient descent step for $G$:
 \end{align}
 for a minibatch of $m$ samples.
 
-\paragraph{}
 GANs have been utilized to generate high-fidelity images, outperforming other generative models in visual quality. However, they often struggle with mode collapse -- a phenomenon where the generator produces a limited variety of outputs. Despite these challenges, GANs have shown impressive results in tasks beyond image generation, such as image super-resolution \cite{denton2015deep}and object detection \cite{goodfellow2014generative}.
 
-\subsection{Diffusion Models in Video Prediction and Infilling}
-\paragraph{Diffusion models represent a significant advancement in the field of artificial intelligence, particularly in their application to video processing tasks, where they have demonstrated exceptional proficiency. These sophisticated models harness the power of historical data to predict future frames and infill missing segments in video sequences, a process that is crucial for creating a seamless narrative flow. By iteratively refining the generated content through a process that gradually reduces noise, diffusion models are capable of producing highly coherent and visually plausible outcomes. This ability not only enhances the realism and continuity of video footage but also offers transformative potential in the realms of video editing and post-production. Editors and filmmakers can now mend discontinuities in footage, extend narrative sequences without original content, or even generate entirely new scenes that blend indistinguishably with real footage, thereby overcoming traditional limitations imposed by incomplete or imperfect source material \cite{hoppe2022diffusion}. The application of diffusion models in these contexts underscores their pivotal role in advancing the art of video production, where the demand for high-quality, realistic content continues to grow. Their integration into video processing workflows signifies a leap forward in our ability to manipulate and enhance visual media, promising a future where the boundaries between the created and the real become increasingly blurred.
-}
+\subsection{Diffusion Models}
+
+Diffusion models \cite{sohl2015deep, ho2020denoising} are a class of generative models famous for their ability to generate high-quality images through a process that iteratively adds and removes noise. These models are characterized by their use of a Markov chain to gradually convert simple noise distributions into complex data distributions.
+
+A diffusion model typically consists of two main components: the forward process (described in Algorithm 1) and the reverse process (described in Algorithm 2). The forward process models the gradual addition of noise to the data, while the reverse process models the generation of data from noise. Mathematically, the forward process can be described by:
+\begin{equation}
+q(\mathbf{x}_t | \mathbf{x}_{t-1}) = \mathcal{N}(\mathbf{x}_t; \sqrt{1-\beta_t} \mathbf{x}_{t-1}, \beta_t \mathbf{I}),
+\end{equation}
+where $\beta_t$ is a variance schedule over discrete timesteps $t = 1, 2, ..., T$. The reverse process involves learning a model to reverse this noise addition:
+\begin{equation}
+p_{\theta}(\mathbf{x}_{t-1} | \mathbf{x}_t) = \mathcal{N}(\mathbf{x}_{t-1}; \mu_{\theta}(\mathbf{x}_t, t), \Sigma_{\theta}(\mathbf{x}_t, t)),
+\end{equation}
+where $\mu_{\theta}(\mathbf{x}_t, t)$ and $\Sigma_{\theta}(\mathbf{x}_t, t)$ are functions parameterized by a neural network.
+
+The training of diffusion models, as outlined in Algorithm 1, involves adjusting the parameters of the neural network to maximize the likelihood of the data under the reverse process. Similarly, the inference procedure, as outlined in Algorithm 2, utilizes the trained model to generate new data samples by reversing the noise process.
+
+Diffusion models have been applied to a variety of tasks beyond image generation, such as super-resolution and inpainting, demonstrating their versatility and potential in numerous domains of generative modeling.
+
+\begin{algorithm}
+\caption{Diffusion model training \cite{bie2023renaissance}}
+\begin{algorithmic}[1]
+\STATE for every training iteration do
+\STATE \hspace{\algorithmicindent} Sample $t$ from discrete timestep $1, 2, \ldots, T$, or from continuous timestep $t \sim [0, 1]$.
+\STATE \hspace{\algorithmicindent} Sample random noise $\epsilon \sim \mathcal{N}(0, 1)$.
+\STATE \hspace{\algorithmicindent} Calculate $x_t$ based on DDPM forward or SDE forward.
+\STATE \hspace{\algorithmicindent} Update the model with noise prediction $\epsilon(x_t, t)$ or score function $s(x_t, t)$.
+\STATE end for
+\end{algorithmic}
+\label{alg:diffusion_model_training}
+\end{algorithm}
+
+\begin{algorithm}
+\caption{Diffusion model Inference \cite{bie2023renaissance}}
+\begin{algorithmic}[1]
+\STATE Sample $x_t$ from normal Gaussian distribution $x_t \sim \mathcal{N}(0, \mathbf{I})$.
+\STATE Sample discrete timesteps from $1, 2, \ldots, T$ or continuous timestep from $[0,1]$.
+\STATE for $t$ in Reverse(timesteps) do
+\STATE \hspace{\algorithmicindent} Calculate the noise distribution $\epsilon(x_t, t)$ or score function $s(x_t, t)$ with the corresponding diffusion model.
+\STATE \hspace{\algorithmicindent} Approximate $x_{t-1}$ or $x_{t-\Delta t}$ based on the reverse function.
+\STATE end for
+\end{algorithmic}
+\label{alg:diffusion_model_inference}
+\end{algorithm}
 
 \subsection{Neural Cellular Automata for 3D Generation}
 \paragraph{The introduction of Neural Cellular Automata (NCA) models marks a groundbreaking expansion in the capabilities of Artificial Intelligence (AI), particularly in the realm of generating three-dimensional artifacts and functional machinery. Mirroring the growth dynamics of natural systems, these models employ a set of simple, local rules that guide the evolution of cells in a discrete grid space, allowing for the emergence of complex, self-organizing structures from minimal initial states. Such a bio-inspired approach facilitates the synthesis of intricate 3D models and mechanisms, embodying both form and function, which can be further refined or evolved to meet specific design criteria. This innovative methodology has profound implications for digital manufacturing and virtual simulation, offering a novel paradigm for creating and experimenting with 3D designs in a manner that transcends the limitations of traditional CAD tools and image generation techniques. By enabling the procedural generation of objects and systems that can adapt, repair, or even replicate, Neural Cellular Automata models herald a new era in digital design and fabrication, promising to revolutionize industries ranging from aerospace to biomedical engineering \cite{sudhakaran2021growing}. This adaptive and potentially autonomous creation process not only enhances the efficiency and flexibility of design and manufacturing but also paves the way for developing more resilient and sustainable technological solutions.}

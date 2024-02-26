@@ -1277,47 +1277,151 @@
       \field{volume}{28}
       \field{year}{2015}
     \endentry
-    \entry{hoppe2022diffusion}{article}{}
-      \name{author}{5}{}{%
-        {{hash=2335cdade364e17975675c5cde097edb}{%
-           family={Höppe},
-           familyi={H\bibinitperiod},
-           given={Tobias},
-           giveni={T\bibinitperiod}}}%
-        {{hash=d5042bea9b7252d12678744245bb71c7}{%
-           family={Mehrjou},
+    \entry{sohl2015deep}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=529bdf392a3471f000ce33ec88c41bd5}{%
+           family={Sohl-Dickstein},
+           familyi={S\bibinithyphendelim D\bibinitperiod},
+           given={Jascha},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e42d744e61977e0833217eb3bfd77f60}{%
+           family={Weiss},
+           familyi={W\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=24b3062319f458bd1a60642d737d4aea}{%
+           family={Maheswaranathan},
            familyi={M\bibinitperiod},
-           given={Arash},
-           giveni={A\bibinitperiod}}}%
-        {{hash=6e0afe0dd7f80126ec663a279b8d6212}{%
-           family={Bauer},
-           familyi={B\bibinitperiod},
-           given={Stefan},
+           given={Niru},
+           giveni={N\bibinitperiod}}}%
+        {{hash=05b3e391388084df874ede60f2210c12}{%
+           family={Ganguli},
+           familyi={G\bibinitperiod},
+           given={Surya},
            giveni={S\bibinitperiod}}}%
-        {{hash=6dfd225d2018535c711fc3e88eba6c9b}{%
-           family={Nielsen},
-           familyi={N\bibinitperiod},
-           given={Didrik},
-           giveni={D\bibinitperiod}}}%
-        {{hash=765439dd5758bdb3511ab54651d7f770}{%
-           family={Dittadi},
-           familyi={D\bibinitperiod},
-           given={Andrea},
-           giveni={A\bibinitperiod}}}%
       }
-      \strng{namehash}{be049f628d1d8d15947691b371cfe2f6}
-      \strng{fullhash}{b1ab541c45a7c6079e8d30ca0f40ed47}
-      \strng{bibnamehash}{be049f628d1d8d15947691b371cfe2f6}
-      \strng{authorbibnamehash}{be049f628d1d8d15947691b371cfe2f6}
-      \strng{authornamehash}{be049f628d1d8d15947691b371cfe2f6}
-      \strng{authorfullhash}{b1ab541c45a7c6079e8d30ca0f40ed47}
+      \list{organization}{1}{%
+        {PMLR}%
+      }
+      \strng{namehash}{ba6e625a46287ebf30dd9d9f3c07087b}
+      \strng{fullhash}{9c08ae1a9d19a2750d4f50c36df0039b}
+      \strng{bibnamehash}{ba6e625a46287ebf30dd9d9f3c07087b}
+      \strng{authorbibnamehash}{ba6e625a46287ebf30dd9d9f3c07087b}
+      \strng{authornamehash}{ba6e625a46287ebf30dd9d9f3c07087b}
+      \strng{authorfullhash}{9c08ae1a9d19a2750d4f50c36df0039b}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:2206.07696}
-      \field{title}{Diffusion models for video prediction and infilling}
-      \field{year}{2022}
+      \field{booktitle}{International conference on machine learning}
+      \field{title}{Deep unsupervised learning using nonequilibrium thermodynamics}
+      \field{year}{2015}
+      \field{pages}{2256\bibrangedash 2265}
+      \range{pages}{10}
+    \endentry
+    \entry{ho2020denoising}{article}{}
+      \name{author}{3}{}{%
+        {{hash=2ac2ca10b22e4d13af1767e87495412f}{%
+           family={Ho},
+           familyi={H\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=31ac0835ffc3ba6d612252522a6a2011}{%
+           family={Jain},
+           familyi={J\bibinitperiod},
+           given={Ajay},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e28d4ee199593959d8c29980a64f1974}{%
+           family={Abbeel},
+           familyi={A\bibinitperiod},
+           given={Pieter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{1ef17e0fed8d834b029ebb1c6adf76b4}
+      \strng{fullhash}{1ef17e0fed8d834b029ebb1c6adf76b4}
+      \strng{bibnamehash}{1ef17e0fed8d834b029ebb1c6adf76b4}
+      \strng{authorbibnamehash}{1ef17e0fed8d834b029ebb1c6adf76b4}
+      \strng{authornamehash}{1ef17e0fed8d834b029ebb1c6adf76b4}
+      \strng{authorfullhash}{1ef17e0fed8d834b029ebb1c6adf76b4}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advances in neural information processing systems}
+      \field{title}{Denoising diffusion probabilistic models}
+      \field{volume}{33}
+      \field{year}{2020}
+      \field{pages}{6840\bibrangedash 6851}
+      \range{pages}{12}
+    \endentry
+    \entry{bie2023renaissance}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=f5b715402ed7bcd0f08b997d265bc18a}{%
+           family={Bie},
+           familyi={B\bibinitperiod},
+           given={Fengxiang},
+           giveni={F\bibinitperiod}}}%
+        {{hash=2f53c8328680fa976fc790ff4723b1b8}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Yibo},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=1247441c3ab1e9b5aaf51ae69a166bdd}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Zhongzhu},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=ed771a1875eacb7bbf2c632fe029e3c1}{%
+           family={Ghanem},
+           familyi={G\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod}}}%
+        {{hash=25af732fe1fbaad2b048c5c39729b744}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Minjia},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e53d4d0172865556a0b0a5989a7f5c6f}{%
+           family={Yao},
+           familyi={Y\bibinitperiod},
+           given={Zhewei},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=dbad9062baf2a17217c7c318d929c981}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Xiaoxia},
+           giveni={X\bibinitperiod}}}%
+        {{hash=dd58022368092cfc5485d1b19f45c74d}{%
+           family={Holmes},
+           familyi={H\bibinitperiod},
+           given={Connor},
+           giveni={C\bibinitperiod}}}%
+        {{hash=2e298b474b98e7f72bf238753ac67b7d}{%
+           family={Golnari},
+           familyi={G\bibinitperiod},
+           given={Pareesa},
+           giveni={P\bibinitperiod}}}%
+        {{hash=0ea7b2f1855c817c98b1794afbea2156}{%
+           family={Clifton},
+           familyi={C\bibinitperiod},
+           given={David\bibnamedelima A},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{d01041661d94ee839bc627c190df7607}
+      \strng{fullhash}{31e7c90f0a546f0d8180f8b41cb88b2a}
+      \strng{bibnamehash}{d01041661d94ee839bc627c190df7607}
+      \strng{authorbibnamehash}{d01041661d94ee839bc627c190df7607}
+      \strng{authornamehash}{d01041661d94ee839bc627c190df7607}
+      \strng{authorfullhash}{31e7c90f0a546f0d8180f8b41cb88b2a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2309.00810}
+      \field{title}{RenAIssance: A Survey into AI Text-to-Image Generation in the Era of Large Model}
+      \field{year}{2023}
     \endentry
     \entry{sudhakaran2021growing}{inproceedings}{}
       \name{author}{7}{}{%
@@ -1366,8 +1470,8 @@
       \strng{authorbibnamehash}{e8f1f4463d9d3799b5a459de7aeb9b67}
       \strng{authornamehash}{e8f1f4463d9d3799b5a459de7aeb9b67}
       \strng{authorfullhash}{f91fe01c074957e890e2cb563b710c40}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Artificial Life Conference Proceedings 33}
@@ -1407,8 +1511,8 @@
       \strng{authorbibnamehash}{45ba725b71739e6c71a9f062454318c1}
       \strng{authornamehash}{45ba725b71739e6c71a9f062454318c1}
       \strng{authorfullhash}{0be0bec35e7d135edea2af9b28a50265}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2310.06904}
@@ -1776,8 +1880,8 @@
       \strng{authorbibnamehash}{d5a17822de636ff8de45307e236e0824}
       \strng{authornamehash}{d5a17822de636ff8de45307e236e0824}
       \strng{authorfullhash}{8782a9f24977c37151479f44b75f9f94}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:1609.03499}
@@ -1808,8 +1912,8 @@
       \strng{authorbibnamehash}{7702d41144501c666778a70d9f6a0e03}
       \strng{authornamehash}{7702d41144501c666778a70d9f6a0e03}
       \strng{authorfullhash}{7702d41144501c666778a70d9f6a0e03}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Advances in Neural Information Processing Systems}
@@ -1874,75 +1978,6 @@
       \field{howpublished}{\url{https://a16z.com/why-2023-was-ai-videos-breakout-year-and-what-to-expect-in-2024/}}
       \field{note}{Accessed: 2024-02-17}
       \field{title}{Why 2023 Was AI Video's Breakout Year and What to Expect in 2024}
-      \field{year}{2023}
-    \endentry
-    \entry{bie2023renaissance}{article}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{10}{}{%
-        {{hash=f5b715402ed7bcd0f08b997d265bc18a}{%
-           family={Bie},
-           familyi={B\bibinitperiod},
-           given={Fengxiang},
-           giveni={F\bibinitperiod}}}%
-        {{hash=2f53c8328680fa976fc790ff4723b1b8}{%
-           family={Yang},
-           familyi={Y\bibinitperiod},
-           given={Yibo},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=1247441c3ab1e9b5aaf51ae69a166bdd}{%
-           family={Zhou},
-           familyi={Z\bibinitperiod},
-           given={Zhongzhu},
-           giveni={Z\bibinitperiod}}}%
-        {{hash=ed771a1875eacb7bbf2c632fe029e3c1}{%
-           family={Ghanem},
-           familyi={G\bibinitperiod},
-           given={Adam},
-           giveni={A\bibinitperiod}}}%
-        {{hash=25af732fe1fbaad2b048c5c39729b744}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Minjia},
-           giveni={M\bibinitperiod}}}%
-        {{hash=e53d4d0172865556a0b0a5989a7f5c6f}{%
-           family={Yao},
-           familyi={Y\bibinitperiod},
-           given={Zhewei},
-           giveni={Z\bibinitperiod}}}%
-        {{hash=dbad9062baf2a17217c7c318d929c981}{%
-           family={Wu},
-           familyi={W\bibinitperiod},
-           given={Xiaoxia},
-           giveni={X\bibinitperiod}}}%
-        {{hash=dd58022368092cfc5485d1b19f45c74d}{%
-           family={Holmes},
-           familyi={H\bibinitperiod},
-           given={Connor},
-           giveni={C\bibinitperiod}}}%
-        {{hash=2e298b474b98e7f72bf238753ac67b7d}{%
-           family={Golnari},
-           familyi={G\bibinitperiod},
-           given={Pareesa},
-           giveni={P\bibinitperiod}}}%
-        {{hash=0ea7b2f1855c817c98b1794afbea2156}{%
-           family={Clifton},
-           familyi={C\bibinitperiod},
-           given={David\bibnamedelima A},
-           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-      }
-      \strng{namehash}{d01041661d94ee839bc627c190df7607}
-      \strng{fullhash}{31e7c90f0a546f0d8180f8b41cb88b2a}
-      \strng{bibnamehash}{d01041661d94ee839bc627c190df7607}
-      \strng{authorbibnamehash}{d01041661d94ee839bc627c190df7607}
-      \strng{authornamehash}{d01041661d94ee839bc627c190df7607}
-      \strng{authorfullhash}{31e7c90f0a546f0d8180f8b41cb88b2a}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:2309.00810}
-      \field{title}{RenAIssance: A Survey into AI Text-to-Image Generation in the Era of Large Model}
       \field{year}{2023}
     \endentry
     \entry{richter2022enhancing}{article}{}

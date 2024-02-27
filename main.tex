@@ -508,6 +508,12 @@ Waveform Generation:
 \end{equation}
 where $\hat{S}$ is the synthesized speech waveform, and $\theta_w$ are the parameters of a WaveNet \cite{oord2016wavenet} model trained to convert the feature representation $V_t$ back into the time-domain signal. WaveNet, a deep generative model of raw audio waveforms, is particularly effective in generating high-fidelity speech with natural intonations and expressions.
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.75\textwidth]{whisper.png}
+  \caption{Autoregressive transformer model architecture used for audio processing tasks like transcription and voice synthesis. The model utilizes a stack of encoder and decoder blocks, with sinusoidal positional encodings and learned positional encodings for sequence representation. \cite{OpenAIWhisper}}
+\end{figure}
+
 The process of voice cloning and modification enables the generation of synthetic speech that closely resembles a target human voice. 
 By capturing the subtle nuances of speech, AI-driven voice synthesis technologies have opened new avenues for creating engaging and emotionally resonant digital communication experiences. 
 

@@ -474,9 +474,9 @@ By training on sequences of audio samples, autoregressive Transformers learn to 
 
 
 
-\subsection{Voice Cloning}
+\subsection{Voice Cloning \& Text-to-Speech (TTS)}
 
-The applications of AI-driven voice synthesis, particularly through voice cloning and modification technologies like ElevenLabs \cite{elevenlabs} and Whisper \cite{OpenAIWhisper}, has apparently closed the gap between synthetic and human speech. 
+The applications of AI-driven voice synthesis, particularly through voice cloning and text-to-speech (TTS) technologies like ElevenLabs \cite{elevenlabs} and Whisper \cite{OpenAIWhisper}, has apparently closed the gap between synthetic and human speech. 
 These systems utilize deep learning frameworks to analyze and replicate the nuances of human speech, including tonality and emotion. 
 Voice cloning involves creating a digital replica of a target voice from a limited set of audio samples. 
 The process can be described by the following stages:
@@ -511,40 +511,36 @@ where $\hat{S}$ is the synthesized speech waveform, and $\theta_w$ are the param
 The process of voice cloning and modification enables the generation of synthetic speech that closely resembles a target human voice. 
 By capturing the subtle nuances of speech, AI-driven voice synthesis technologies have opened new avenues for creating engaging and emotionally resonant digital communication experiences. 
 
-\subsection{Voice Modification}
+\subsection{Audio Modification}
 
-The application of Artificial Intelligence (AI) in enhancing audio quality leverages sophisticated algorithms to tackle challenges such as noise reduction, sound separation, and audio restoration. These processes can be described through mathematical formulations that highlight the underlying mechanisms of AI-driven audio enhancement techniques:
+There are several methods to tackle audio modification challenges such as noise reduction, sound separation, and audio restoration \cite{godsill2002digital}. 
+The processes are shown below:
 
-1. **Noise Reduction**:
 Noise reduction aims to eliminate unwanted background noise from audio recordings, enhancing the clarity of the sound. This can be mathematically represented by:
 \begin{equation}
 S_{clean} = S_{noisy} - N
 \end{equation}
 where $S_{clean}$ is the clean audio signal, $S_{noisy}$ is the original noisy signal, and $N$ represents the noise component. Advanced AI models, such as Deep Neural Networks (DNNs), are trained to estimate $N$ accurately from $S_{noisy}$, allowing for effective noise removal.
 
-2. **Sound Separation**:
 Sound separation involves isolating individual sound sources from a mixed audio signal. This can be expressed as:
 \begin{equation}
 S_i = F(S_{mix}; \theta_i)
 \end{equation}
 where $S_i$ is the isolated sound of source $i$, $S_{mix}$ is the mixed audio signal, and $F$ is a function modeled by the AI system with parameters $\theta_i$ tailored to extract the $i^{th}$ sound source.
 
-3. **Audio Restoration**:
 Audio restoration focuses on recovering the original quality of degraded audio recordings. The process can be conceptualized as:
 \begin{equation}
 S_{restored} = R(S_{degraded}; \theta_r)
 \end{equation}
 where $S_{restored}$ is the restored audio signal, $S_{degraded}$ is the degraded audio signal, and $R$ represents the restoration function implemented by the AI with parameters $\theta_r$. This function aims to reconstruct lost or corrupted signal components, effectively restoring the audio to its original state.
 
-4. **Waveform Enhancement**:
 The final step often involves enhancing the waveform directly to improve the overall audio quality, which can be mathematically described by:
 \begin{equation}
 \hat{S} = G(S_{processed}; \theta_g)
 \end{equation}
 where $\hat{S}$ is the enhanced audio waveform, $S_{processed}$ is the audio signal after noise reduction, sound separation, and restoration, and $G$ is the enhancement function driven by AI with parameters $\theta_g$. Models like WaveNet are examples of generative networks that can be used for this purpose, fine-tuning the audio quality by adjusting the waveform directly.
 
-These mathematical representations encapsulate the core processes involved in AI-driven audio quality enhancement, demonstrating how AI algorithms can significantly improve the clarity, fidelity, and overall quality of sound recordings. By leveraging deep learning and advanced signal processing techniques, AI offers innovative solutions to longstanding audio engineering challenges, heralding a new era of high-quality sound accessible to all.
-
+These core processes involved in audio modification, demonstrating how AI algorithms can significantly improve the clarity, fidelity, and overall quality of sound recordings. 
 
 \section{Current Development Trends}
 

@@ -1146,6 +1146,7 @@
       \strng{authorbibnamehash}{f516051d73434fcc17483bfac7031223}
       \strng{authornamehash}{f516051d73434fcc17483bfac7031223}
       \strng{authorfullhash}{f516051d73434fcc17483bfac7031223}
+      \field{extraname}{1}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -1204,6 +1205,58 @@
       \field{howpublished}{\url{https://elevenlabs.io/}}
       \field{note}{Accessed: Feb 26 2024}
       \field{title}{{Eleven Labs}}
+    \endentry
+    \entry{westerlund2019emergence}{article}{}
+      \name{author}{1}{}{%
+        {{hash=732e0f615261eeb5b84e5ec3ca6cc040}{%
+           family={Westerlund},
+           familyi={W\bibinitperiod},
+           given={Mika},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{732e0f615261eeb5b84e5ec3ca6cc040}
+      \strng{fullhash}{732e0f615261eeb5b84e5ec3ca6cc040}
+      \strng{bibnamehash}{732e0f615261eeb5b84e5ec3ca6cc040}
+      \strng{authorbibnamehash}{732e0f615261eeb5b84e5ec3ca6cc040}
+      \strng{authornamehash}{732e0f615261eeb5b84e5ec3ca6cc040}
+      \strng{authorfullhash}{732e0f615261eeb5b84e5ec3ca6cc040}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Technology innovation management review}
+      \field{number}{11}
+      \field{title}{The emergence of deepfake technology: A review}
+      \field{volume}{9}
+      \field{year}{2019}
+    \endentry
+    \entry{hristov2016artificial}{article}{}
+      \name{author}{1}{}{%
+        {{hash=3e459d3a4e3dc7161a5de8142bf4b45e}{%
+           family={Hristov},
+           familyi={H\bibinitperiod},
+           given={Kalin},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {HeinOnline}%
+      }
+      \strng{namehash}{3e459d3a4e3dc7161a5de8142bf4b45e}
+      \strng{fullhash}{3e459d3a4e3dc7161a5de8142bf4b45e}
+      \strng{bibnamehash}{3e459d3a4e3dc7161a5de8142bf4b45e}
+      \strng{authorbibnamehash}{3e459d3a4e3dc7161a5de8142bf4b45e}
+      \strng{authornamehash}{3e459d3a4e3dc7161a5de8142bf4b45e}
+      \strng{authorfullhash}{3e459d3a4e3dc7161a5de8142bf4b45e}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Idea}
+      \field{title}{Artificial intelligence and the copyright dilemma}
+      \field{volume}{57}
+      \field{year}{2016}
+      \field{pages}{431}
+      \range{pages}{1}
     \endentry
     \entry{cho2014properties}{article}{}
       \name{author}{4}{}{%
@@ -1309,8 +1362,8 @@
       \strng{authorbibnamehash}{ba6e625a46287ebf30dd9d9f3c07087b}
       \strng{authornamehash}{ba6e625a46287ebf30dd9d9f3c07087b}
       \strng{authorfullhash}{9c08ae1a9d19a2750d4f50c36df0039b}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{International conference on machine learning}
@@ -1343,8 +1396,8 @@
       \strng{authorbibnamehash}{1ef17e0fed8d834b029ebb1c6adf76b4}
       \strng{authornamehash}{1ef17e0fed8d834b029ebb1c6adf76b4}
       \strng{authorfullhash}{1ef17e0fed8d834b029ebb1c6adf76b4}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Advances in neural information processing systems}
@@ -1459,58 +1512,6 @@
       \field{journaltitle}{arXiv preprint arXiv:2310.06904}
       \field{title}{Mitigating stereotypical biases in text to image generative systems}
       \field{year}{2023}
-    \endentry
-    \entry{westerlund2019emergence}{article}{}
-      \name{author}{1}{}{%
-        {{hash=732e0f615261eeb5b84e5ec3ca6cc040}{%
-           family={Westerlund},
-           familyi={W\bibinitperiod},
-           given={Mika},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{732e0f615261eeb5b84e5ec3ca6cc040}
-      \strng{fullhash}{732e0f615261eeb5b84e5ec3ca6cc040}
-      \strng{bibnamehash}{732e0f615261eeb5b84e5ec3ca6cc040}
-      \strng{authorbibnamehash}{732e0f615261eeb5b84e5ec3ca6cc040}
-      \strng{authornamehash}{732e0f615261eeb5b84e5ec3ca6cc040}
-      \strng{authorfullhash}{732e0f615261eeb5b84e5ec3ca6cc040}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Technology innovation management review}
-      \field{number}{11}
-      \field{title}{The emergence of deepfake technology: A review}
-      \field{volume}{9}
-      \field{year}{2019}
-    \endentry
-    \entry{hristov2016artificial}{article}{}
-      \name{author}{1}{}{%
-        {{hash=3e459d3a4e3dc7161a5de8142bf4b45e}{%
-           family={Hristov},
-           familyi={H\bibinitperiod},
-           given={Kalin},
-           giveni={K\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {HeinOnline}%
-      }
-      \strng{namehash}{3e459d3a4e3dc7161a5de8142bf4b45e}
-      \strng{fullhash}{3e459d3a4e3dc7161a5de8142bf4b45e}
-      \strng{bibnamehash}{3e459d3a4e3dc7161a5de8142bf4b45e}
-      \strng{authorbibnamehash}{3e459d3a4e3dc7161a5de8142bf4b45e}
-      \strng{authornamehash}{3e459d3a4e3dc7161a5de8142bf4b45e}
-      \strng{authorfullhash}{3e459d3a4e3dc7161a5de8142bf4b45e}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Idea}
-      \field{title}{Artificial intelligence and the copyright dilemma}
-      \field{volume}{57}
-      \field{year}{2016}
-      \field{pages}{431}
-      \range{pages}{1}
     \endentry
     \entry{habibian2021skip}{inproceedings}{}
       \name{author}{4}{}{%
@@ -1691,6 +1692,82 @@
       \field{title}{World models}
       \field{year}{2018}
     \endentry
+    \entry{yu2019review}{article}{}
+      \name{author}{4}{}{%
+        {{hash=c447a713c11f58a40c2a899040774a98}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=bfc45da190cb661143c8a28c64fe9af3}{%
+           family={Si},
+           familyi={S\bibinitperiod},
+           given={Xiaosheng},
+           giveni={X\bibinitperiod}}}%
+        {{hash=83444556f7d72cd5d40f9416eb4d41f8}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Changhua},
+           giveni={C\bibinitperiod}}}%
+        {{hash=354c58556dbbc757e615ab80be77d404}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Jianxun},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press One Rogers Street, Cambridge, MA 02142-1209, USA journals-info~…}%
+      }
+      \strng{namehash}{4972dc455da6f1318b6136d215d7d53e}
+      \strng{fullhash}{265b947d51b59b1e4e6250ca124ff41a}
+      \strng{bibnamehash}{4972dc455da6f1318b6136d215d7d53e}
+      \strng{authorbibnamehash}{4972dc455da6f1318b6136d215d7d53e}
+      \strng{authornamehash}{4972dc455da6f1318b6136d215d7d53e}
+      \strng{authorfullhash}{265b947d51b59b1e4e6250ca124ff41a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Neural computation}
+      \field{number}{7}
+      \field{title}{A review of recurrent neural networks: LSTM cells and network architectures}
+      \field{volume}{31}
+      \field{year}{2019}
+      \field{pages}{1235\bibrangedash 1270}
+      \range{pages}{36}
+    \endentry
+    \entry{dey2017gate}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=cdbe375f4349622904210be2071a2806}{%
+           family={Dey},
+           familyi={D\bibinitperiod},
+           given={Rahul},
+           giveni={R\bibinitperiod}}}%
+        {{hash=562329d35461b8ad79d7293e6f6f7164}{%
+           family={Salem},
+           familyi={S\bibinitperiod},
+           given={Fathi\bibnamedelima M},
+           giveni={F\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{0ffcc0752db5a42176e68e794ddc16f3}
+      \strng{fullhash}{0ffcc0752db5a42176e68e794ddc16f3}
+      \strng{bibnamehash}{0ffcc0752db5a42176e68e794ddc16f3}
+      \strng{authorbibnamehash}{0ffcc0752db5a42176e68e794ddc16f3}
+      \strng{authornamehash}{0ffcc0752db5a42176e68e794ddc16f3}
+      \strng{authorfullhash}{0ffcc0752db5a42176e68e794ddc16f3}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2017 IEEE 60th international midwest symposium on circuits and systems (MWSCAS)}
+      \field{title}{Gate-variants of gated recurrent unit (GRU) neural networks}
+      \field{year}{2017}
+      \field{pages}{1597\bibrangedash 1600}
+      \range{pages}{4}
+    \endentry
     \entry{yan2021videogpt}{article}{}
       \name{author}{4}{}{%
         {{hash=dfb86030c8cc64f7744459cec94fbb55}{%
@@ -1785,34 +1862,27 @@
       \field{pages}{720\bibrangedash 736}
       \range{pages}{17}
     \endentry
-    \entry{briot2021artificial}{article}{}
+    \entry{OpenAIWhisper}{misc}{}
       \name{author}{1}{}{%
-        {{hash=84898617ee952f11d2b52ff06b3661f4}{%
-           family={Briot},
-           familyi={B\bibinitperiod},
-           given={Jean-Pierre},
-           giveni={J\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=0523b13262b12c215d8009938f5c14f1}{%
+           family={OpenAI},
+           familyi={O\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{84898617ee952f11d2b52ff06b3661f4}
-      \strng{fullhash}{84898617ee952f11d2b52ff06b3661f4}
-      \strng{bibnamehash}{84898617ee952f11d2b52ff06b3661f4}
-      \strng{authorbibnamehash}{84898617ee952f11d2b52ff06b3661f4}
-      \strng{authornamehash}{84898617ee952f11d2b52ff06b3661f4}
-      \strng{authorfullhash}{84898617ee952f11d2b52ff06b3661f4}
+      \strng{namehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{fullhash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{bibnamehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authorbibnamehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authornamehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authorfullhash}{0523b13262b12c215d8009938f5c14f1}
+      \field{extraname}{2}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Neural Computing and Applications}
-      \field{number}{1}
-      \field{title}{From artificial neural networks to deep learning for music generation: history, concepts and trends}
-      \field{volume}{33}
-      \field{year}{2021}
-      \field{pages}{39\bibrangedash 65}
-      \range{pages}{27}
+      \field{howpublished}{\url{https://openai.com/research/whisper}}
+      \field{note}{Accessed: 2024-02-27}
+      \field{title}{Whisper}
+      \field{year}{2024}
     \endentry
     \entry{oord2016wavenet}{article}{}
       \name{author}{9}{}{%
@@ -1875,41 +1945,6 @@
       \field{journaltitle}{arXiv preprint arXiv:1609.03499}
       \field{title}{Wavenet: A generative model for raw audio}
       \field{year}{2016}
-    \endentry
-    \entry{greshler2021catch}{article}{}
-      \name{author}{3}{}{%
-        {{hash=b36cc18e43589b5efd009bfc63847b85}{%
-           family={Greshler},
-           familyi={G\bibinitperiod},
-           given={Gal},
-           giveni={G\bibinitperiod}}}%
-        {{hash=84005b4fd331c2b7b02830e0019556e4}{%
-           family={Shaham},
-           familyi={S\bibinitperiod},
-           given={Tamar},
-           giveni={T\bibinitperiod}}}%
-        {{hash=7a20f965a29ab60ffefed7fc106e2719}{%
-           family={Michaeli},
-           familyi={M\bibinitperiod},
-           given={Tomer},
-           giveni={T\bibinitperiod}}}%
-      }
-      \strng{namehash}{7702d41144501c666778a70d9f6a0e03}
-      \strng{fullhash}{7702d41144501c666778a70d9f6a0e03}
-      \strng{bibnamehash}{7702d41144501c666778a70d9f6a0e03}
-      \strng{authorbibnamehash}{7702d41144501c666778a70d9f6a0e03}
-      \strng{authornamehash}{7702d41144501c666778a70d9f6a0e03}
-      \strng{authorfullhash}{7702d41144501c666778a70d9f6a0e03}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Advances in Neural Information Processing Systems}
-      \field{title}{Catch-a-waveform: Learning to generate audio from a single short example}
-      \field{volume}{34}
-      \field{year}{2021}
-      \field{pages}{20916\bibrangedash 20928}
-      \range{pages}{13}
     \endentry
     \entry{valentini2018speech}{article}{}
       \name{author}{2}{}{%
@@ -2038,6 +2073,70 @@
       \field{journaltitle}{arXiv preprint arXiv:2205.09731}
       \field{title}{Towards Unified Keyframe Propagation Models}
       \field{year}{2022}
+    \endentry
+    \entry{briot2021artificial}{article}{}
+      \name{author}{1}{}{%
+        {{hash=84898617ee952f11d2b52ff06b3661f4}{%
+           family={Briot},
+           familyi={B\bibinitperiod},
+           given={Jean-Pierre},
+           giveni={J\bibinithyphendelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{84898617ee952f11d2b52ff06b3661f4}
+      \strng{fullhash}{84898617ee952f11d2b52ff06b3661f4}
+      \strng{bibnamehash}{84898617ee952f11d2b52ff06b3661f4}
+      \strng{authorbibnamehash}{84898617ee952f11d2b52ff06b3661f4}
+      \strng{authornamehash}{84898617ee952f11d2b52ff06b3661f4}
+      \strng{authorfullhash}{84898617ee952f11d2b52ff06b3661f4}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Neural Computing and Applications}
+      \field{number}{1}
+      \field{title}{From artificial neural networks to deep learning for music generation: history, concepts and trends}
+      \field{volume}{33}
+      \field{year}{2021}
+      \field{pages}{39\bibrangedash 65}
+      \range{pages}{27}
+    \endentry
+    \entry{greshler2021catch}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b36cc18e43589b5efd009bfc63847b85}{%
+           family={Greshler},
+           familyi={G\bibinitperiod},
+           given={Gal},
+           giveni={G\bibinitperiod}}}%
+        {{hash=84005b4fd331c2b7b02830e0019556e4}{%
+           family={Shaham},
+           familyi={S\bibinitperiod},
+           given={Tamar},
+           giveni={T\bibinitperiod}}}%
+        {{hash=7a20f965a29ab60ffefed7fc106e2719}{%
+           family={Michaeli},
+           familyi={M\bibinitperiod},
+           given={Tomer},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{7702d41144501c666778a70d9f6a0e03}
+      \strng{fullhash}{7702d41144501c666778a70d9f6a0e03}
+      \strng{bibnamehash}{7702d41144501c666778a70d9f6a0e03}
+      \strng{authorbibnamehash}{7702d41144501c666778a70d9f6a0e03}
+      \strng{authornamehash}{7702d41144501c666778a70d9f6a0e03}
+      \strng{authorfullhash}{7702d41144501c666778a70d9f6a0e03}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advances in Neural Information Processing Systems}
+      \field{title}{Catch-a-waveform: Learning to generate audio from a single short example}
+      \field{volume}{34}
+      \field{year}{2021}
+      \field{pages}{20916\bibrangedash 20928}
+      \range{pages}{13}
     \endentry
     \entry{vaswani2017attention}{article}{}
       \name{author}{8}{}{%

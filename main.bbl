@@ -1994,149 +1994,14 @@
       \strng{authorbibnamehash}{66af7b0a342d302921c8bf61fc538ddb}
       \strng{authornamehash}{66af7b0a342d302921c8bf61fc538ddb}
       \strng{authorfullhash}{66af7b0a342d302921c8bf61fc538ddb}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://a16z.com/why-2023-was-ai-videos-breakout-year-and-what-to-expect-in-2024/}}
       \field{note}{Accessed: 2024-02-17}
       \field{title}{Why 2023 Was AI Video's Breakout Year and What to Expect in 2024}
       \field{year}{2023}
-    \endentry
-    \entry{richter2022enhancing}{article}{}
-      \name{author}{3}{}{%
-        {{hash=132cc1bc90af33fd4c9cbf6c7f6ca36a}{%
-           family={Richter},
-           familyi={R\bibinitperiod},
-           given={Stephan\bibnamedelima R},
-           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-        {{hash=377beb0ae9039733bdaf77fae8d817ff}{%
-           family={AlHaija},
-           familyi={A\bibinitperiod},
-           given={Hassan\bibnamedelima Abu},
-           giveni={H\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=9025300f43a193cfed8e10e924f2a117}{%
-           family={Koltun},
-           familyi={K\bibinitperiod},
-           given={Vladlen},
-           giveni={V\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {IEEE}%
-      }
-      \strng{namehash}{70411399e07a75d2420ab2aa9692f706}
-      \strng{fullhash}{70411399e07a75d2420ab2aa9692f706}
-      \strng{bibnamehash}{70411399e07a75d2420ab2aa9692f706}
-      \strng{authorbibnamehash}{70411399e07a75d2420ab2aa9692f706}
-      \strng{authornamehash}{70411399e07a75d2420ab2aa9692f706}
-      \strng{authorfullhash}{70411399e07a75d2420ab2aa9692f706}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE Transactions on Pattern Analysis and Machine Intelligence}
-      \field{number}{2}
-      \field{title}{Enhancing photorealism enhancement}
-      \field{volume}{45}
-      \field{year}{2022}
-      \field{pages}{1700\bibrangedash 1715}
-      \range{pages}{16}
-    \endentry
-    \entry{esser2022towards}{article}{}
-      \name{author}{3}{}{%
-        {{hash=e61c1cb5e29d764299a12d1ab334cdc2}{%
-           family={Esser},
-           familyi={E\bibinitperiod},
-           given={Patrick},
-           giveni={P\bibinitperiod}}}%
-        {{hash=02fceba970ef61f83ea68faec287b8b4}{%
-           family={Michael},
-           familyi={M\bibinitperiod},
-           given={Peter},
-           giveni={P\bibinitperiod}}}%
-        {{hash=cc47e417434372368ba183c1ffb435a1}{%
-           family={Sengupta},
-           familyi={S\bibinitperiod},
-           given={Soumyadip},
-           giveni={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{e5b7b352cc66063b1c1793bdb61ac011}
-      \strng{fullhash}{e5b7b352cc66063b1c1793bdb61ac011}
-      \strng{bibnamehash}{e5b7b352cc66063b1c1793bdb61ac011}
-      \strng{authorbibnamehash}{e5b7b352cc66063b1c1793bdb61ac011}
-      \strng{authornamehash}{e5b7b352cc66063b1c1793bdb61ac011}
-      \strng{authorfullhash}{e5b7b352cc66063b1c1793bdb61ac011}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:2205.09731}
-      \field{title}{Towards Unified Keyframe Propagation Models}
-      \field{year}{2022}
-    \endentry
-    \entry{briot2021artificial}{article}{}
-      \name{author}{1}{}{%
-        {{hash=84898617ee952f11d2b52ff06b3661f4}{%
-           family={Briot},
-           familyi={B\bibinitperiod},
-           given={Jean-Pierre},
-           giveni={J\bibinithyphendelim P\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{84898617ee952f11d2b52ff06b3661f4}
-      \strng{fullhash}{84898617ee952f11d2b52ff06b3661f4}
-      \strng{bibnamehash}{84898617ee952f11d2b52ff06b3661f4}
-      \strng{authorbibnamehash}{84898617ee952f11d2b52ff06b3661f4}
-      \strng{authornamehash}{84898617ee952f11d2b52ff06b3661f4}
-      \strng{authorfullhash}{84898617ee952f11d2b52ff06b3661f4}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Neural Computing and Applications}
-      \field{number}{1}
-      \field{title}{From artificial neural networks to deep learning for music generation: history, concepts and trends}
-      \field{volume}{33}
-      \field{year}{2021}
-      \field{pages}{39\bibrangedash 65}
-      \range{pages}{27}
-    \endentry
-    \entry{greshler2021catch}{article}{}
-      \name{author}{3}{}{%
-        {{hash=b36cc18e43589b5efd009bfc63847b85}{%
-           family={Greshler},
-           familyi={G\bibinitperiod},
-           given={Gal},
-           giveni={G\bibinitperiod}}}%
-        {{hash=84005b4fd331c2b7b02830e0019556e4}{%
-           family={Shaham},
-           familyi={S\bibinitperiod},
-           given={Tamar},
-           giveni={T\bibinitperiod}}}%
-        {{hash=7a20f965a29ab60ffefed7fc106e2719}{%
-           family={Michaeli},
-           familyi={M\bibinitperiod},
-           given={Tomer},
-           giveni={T\bibinitperiod}}}%
-      }
-      \strng{namehash}{7702d41144501c666778a70d9f6a0e03}
-      \strng{fullhash}{7702d41144501c666778a70d9f6a0e03}
-      \strng{bibnamehash}{7702d41144501c666778a70d9f6a0e03}
-      \strng{authorbibnamehash}{7702d41144501c666778a70d9f6a0e03}
-      \strng{authornamehash}{7702d41144501c666778a70d9f6a0e03}
-      \strng{authorfullhash}{7702d41144501c666778a70d9f6a0e03}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Advances in Neural Information Processing Systems}
-      \field{title}{Catch-a-waveform: Learning to generate audio from a single short example}
-      \field{volume}{34}
-      \field{year}{2021}
-      \field{pages}{20916\bibrangedash 20928}
-      \range{pages}{13}
     \endentry
     \entry{vaswani2017attention}{article}{}
       \name{author}{8}{}{%
@@ -2187,8 +2052,8 @@
       \strng{authorbibnamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
       \strng{authornamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
       \strng{authorfullhash}{cb26e47f6b8133865271fc8483132297}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Advances in neural information processing systems}
@@ -2257,8 +2122,8 @@
       \strng{authorbibnamehash}{85437fe07696e4c57f916c83d4ba5581}
       \strng{authornamehash}{85437fe07696e4c57f916c83d4ba5581}
       \strng{authorfullhash}{8790f0827d0a1a3029e8a6cb9a6687e3}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Advances in neural information processing systems}
@@ -2302,8 +2167,8 @@
       \strng{authorbibnamehash}{59c8902722d20b85a1949951ce3800a1}
       \strng{authornamehash}{59c8902722d20b85a1949951ce3800a1}
       \strng{authorfullhash}{d955e31caa535f6c670ae18aa4cfb349}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Advances in neural information processing systems}
@@ -2350,8 +2215,39 @@
       \field{pages}{770\bibrangedash 778}
       \range{pages}{9}
     \endentry
+    \entry{esser2022towards}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e61c1cb5e29d764299a12d1ab334cdc2}{%
+           family={Esser},
+           familyi={E\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=02fceba970ef61f83ea68faec287b8b4}{%
+           family={Michael},
+           familyi={M\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=cc47e417434372368ba183c1ffb435a1}{%
+           family={Sengupta},
+           familyi={S\bibinitperiod},
+           given={Soumyadip},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{e5b7b352cc66063b1c1793bdb61ac011}
+      \strng{fullhash}{e5b7b352cc66063b1c1793bdb61ac011}
+      \strng{bibnamehash}{e5b7b352cc66063b1c1793bdb61ac011}
+      \strng{authorbibnamehash}{e5b7b352cc66063b1c1793bdb61ac011}
+      \strng{authornamehash}{e5b7b352cc66063b1c1793bdb61ac011}
+      \strng{authorfullhash}{e5b7b352cc66063b1c1793bdb61ac011}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2205.09731}
+      \field{title}{Towards Unified Keyframe Propagation Models}
+      \field{year}{2022}
+    \endentry
   \enddatalist
-  \missing{sudhakaran2021growing}
 \endrefsection
 \endinput
 

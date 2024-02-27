@@ -41,8 +41,8 @@
       \strng{authorbibnamehash}{a4f50258a14156905c8d2b1b4704be30}
       \strng{authornamehash}{a4f50258a14156905c8d2b1b4704be30}
       \strng{authorfullhash}{a4f50258a14156905c8d2b1b4704be30}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Artificial intelligence a modern approach}
@@ -70,8 +70,8 @@
       \strng{authorbibnamehash}{d3d8da60975e2b388cca53d2bd755d35}
       \strng{authornamehash}{d3d8da60975e2b388cca53d2bd755d35}
       \strng{authorfullhash}{d3d8da60975e2b388cca53d2bd755d35}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Science}
@@ -126,8 +126,8 @@
       \strng{authorbibnamehash}{a254fa1b687d9d72c26d2a9eda59fc40}
       \strng{authornamehash}{a254fa1b687d9d72c26d2a9eda59fc40}
       \strng{authorfullhash}{017db0b2a47d1a06c1b4bc6f738441c3}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2210.11610}
@@ -176,8 +176,8 @@
       \strng{authorbibnamehash}{2d51d624998098779746987b6ea71ae8}
       \strng{authornamehash}{2d51d624998098779746987b6ea71ae8}
       \strng{authorfullhash}{a7d51748bf44099cb8ab27208194576d}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Heliyon}
@@ -203,8 +203,8 @@
       \strng{authorbibnamehash}{288bdbcfe1b91ad7484d7a24f74f99ed}
       \strng{authornamehash}{288bdbcfe1b91ad7484d7a24f74f99ed}
       \strng{authorfullhash}{288bdbcfe1b91ad7484d7a24f74f99ed}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Neural networks}
@@ -241,8 +241,8 @@
       \strng{authorbibnamehash}{c6c75bd00ce5a488e91a749d8383b3df}
       \strng{authornamehash}{c6c75bd00ce5a488e91a749d8383b3df}
       \strng{authorfullhash}{c6c75bd00ce5a488e91a749d8383b3df}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{nature}
@@ -1321,8 +1321,8 @@
       \strng{authorbibnamehash}{37b6771939cc44a68dda82f8b98be916}
       \strng{authornamehash}{37b6771939cc44a68dda82f8b98be916}
       \strng{authorfullhash}{37b6771939cc44a68dda82f8b98be916}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Advances in neural information processing systems}
@@ -1758,8 +1758,8 @@
       \strng{authorbibnamehash}{0ffcc0752db5a42176e68e794ddc16f3}
       \strng{authornamehash}{0ffcc0752db5a42176e68e794ddc16f3}
       \strng{authorfullhash}{0ffcc0752db5a42176e68e794ddc16f3}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2017 IEEE 60th international midwest symposium on circuits and systems (MWSCAS)}
@@ -1946,39 +1946,39 @@
       \field{title}{Wavenet: A generative model for raw audio}
       \field{year}{2016}
     \endentry
-    \entry{valentini2018speech}{article}{}
-      \name{author}{2}{}{%
-        {{hash=cf375a6ed3da9d1c93ed089a89a6de73}{%
-           family={Valentini-Botinhao},
-           familyi={V\bibinithyphendelim B\bibinitperiod},
-           given={Cassia},
-           giveni={C\bibinitperiod}}}%
-        {{hash=64bfb2b1761cc3077e7b25f2eaa562ee}{%
-           family={Yamagishi},
-           familyi={Y\bibinitperiod},
-           given={Junichi},
-           giveni={J\bibinitperiod}}}%
+    \entry{godsill2002digital}{book}{}
+      \name{author}{3}{}{%
+        {{hash=bc15f0e86c04b04d51cdd1bff7614bfe}{%
+           family={Godsill},
+           familyi={G\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=125afa0fe0143fa3db24fe258c54caf8}{%
+           family={Rayner},
+           familyi={R\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=f2ffb0fcf2473b1619d2032fd10cead7}{%
+           family={Cappé},
+           familyi={C\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {IEEE}%
+        {Springer}%
       }
-      \strng{namehash}{9ca3102f222d9d002e9f18589911cf2b}
-      \strng{fullhash}{9ca3102f222d9d002e9f18589911cf2b}
-      \strng{bibnamehash}{9ca3102f222d9d002e9f18589911cf2b}
-      \strng{authorbibnamehash}{9ca3102f222d9d002e9f18589911cf2b}
-      \strng{authornamehash}{9ca3102f222d9d002e9f18589911cf2b}
-      \strng{authorfullhash}{9ca3102f222d9d002e9f18589911cf2b}
+      \strng{namehash}{372b5f11e018453e9aa9b087df22f146}
+      \strng{fullhash}{372b5f11e018453e9aa9b087df22f146}
+      \strng{bibnamehash}{372b5f11e018453e9aa9b087df22f146}
+      \strng{authorbibnamehash}{372b5f11e018453e9aa9b087df22f146}
+      \strng{authornamehash}{372b5f11e018453e9aa9b087df22f146}
+      \strng{authorfullhash}{372b5f11e018453e9aa9b087df22f146}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE/ACM Transactions on Audio, Speech, and Language Processing}
-      \field{number}{8}
-      \field{title}{Speech enhancement of noisy and reverberant speech for text-to-speech}
-      \field{volume}{26}
-      \field{year}{2018}
-      \field{pages}{1420\bibrangedash 1433}
-      \range{pages}{14}
+      \field{title}{Digital audio restoration}
+      \field{year}{2002}
     \endentry
     \entry{a16zAI2023}{misc}{}
       \name{author}{1}{}{%
@@ -1994,8 +1994,8 @@
       \strng{authorbibnamehash}{66af7b0a342d302921c8bf61fc538ddb}
       \strng{authornamehash}{66af7b0a342d302921c8bf61fc538ddb}
       \strng{authorfullhash}{66af7b0a342d302921c8bf61fc538ddb}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://a16z.com/why-2023-was-ai-videos-breakout-year-and-what-to-expect-in-2024/}}
@@ -2091,8 +2091,8 @@
       \strng{authorbibnamehash}{84898617ee952f11d2b52ff06b3661f4}
       \strng{authornamehash}{84898617ee952f11d2b52ff06b3661f4}
       \strng{authorfullhash}{84898617ee952f11d2b52ff06b3661f4}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Neural Computing and Applications}
@@ -2127,8 +2127,8 @@
       \strng{authorbibnamehash}{7702d41144501c666778a70d9f6a0e03}
       \strng{authornamehash}{7702d41144501c666778a70d9f6a0e03}
       \strng{authorfullhash}{7702d41144501c666778a70d9f6a0e03}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Advances in Neural Information Processing Systems}

@@ -374,7 +374,7 @@ This progress highlights the ongoing necessity for innovation in computational m
 
 \section{AIGC in Sound}
 
-\subsection{Recurrent Neural Networks}
+\subsection{Recurrent Neural Networks (RNN)}
 
 Recurrent Neural Networks (RNNs) \cite{srivastava2015unsupervised, chiappa2017recurrent, ha2018world} have shown remarkable capabilities in modeling sequential data, making them particularly suited for applications in sound synthesis. 
 Unlike traditional feedforward neural networks, RNNs incorporate a feedback loop, allowing them to maintain a form of memory over input sequences. 
@@ -403,7 +403,7 @@ Forget Gate:
 \begin{equation}
 f_t = \sigma(W_{f} \cdot [h_{t-1}, x_t] + b_f)
 \end{equation}
-The forget gate decides which information from the cell state is to be discarded. $f_t$ represents the forget gate's activation at time $t$. $\sigma$ is the sigmoid function, $W_{f}$ is the weight matrix for the forget gate, $h_{t-1}$ is the previous hidden state, $x_t$ is the current input, and $b_f$ is the bias.
+It decides which information from the cell state is to be discarded. $f_t$ represents the forget gate's activation at time $t$. $\sigma$ is the sigmoid function, $W_{f}$ is the weight matrix for the forget gate, $h_{t-1}$ is the previous hidden state, $x_t$ is the current input, and $b_f$ is the bias.
 
 Input Gate:
 \begin{equation}
@@ -412,13 +412,13 @@ i_t = \sigma(W_{i} \cdot [h_{t-1}, x_t] + b_i)
 \begin{equation}
 \tilde{C}_t = \tanh(W_{C} \cdot [h_{t-1}, x_t] + b_C)
 \end{equation}
-The input gate controls the extent to which new information is stored in the cell state. $i_t$ is the input gate's activation, and $\tilde{C}_t$ is the candidate value for addition to the cell state. $W_{i}$ and $W_{C}$ are the weight matrices, and $b_i$ and $b_C$ are biases.
+It controls the extent to which new information is stored in the cell state. $i_t$ is the input gate's activation, and $\tilde{C}_t$ is the candidate value for addition to the cell state. $W_{i}$ and $W_{C}$ are the weight matrices, and $b_i$ and $b_C$ are biases.
 
 Cell State Update:
 \begin{equation}
 C_t = f_t \ast C_{t-1} + i_t \ast \tilde{C}_t
 \end{equation}
-The cell state $C_t$ is updated by removing information deemed unnecessary by the forget gate and adding new candidate values scaled by the input gate's activation.
+It is updated by removing information deemed unnecessary by the forget gate and adding new candidate values scaled by the input gate's activation.
 
 Output Gate:
 \begin{equation}
@@ -427,15 +427,15 @@ o_t = \sigma(W_{o} \cdot [h_{t-1}, x_t] + b_o)
 \begin{equation}
 h_t = o_t \ast \tanh(C_t)
 \end{equation}
-The output gate determines the next hidden state $h_t$, which contains information about the current input and the previous state, to be passed to the network. The output gate's activation $o_t$ scales the tanh of the updated cell state, deciding the part of the cell state to output.
+It determines the next hidden state $h_t$, which contains information about the current input and the previous state, to be passed to the network. The output gate's activation $o_t$ scales the tanh of the updated cell state, deciding the part of the cell state to output.
 
 In sound synthesis applications, LSTM models are trained on large datasets of audio samples, allowing them to learn and generate new sound sequences that closely mimic the characteristics of the training data. The ability to model long-term dependencies makes LSTMs particularly suited for generating complex and temporally coherent sound sequences, such as musical compositions or natural speech patterns. By optimizing the LSTM parameters (weights and biases) through backpropagation, the model can be fine-tuned to produce high-quality audio outputs that capture the nuances of human-generated sounds.
 
 \subsection{Autoregressive Transformers}
 
-Autoregressive Transformers \cite{yan2021videogpt, wu2022nuwa} have revolutionized sound synthesis by leveraging self-attention mechanisms to model complex sequential data. Unlike RNNs, Transformers process sequences in parallel, allowing for more efficient training and better handling of long-term dependencies. In sound synthesis, autoregressive Transformers predict subsequent audio samples based on a sequence of past samples, capturing the intricate temporal dynamics of sound.
-
-The core concept of the Transformer architecture in sound synthesis can be encapsulated by the following equations, which describe the self-attention mechanism and the generation process:
+Autoregressive Transformers \cite{yan2021videogpt, wu2022nuwa} have improved sound synthesis by leveraging self-attention mechanisms to model complex sequential data. Unlike RNNs, Transformers process sequences in parallel, allowing for more efficient training and better handling of long-term dependencies. 
+In sound synthesis, autoregressive Transformers predict subsequent audio samples based on a sequence of past samples, capturing the temporal dynamics of sound.
+The core concept of the Transformer architecture in sound synthesis can be described by the following equations about the self-attention mechanism and the generation process:
 
 Input Embedding and Positional Encoding:
 \begin{equation}
@@ -454,7 +454,7 @@ Multi-Head Attention:
 \text{MultiHead}(Q, K, V) = \text{Concat}(\text{head}_1, \ldots, \text{head}_h)W^O
 \end{equation}
 \begin{equation}
-\text{where head}_i = \text{Attention}(QW^Q_i, KW^K_i, VW^V_i)
+\text{head}_i = \text{Attention}(QW^Q_i, KW^K_i, VW^V_i)
 \end{equation}
 Multi-head attention allows the model to focus on different positions, capturing various aspects of the sound sequence. $W^Q_i$, $W^K_i$, $W^V_i$, and $W^O$ are parameter matrices for each head $i$ and the output projection, respectively.
 

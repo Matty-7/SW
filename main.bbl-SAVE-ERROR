@@ -1460,49 +1460,57 @@
       \field{title}{Mitigating stereotypical biases in text to image generative systems}
       \field{year}{2023}
     \endentry
-    \entry{kasten2021layered}{article}{}
-      \name{author}{4}{}{%
-        {{hash=1f353036cf6d9ba552ca3f391fbf6a4b}{%
-           family={Kasten},
-           familyi={K\bibinitperiod},
-           given={Yoni},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=0c375cf5a535db86aed99dd42e5c9f3b}{%
-           family={Ofri},
-           familyi={O\bibinitperiod},
-           given={Dolev},
-           giveni={D\bibinitperiod}}}%
-        {{hash=4954ab8be479c4a3f1496ddfbc21a605}{%
-           family={Wang},
+    \entry{westerlund2019emergence}{article}{}
+      \name{author}{1}{}{%
+        {{hash=732e0f615261eeb5b84e5ec3ca6cc040}{%
+           family={Westerlund},
            familyi={W\bibinitperiod},
-           given={Oliver},
-           giveni={O\bibinitperiod}}}%
-        {{hash=b8d9b5553cce7ae37689e63b3f09c09e}{%
-           family={Dekel},
-           familyi={D\bibinitperiod},
-           given={Tali},
-           giveni={T\bibinitperiod}}}%
+           given={Mika},
+           giveni={M\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {ACM New York, NY, USA}%
-      }
-      \strng{namehash}{c0c9f5d183a05f45727145f4542be42d}
-      \strng{fullhash}{cf62bd5b00dd484eb09dc1ca6e16a4b3}
-      \strng{bibnamehash}{c0c9f5d183a05f45727145f4542be42d}
-      \strng{authorbibnamehash}{c0c9f5d183a05f45727145f4542be42d}
-      \strng{authornamehash}{c0c9f5d183a05f45727145f4542be42d}
-      \strng{authorfullhash}{cf62bd5b00dd484eb09dc1ca6e16a4b3}
+      \strng{namehash}{732e0f615261eeb5b84e5ec3ca6cc040}
+      \strng{fullhash}{732e0f615261eeb5b84e5ec3ca6cc040}
+      \strng{bibnamehash}{732e0f615261eeb5b84e5ec3ca6cc040}
+      \strng{authorbibnamehash}{732e0f615261eeb5b84e5ec3ca6cc040}
+      \strng{authornamehash}{732e0f615261eeb5b84e5ec3ca6cc040}
+      \strng{authorfullhash}{732e0f615261eeb5b84e5ec3ca6cc040}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{ACM Transactions on Graphics (TOG)}
-      \field{number}{6}
-      \field{title}{Layered neural atlases for consistent video editing}
-      \field{volume}{40}
-      \field{year}{2021}
-      \field{pages}{1\bibrangedash 12}
-      \range{pages}{12}
+      \field{journaltitle}{Technology innovation management review}
+      \field{number}{11}
+      \field{title}{The emergence of deepfake technology: A review}
+      \field{volume}{9}
+      \field{year}{2019}
+    \endentry
+    \entry{hristov2016artificial}{article}{}
+      \name{author}{1}{}{%
+        {{hash=3e459d3a4e3dc7161a5de8142bf4b45e}{%
+           family={Hristov},
+           familyi={H\bibinitperiod},
+           given={Kalin},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {HeinOnline}%
+      }
+      \strng{namehash}{3e459d3a4e3dc7161a5de8142bf4b45e}
+      \strng{fullhash}{3e459d3a4e3dc7161a5de8142bf4b45e}
+      \strng{bibnamehash}{3e459d3a4e3dc7161a5de8142bf4b45e}
+      \strng{authorbibnamehash}{3e459d3a4e3dc7161a5de8142bf4b45e}
+      \strng{authornamehash}{3e459d3a4e3dc7161a5de8142bf4b45e}
+      \strng{authorfullhash}{3e459d3a4e3dc7161a5de8142bf4b45e}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Idea}
+      \field{title}{Artificial intelligence and the copyright dilemma}
+      \field{volume}{57}
+      \field{year}{2016}
+      \field{pages}{431}
+      \range{pages}{1}
     \endentry
     \entry{habibian2021skip}{inproceedings}{}
       \name{author}{4}{}{%
@@ -1541,6 +1549,45 @@
       \field{title}{Skip-convolutions for efficient video processing}
       \field{year}{2021}
       \field{pages}{2695\bibrangedash 2704}
+      \range{pages}{10}
+    \endentry
+    \entry{ignatov2021real}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=4011379a09871383d80487950f2cb481}{%
+           family={Ignatov},
+           familyi={I\bibinitperiod},
+           given={Andrey},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4e47cc4cb2809d75eb8428600d511cb3}{%
+           family={Romero},
+           familyi={R\bibinitperiod},
+           given={Andres},
+           giveni={A\bibinitperiod}}}%
+        {{hash=33e1ad9613ce4052cef114c9db48c119}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Heewon},
+           giveni={H\bibinitperiod}}}%
+        {{hash=740c788a36355395a6809932b5f84ab5}{%
+           family={Timofte},
+           familyi={T\bibinitperiod},
+           given={Radu},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{befb5e92a4482876bb8117f47418b4aa}
+      \strng{fullhash}{d3007cb5d9e46f5bff8b8456458341c5}
+      \strng{bibnamehash}{befb5e92a4482876bb8117f47418b4aa}
+      \strng{authorbibnamehash}{befb5e92a4482876bb8117f47418b4aa}
+      \strng{authornamehash}{befb5e92a4482876bb8117f47418b4aa}
+      \strng{authorfullhash}{d3007cb5d9e46f5bff8b8456458341c5}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}
+      \field{title}{Real-time video super-resolution on smartphones with deep learning, mobile ai 2021 challenge: Report}
+      \field{year}{2021}
+      \field{pages}{2535\bibrangedash 2544}
       \range{pages}{10}
     \endentry
     \entry{srivastava2015unsupervised}{inproceedings}{}
@@ -1673,8 +1720,8 @@
       \strng{authorbibnamehash}{c69b4edeadac179da54049718f881a6f}
       \strng{authornamehash}{c69b4edeadac179da54049718f881a6f}
       \strng{authorfullhash}{b6376cec9ca01f734ea17eb243744d58}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2104.10157}
@@ -1728,8 +1775,8 @@
       \strng{authorbibnamehash}{53e10737a94d55b063c2ecf951f9e7a2}
       \strng{authornamehash}{53e10737a94d55b063c2ecf951f9e7a2}
       \strng{authorfullhash}{ab52bc336d1c868a91216520b1335154}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{European conference on computer vision}
@@ -2041,8 +2088,8 @@
       \strng{authorbibnamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
       \strng{authornamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
       \strng{authorfullhash}{cb26e47f6b8133865271fc8483132297}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Advances in neural information processing systems}

@@ -233,6 +233,15 @@ Whether for dubbing, voiceovers, or virtual assistants, ElevenLabs offers unpara
 The combination of these AI models—ChatGPT, MidJourney, Runway, and ElevenLabs prelude a new age in digital content creation, where the fusion of text, image, video, and voice generated through AI not only enriches the content landscape but also offers creators the tools to craft experiences that were once unimaginable.
 }
 
+\paragraph{However, AIGC technology has also sparked ethical debates concerning the creation and use of AI-generated content. 
+Deepfakes \cite{westerlund2019emergence}, which involve altering videos and images to the point of being indistinguishable from authentic media, have the potential to distort reality and spread misinformation. 
+The manipulation of media content raises concerns about the impact on individuals' reputations and the broader implications for societal and political discourse. 
+As artificial intelligence capabilities grow, the need for ethical guidelines that ensure transparency and prevent biases becomes more urgent.
+Coupled with the ethical concerns surrounding deepfakes is the issue of copyright in AI-generated images and videos. \cite{hristov2016artificial}
+The legal system is currently unprepared to tackle questions of ownership and violation when content is created by an AI. 
+This prompts a discussion about the originality of AI-generated works and the ethical use of AI in creative processes. 
+As AI becomes more pervasive, it will challenge traditional copyright laws, necessitating continuous research and the development of legal measures that keep pace with AI evolution.}
+
 \section{AIGC in Image and Video}
 
 \subsection{Variational Autoencoders (VAE)}
@@ -350,17 +359,6 @@ By actively mitigating biases, AI models can foster digital environments that ar
 Future work need to address additional forms of biases and explore the applicability of mitigative strategies in video models, thereby extending the principles of fairness and inclusivity to broader multimedia contexts.
 }
 
-\subsection{Ethical Considerations: Deepfakes and Copyright}
-
-\paragraph{Deepfake \cite{westerlund2019emergence} technology has sparked ethical debates concerning the creation and use of AI-generated content. 
-Deepfakes, which involve altering videos and images to the point of being indistinguishable from authentic media, have the potential to distort reality and spread misinformation. 
-The manipulation of media content raises concerns about the impact on individuals' reputations and the broader implications for societal and political discourse. 
-As artificial intelligence capabilities grow, the need for ethical guidelines that ensure transparency and prevent biases becomes more urgent.
-Coupled with the ethical concerns surrounding deepfakes is the issue of copyright in AI-generated images and videos. \cite{hristov2016artificial}
-The legal system is currently unprepared to tackle questions of ownership and violation when content is created by an AI. 
-This prompts a discussion about the originality of AI-generated works and the ethical use of AI in creative processes. 
-As AI becomes more pervasive, it will challenge traditional copyright laws, necessitating continuous research and the development of legal measures that keep pace with AI evolution.}
-
 
 \subsection{Computational Efficiency and Resolution Enhancement in Visual Processing}
 
@@ -376,13 +374,115 @@ This progress highlights the ongoing necessity for innovation in computational m
 
 \section{AIGC in Sound}
 
-\subsection{Music Composition and Production}
-\paragraph{Artificial Intelligence (AI), leveraging deep learning models such as Recurrent Neural Networks (RNNs) \cite{srivastava2015unsupervised} \cite{chiappa2017recurrent} \cite{ha2018world} and Autoregressive Transformers \cite{yan2021videogpt} \cite{wu2022nuwa}, has significantly advanced the field of music composition, transcending traditional genre boundaries to encompass everything from classical to contemporary pop. These AI algorithms sift through extensive datasets of music, absorbing and analyzing compositional patterns, structures, and styles inherent within. Through this comprehensive learning process, they acquire the capability to generate novel musical compositions that bear a striking resemblance to those created by human composers, both in complexity and emotional depth. This remarkable proficiency not only equips artists and producers with sophisticated tools to venture into uncharted creative territories but also democratizes the process of music production. By mitigating the barrier posed by the lack of formal musical training, AI-powered music composition becomes an invaluable resource, offering a platform for a broader demographic to express their creativity through music. The technology's ability to replicate the nuances of human composition highlights a significant leap in AI's role in creative arts, bridging the gap between artificial intelligence and human emotional expression. Consequently, this development not only enriches the musical landscape with diverse and innovative compositions but also catalyzes a shift in the dynamics of music creation and consumption, making the art of music composition more inclusive and accessible to a global audience \cite{briot2021artificial}. This transformative use of AI in music composition exemplifies the broader potential of AI to influence and enhance creative industries, heralding a new era of artistic expression that melds human creativity with computational precision and versatility.}
+\subsection{Recurrent Neural Networks}
+
+Recurrent Neural Networks (RNNs) \cite{srivastava2015unsupervised, chiappa2017recurrent, ha2018world} have shown remarkable capabilities in modeling sequential data, making them particularly suited for applications in sound synthesis. 
+Unlike traditional feedforward neural networks, RNNs incorporate a feedback loop, allowing them to maintain a form of memory over input sequences. 
+This characteristic is leveraged in sound synthesis to model the temporal dependencies of audio signals, enabling the generation of coherent and dynamic sound sequences.
+
+The fundamental equation governing the operation of a basic RNN unit for sound synthesis can be described as follows:
+\begin{equation}
+h_t = \sigma(W_{ih} x_t + W_{hh} h_{t-1} + b_h)
+\end{equation}
+where $h_t$ represents the hidden state at time $t$, $x_t$ is the input vector at time $t$, $W_{ih}$ and $W_{hh}$ are the weights of the input-to-hidden and hidden-to-hidden connections, respectively, $b_h$ is the bias, and $\sigma$ denotes the activation function, often a non-linear function such as the tanh or ReLU.
+
+The output of the RNN, which corresponds to the synthesized sound at each timestep, is computed as:
+\begin{equation}
+y_t = W_{ho} h_t + b_o
+\end{equation}
+where $y_t$ is the output vector at time $t$, $W_{ho}$ represents the weights of the hidden-to-output connections, and $b_o$ is the output bias. \\
+To enhance the model's capacity to handle long-term dependencies, which are prevalent in complex sound sequences, Long Short-Term Memory (LSTM) \cite{yu2019review} units or Gated Recurrent Units (GRUs) \cite{dey2017gate} can be incorporated. 
+These advanced variants of RNNs introduce mechanisms such as forget gates (in LSTMs) and update gates (in GRUs) that allow the network to selectively remember or forget information. 
+This capability significantly improves the network's ability to model sequences with long-range temporal dependencies, making it highly effective for tasks like sound synthesis where the coherence over time is crucial.
+
+\subsection{Long Short-Term Memory (LSTM)}
+
+Long Short-Term Memory (LSTM) units are a specific type of Recurrent Neural Network (RNN) architecture designed to overcome the limitations of traditional RNNs, particularly in handling long-term dependencies. LSTMs are adept at modeling the temporal relationships inherent in complex sound sequences, making them highly effective for sound synthesis tasks. The LSTM's architecture includes several key components—forget gate, input gate, cell state, and output gate—that work together to regulate the flow of information through the unit. These components allow the LSTM to retain or discard information over long sequences, enabling the generation of coherent and dynamic audio content. The following equations provide a detailed mathematical representation of the LSTM's operation:
+
+Forget Gate:
+\begin{equation}
+f_t = \sigma(W_{f} \cdot [h_{t-1}, x_t] + b_f)
+\end{equation}
+The forget gate decides which information from the cell state is to be discarded. $f_t$ represents the forget gate's activation at time $t$. $\sigma$ is the sigmoid function, $W_{f}$ is the weight matrix for the forget gate, $h_{t-1}$ is the previous hidden state, $x_t$ is the current input, and $b_f$ is the bias.
+
+Input Gate:
+\begin{equation}
+i_t = \sigma(W_{i} \cdot [h_{t-1}, x_t] + b_i)
+\end{equation}
+\begin{equation}
+\tilde{C}_t = \tanh(W_{C} \cdot [h_{t-1}, x_t] + b_C)
+\end{equation}
+The input gate controls the extent to which new information is stored in the cell state. $i_t$ is the input gate's activation, and $\tilde{C}_t$ is the candidate value for addition to the cell state. $W_{i}$ and $W_{C}$ are the weight matrices, and $b_i$ and $b_C$ are biases.
+
+Cell State Update:
+\begin{equation}
+C_t = f_t \ast C_{t-1} + i_t \ast \tilde{C}_t
+\end{equation}
+The cell state $C_t$ is updated by removing information deemed unnecessary by the forget gate and adding new candidate values scaled by the input gate's activation.
+
+Output Gate:
+\begin{equation}
+o_t = \sigma(W_{o} \cdot [h_{t-1}, x_t] + b_o)
+\end{equation}
+\begin{equation}
+h_t = o_t \ast \tanh(C_t)
+\end{equation}
+The output gate determines the next hidden state $h_t$, which contains information about the current input and the previous state, to be passed to the network. The output gate's activation $o_t$ scales the tanh of the updated cell state, deciding the part of the cell state to output.
+
+In sound synthesis applications, LSTM models are trained on large datasets of audio samples, allowing them to learn and generate new sound sequences that closely mimic the characteristics of the training data. The ability to model long-term dependencies makes LSTMs particularly suited for generating complex and temporally coherent sound sequences, such as musical compositions or natural speech patterns. By optimizing the LSTM parameters (weights and biases) through backpropagation, the model can be fine-tuned to produce high-quality audio outputs that capture the nuances of human-generated sounds.
+
+\subsection{Autoregressive Transformers}
+
+Autoregressive Transformers \cite{yan2021videogpt, wu2022nuwa} have revolutionized sound synthesis by leveraging self-attention mechanisms to model complex sequential data. Unlike RNNs, Transformers process sequences in parallel, allowing for more efficient training and better handling of long-term dependencies. In sound synthesis, autoregressive Transformers predict subsequent audio samples based on a sequence of past samples, capturing the intricate temporal dynamics of sound.
+
+The core concept of the Transformer architecture in sound synthesis can be encapsulated by the following equations, which describe the self-attention mechanism and the generation process:
+
+Input Embedding and Positional Encoding:
+\begin{equation}
+X' = X + PE
+\end{equation}
+where $X$ is the input sequence of sound samples or features, and $PE$ is the positional encoding added to $X$ to retain positional information.
+
+Self-Attention Mechanism:
+\begin{equation}
+\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
+\end{equation}
+where $Q$, $K$, and $V$ represent the queries, keys, and values matrices obtained from $X'$, respectively, and $d_k$ is the dimension of the key vectors. This equation calculates the attention weights and applies them to the values to produce an output that highlights important features of the input sequence.
+
+Multi-Head Attention:
+\begin{equation}
+\text{MultiHead}(Q, K, V) = \text{Concat}(\text{head}_1, \ldots, \text{head}_h)W^O
+\end{equation}
+\begin{equation}
+\text{where head}_i = \text{Attention}(QW^Q_i, KW^K_i, VW^V_i)
+\end{equation}
+Multi-head attention allows the model to focus on different positions, capturing various aspects of the sound sequence. $W^Q_i$, $W^K_i$, $W^V_i$, and $W^O$ are parameter matrices for each head $i$ and the output projection, respectively.
+
+Position-wise Feed-Forward Networks:
+\begin{equation}
+\text{FFN}(x) = \max(0, xW_1 + b_1)W_2 + b_2
+\end{equation}
+Each layer in the Transformer includes a feed-forward network applied to each position separately and identically. This consists of two linear transformations with a ReLU activation in between.
+
+Output Generation:
+\begin{equation}
+P(y_t | y_{<t}) = \text{softmax}(y_{t-1}W + b)
+\end{equation}
+The output at each timestep $t$, $y_t$, is predicted based on the previous outputs $y_{<t}$, where $W$ and $b$ are the weights and bias in the final linear layer that projects the decoder output to the space of possible audio samples. $P(y_t | y_{<t})$ represents the probability distribution over possible next samples given the previous samples.
+
+By training on sequences of audio samples, autoregressive Transformers learn to generate new sound sequences sample by sample, offering a powerful framework for high-quality sound synthesis, including music composition and speech generation, with the ability to capture the long-range dependencies characteristic of audio signals.
+
+
 
 \subsection{Voice Synthesis and Modification}
-\paragraph{The domain of voice synthesis has witnessed profound advancements through the application of Artificial Intelligence (AI), particularly with the introduction of technologies like WaveNet and Tacotron, which have significantly narrowed the gap between synthetic and human speech. These AI-driven systems excel in capturing the nuances of human tonality, inflection, and emotion, producing synthetic voices of unparalleled realism. The intricacies of speech, including the subtle variations in pitch, pace, and volume that convey different emotions and intentions, are now accurately replicated by these models, enabling a wide array of applications. From powering virtual assistants with voices that can express empathy and understanding to creating audiobooks narrated with engaging and dynamic inflections, and even providing voiceovers for animations that require a diverse range of character voices, AI has expanded the horizons of voice synthesis. Furthermore, the ability to tailor these synthetic voices with specific emotional tones or accents has not only enhanced the user experience by making interactions more natural and engaging but also significantly broadened the potential for innovation in interactive media and communication. This capability to customize and generate human-like speech through AI not only demonstrates the technological achievements in the field but also highlights the potential for creating more immersive and emotionally resonant digital environments. As these technologies continue to evolve, they promise to further transform our interaction with machines, making digital communication more natural and intuitive than ever before \cite{oord2016wavenet}.}
-\subsection{Sound Effects Generation}
-\paragraph{Artificial Intelligence (AI) has significantly transformed the landscape of sound effects generation, offering unparalleled versatility and creativity in audio design. Through the utilization of advanced machine learning techniques, AI models are trained on extensive libraries of pre-recorded sound effects, enabling them to learn and replicate the acoustic characteristics of a wide range of environments and actions. This innovative approach allows for the synthesis of highly realistic and novel sounds, from the delicate rustling of leaves to the complex cacophony of urban environments. The application of AI in this field is particularly beneficial in enhancing the realism and immersive quality of multimedia experiences, such as video games, films, and virtual reality simulations. By generating sound effects that are tailored to the specific requirements of a scene or action, AI reduces the dependence on traditional, extensive sound libraries, facilitating the creation of unique and context-specific audio landscapes. This capability not only streamlines the audio process but also opens up new possibilities for creative expression in sound design, enabling creators to craft more engaging and authentic auditory experiences. The advent of AI-driven sound effects generation marks a pivotal development in the field of audio engineering, promising to further elevate the sensory richness of digital and interactive media \cite{greshler2021catch}.}
+\paragraph{The domain of voice synthesis has witnessed profound advancements through the application of Artificial Intelligence (AI), particularly with the introduction of technologies like WaveNet and Tacotron, which have significantly narrowed the gap between synthetic and human speech. 
+These AI-driven systems excel in capturing the nuances of human tonality, inflection, and emotion, producing synthetic voices of unparalleled realism. The intricacies of speech, including the subtle variations in pitch, pace, and volume that convey different emotions and intentions, are now accurately replicated by these models, enabling a wide array of applications. 
+From powering virtual assistants with voices that can express empathy and understanding to creating audiobooks narrated with engaging and dynamic inflections, and even providing voiceovers for animations that require a diverse range of character voices, AI has expanded the horizons of voice synthesis. 
+Furthermore, the ability to tailor these synthetic voices with specific emotional tones or accents has not only enhanced the user experience by making interactions more natural and engaging but also significantly broadened the potential for innovation in interactive media and communication. 
+This capability to customize and generate human-like speech through AI not only demonstrates the technological achievements in the field but also highlights the potential for creating more immersive and emotionally resonant digital environments. 
+As these technologies continue to evolve, they promise to further transform our interaction with machines, making digital communication more natural and intuitive than ever before \cite{oord2016wavenet}.}
+
+
 \subsection{Enhancing Audio Quality}
 \paragraph{The enhancement of audio quality through Artificial Intelligence (AI) represents a significant leap forward in the field of sound engineering, addressing some of the most persistent challenges in audio processing with innovative solutions. Advanced AI algorithms are at the forefront of this revolution, employing sophisticated techniques such as noise reduction, sound separation, and audio restoration to significantly improve the clarity and fidelity of sound recordings. These algorithms excel at isolating vocal tracks from noisy backgrounds, enabling clear communication in environments previously deemed unsuitable for high-quality audio capture. Furthermore, they can deftly separate individual musical instruments within a complex mix, offering producers unprecedented control over the editing and mixing process. Perhaps most remarkably, AI-driven techniques breathe new life into old recordings, restoring them to their former glory by removing artifacts and distortions that have long obscured their original quality. This multifaceted approach to audio enhancement not only benefits content creators, providing them with cleaner, more manipulable audio tracks, but also significantly elevates the listening experience for consumers, ensuring access to high-quality audio regardless of the source material's age or condition. The integration of AI in enhancing audio quality thus stands as a testament to the transformative potential of these technologies, offering a glimpse into a future where pristine sound is universally accessible, transcending the limitations of traditional audio processing methods \cite{valentini2018speech}.}
 

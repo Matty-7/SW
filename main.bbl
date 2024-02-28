@@ -1980,6 +1980,172 @@
       \field{title}{Digital audio restoration}
       \field{year}{2002}
     \endentry
+    \entry{touvron2023llama}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=a2a13fcd633ec70c55a7f3f4812afdcf}{%
+           family={Touvron},
+           familyi={T\bibinitperiod},
+           given={Hugo},
+           giveni={H\bibinitperiod}}}%
+        {{hash=c641a91d616b6eda08cbbdca7b7eb186}{%
+           family={Lavril},
+           familyi={L\bibinitperiod},
+           given={Thibaut},
+           giveni={T\bibinitperiod}}}%
+        {{hash=a32ece3bc966e7e88747e905158c9a6a}{%
+           family={Izacard},
+           familyi={I\bibinitperiod},
+           given={Gautier},
+           giveni={G\bibinitperiod}}}%
+        {{hash=7222f9d76b0fff504f39e7c9c2a526be}{%
+           family={Martinet},
+           familyi={M\bibinitperiod},
+           given={Xavier},
+           giveni={X\bibinitperiod}}}%
+        {{hash=08284515d256b832e9dba10a88af84f4}{%
+           family={Lachaux},
+           familyi={L\bibinitperiod},
+           given={Marie-Anne},
+           giveni={M\bibinithyphendelim A\bibinitperiod}}}%
+        {{hash=1d29ae55d8d993d9f195b3c97bd34f7c}{%
+           family={Lacroix},
+           familyi={L\bibinitperiod},
+           given={Timothée},
+           giveni={T\bibinitperiod}}}%
+        {{hash=e0d9a8657c1043f53c54f3f5a6ff305f}{%
+           family={Rozière},
+           familyi={R\bibinitperiod},
+           given={Baptiste},
+           giveni={B\bibinitperiod}}}%
+        {{hash=78a420900f50a8470ad085fb05231bf6}{%
+           family={Goyal},
+           familyi={G\bibinitperiod},
+           given={Naman},
+           giveni={N\bibinitperiod}}}%
+        {{hash=00ce63f55ae2ce6ea638e5f991996584}{%
+           family={Hambro},
+           familyi={H\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=5373a3313da61427121b3e9733df1ed2}{%
+           family={Azhar},
+           familyi={A\bibinitperiod},
+           given={Faisal},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{c237483431fea681283a37adbb23a59f}
+      \strng{fullhash}{685ba9e774fd21d3e8ece22557eada7e}
+      \strng{bibnamehash}{c237483431fea681283a37adbb23a59f}
+      \strng{authorbibnamehash}{c237483431fea681283a37adbb23a59f}
+      \strng{authornamehash}{c237483431fea681283a37adbb23a59f}
+      \strng{authorfullhash}{685ba9e774fd21d3e8ece22557eada7e}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2302.13971}
+      \field{title}{Llama: Open and efficient foundation language models}
+      \field{year}{2023}
+    \endentry
+    \entry{StabilityAI_StableLM}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=57da0a89f365731f93fa82d5a77e8d93}{%
+           family={AI},
+           familyi={A\bibinitperiod},
+           given={Stability},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{57da0a89f365731f93fa82d5a77e8d93}
+      \strng{fullhash}{57da0a89f365731f93fa82d5a77e8d93}
+      \strng{bibnamehash}{57da0a89f365731f93fa82d5a77e8d93}
+      \strng{authorbibnamehash}{57da0a89f365731f93fa82d5a77e8d93}
+      \strng{authornamehash}{57da0a89f365731f93fa82d5a77e8d93}
+      \strng{authorfullhash}{57da0a89f365731f93fa82d5a77e8d93}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{GitHub repository}
+      \field{title}{StableLM: A project by Stability AI}
+      \field{year}{Oct 5, 2023}
+      \verb{urlraw}
+      \verb https://github.com/Stability-AI/StableLM
+      \endverb
+      \verb{url}
+      \verb https://github.com/Stability-AI/StableLM
+      \endverb
+    \endentry
+    \entry{jiang2023mistral}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=a91e014a59af240c37c0fc26432a125b}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Albert\bibnamedelima Q},
+           giveni={A\bibinitperiod\bibinitdelim Q\bibinitperiod}}}%
+        {{hash=2b9ab922e693d9237ad952a8030eee9d}{%
+           family={Sablayrolles},
+           familyi={S\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e9a587c57b1dcb4834850800386d8aca}{%
+           family={Mensch},
+           familyi={M\bibinitperiod},
+           given={Arthur},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5d11905f79ca61f62a93a43574139850}{%
+           family={Bamford},
+           familyi={B\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=d61a282b0086c5c4d52c371e7c748278}{%
+           family={Chaplot},
+           familyi={C\bibinitperiod},
+           given={Devendra\bibnamedelima Singh},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=af4c75452e1c1c77b8727f6dace64a42}{%
+           family={Casas},
+           familyi={C\bibinitperiod},
+           given={Diego\bibnamedelimb de\bibnamedelima las},
+           giveni={D\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim l\bibinitperiod}}}%
+        {{hash=dafbd4ebc73fd986f482b5cb24ed701d}{%
+           family={Bressand},
+           familyi={B\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=a9285c2c0cdc863e02225039176bb017}{%
+           family={Lengyel},
+           familyi={L\bibinitperiod},
+           given={Gianna},
+           giveni={G\bibinitperiod}}}%
+        {{hash=56509a94ba6cdaf0c71304d6cf806cee}{%
+           family={Lample},
+           familyi={L\bibinitperiod},
+           given={Guillaume},
+           giveni={G\bibinitperiod}}}%
+        {{hash=1c3686dfd5bade81bcfe2f5c89d70465}{%
+           family={Saulnier},
+           familyi={S\bibinitperiod},
+           given={Lucile},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{066da2bf78c9b2e3d4c5f5a2cc6c4bff}
+      \strng{fullhash}{a4de410ef4d31ee762a947028055bdcb}
+      \strng{bibnamehash}{066da2bf78c9b2e3d4c5f5a2cc6c4bff}
+      \strng{authorbibnamehash}{066da2bf78c9b2e3d4c5f5a2cc6c4bff}
+      \strng{authornamehash}{066da2bf78c9b2e3d4c5f5a2cc6c4bff}
+      \strng{authorfullhash}{a4de410ef4d31ee762a947028055bdcb}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2310.06825}
+      \field{title}{Mistral 7B}
+      \field{year}{2023}
+    \endentry
     \entry{a16zAI2023}{misc}{}
       \name{author}{1}{}{%
         {{hash=66af7b0a342d302921c8bf61fc538ddb}{%
@@ -1994,13 +2160,107 @@
       \strng{authorbibnamehash}{66af7b0a342d302921c8bf61fc538ddb}
       \strng{authornamehash}{66af7b0a342d302921c8bf61fc538ddb}
       \strng{authorfullhash}{66af7b0a342d302921c8bf61fc538ddb}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://a16z.com/why-2023-was-ai-videos-breakout-year-and-what-to-expect-in-2024/}}
       \field{note}{Accessed: 2024-02-17}
       \field{title}{Why 2023 Was AI Video's Breakout Year and What to Expect in 2024}
+      \field{year}{2023}
+    \endentry
+    \entry{eu_ai_act_2023}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=04477f088e2d7fa909d6f010ddf08b41}{%
+           family={{European Parliament}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{04477f088e2d7fa909d6f010ddf08b41}
+      \strng{fullhash}{04477f088e2d7fa909d6f010ddf08b41}
+      \strng{bibnamehash}{04477f088e2d7fa909d6f010ddf08b41}
+      \strng{authorbibnamehash}{04477f088e2d7fa909d6f010ddf08b41}
+      \strng{authornamehash}{04477f088e2d7fa909d6f010ddf08b41}
+      \strng{authorfullhash}{04477f088e2d7fa909d6f010ddf08b41}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.europarl.europa.eu/topics/en/article/20230601STO93804/eu-ai-act-first-regulation-on-artificial-intelligence}}
+      \field{note}{Accessed: 2024-02-28}
+      \field{title}{EU AI Act: First Regulation on Artificial Intelligence}
+      \field{year}{2023}
+    \endentry
+    \entry{China_AI_Policy_2023}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=94a2631bf243bfffd82f0684e2fcb161}{%
+           family={{The State Council of the People's Republic of China}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{94a2631bf243bfffd82f0684e2fcb161}
+      \strng{fullhash}{94a2631bf243bfffd82f0684e2fcb161}
+      \strng{bibnamehash}{94a2631bf243bfffd82f0684e2fcb161}
+      \strng{authorbibnamehash}{94a2631bf243bfffd82f0684e2fcb161}
+      \strng{authornamehash}{94a2631bf243bfffd82f0684e2fcb161}
+      \strng{authorfullhash}{94a2631bf243bfffd82f0684e2fcb161}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.gov.cn/zhengce/zhengceku/202307/content_6891752.htm}}
+      \field{month}{7}
+      \field{note}{Accessed: 2024-02-28}
+      \field{title}{Interim Measures for the Management of Generative Artificial Intelligence Services [生成式人工智能服务管理暂行办法]}
+      \field{year}{2023}
+    \endentry
+    \entry{WhiteHouse_AI_ExecOrder_2023}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=0cee9b756070a2e3863e7466712c9eb8}{%
+           family={{The White House}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{0cee9b756070a2e3863e7466712c9eb8}
+      \strng{fullhash}{0cee9b756070a2e3863e7466712c9eb8}
+      \strng{bibnamehash}{0cee9b756070a2e3863e7466712c9eb8}
+      \strng{authorbibnamehash}{0cee9b756070a2e3863e7466712c9eb8}
+      \strng{authornamehash}{0cee9b756070a2e3863e7466712c9eb8}
+      \strng{authorfullhash}{0cee9b756070a2e3863e7466712c9eb8}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.whitehouse.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/}}
+      \field{month}{10}
+      \field{note}{Accessed: 2024-02-28}
+      \field{title}{Executive Order on the Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence}
+      \field{year}{2023}
+    \endentry
+    \entry{Grynbaum_Mac_2023_Times_Sues_OpenAI}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=7fc5a3c75a87aa2a14edc9c28c9766db}{%
+           family={Grynbaum},
+           familyi={G\bibinitperiod},
+           given={Michael\bibnamedelima M.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=487b18d4e8f2510358aed5be09224b50}{%
+           family={Mac},
+           familyi={M\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{57417552d40d465a2df36aafd0bd23a3}
+      \strng{fullhash}{57417552d40d465a2df36aafd0bd23a3}
+      \strng{bibnamehash}{57417552d40d465a2df36aafd0bd23a3}
+      \strng{authorbibnamehash}{57417552d40d465a2df36aafd0bd23a3}
+      \strng{authornamehash}{57417552d40d465a2df36aafd0bd23a3}
+      \strng{authorfullhash}{57417552d40d465a2df36aafd0bd23a3}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.nytimes.com/2023/12/27/business/media/new-york-times-open-ai-microsoft-lawsuit.html}}
+      \field{month}{12}
+      \field{note}{Accessed: 2024-02-28}
+      \field{title}{The Times Sues OpenAI and Microsoft Over A.I. Use of Copyrighted Work}
       \field{year}{2023}
     \endentry
     \entry{vaswani2017attention}{article}{}
@@ -2052,8 +2312,8 @@
       \strng{authorbibnamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
       \strng{authornamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
       \strng{authorfullhash}{cb26e47f6b8133865271fc8483132297}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Advances in neural information processing systems}
@@ -2122,8 +2382,8 @@
       \strng{authorbibnamehash}{85437fe07696e4c57f916c83d4ba5581}
       \strng{authornamehash}{85437fe07696e4c57f916c83d4ba5581}
       \strng{authorfullhash}{8790f0827d0a1a3029e8a6cb9a6687e3}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Advances in neural information processing systems}
@@ -2167,8 +2427,8 @@
       \strng{authorbibnamehash}{59c8902722d20b85a1949951ce3800a1}
       \strng{authornamehash}{59c8902722d20b85a1949951ce3800a1}
       \strng{authorfullhash}{d955e31caa535f6c670ae18aa4cfb349}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Advances in neural information processing systems}
@@ -2239,8 +2499,8 @@
       \strng{authorbibnamehash}{e5b7b352cc66063b1c1793bdb61ac011}
       \strng{authornamehash}{e5b7b352cc66063b1c1793bdb61ac011}
       \strng{authorfullhash}{e5b7b352cc66063b1c1793bdb61ac011}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2205.09731}

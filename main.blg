@@ -1,15 +1,20 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'main.blg'
-[34] biber-darwin:340> INFO - === Wed Feb 28, 2024, 00:11:31
-[41] Biber.pm:419> INFO - Reading 'main.bcf'
-[90] Biber.pm:979> INFO - Found 55 citekeys in bib section 0
-[97] Biber.pm:4419> INFO - Processing section 0
-[103] Biber.pm:4610> INFO - Looking for bibtex file 'bibfile.bib' for section 0
-[104] bibtex.pm:1713> INFO - LaTeX decoding ...
-[128] bibtex.pm:1519> INFO - Found BibTeX data source 'bibfile.bib'
-[329] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[330] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[330] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[330] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[346] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[362] bbl.pm:763> INFO - Output to main.bbl
+[37] biber-darwin:340> INFO - === Wed Feb 28, 2024, 09:49:07
+[46] Biber.pm:419> INFO - Reading 'main.bcf'
+[93] Biber.pm:979> INFO - Found 62 citekeys in bib section 0
+[100] Biber.pm:4419> INFO - Processing section 0
+[106] Biber.pm:4610> INFO - Looking for bibtex file 'bibfile.bib' for section 0
+[108] bibtex.pm:1713> INFO - LaTeX decoding ...
+[134] bibtex.pm:1519> INFO - Found BibTeX data source 'bibfile.bib'
+[354] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[354] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[354] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[354] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[376] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[394] bbl.pm:763> INFO - Output to main.bbl
+[394] Biber.pm:131> WARN - legacy year field 'Oct 5, 2023' in entry 'StabilityAI_StableLM' is not an integer - this will probably not sort properly.
+[394] Biber.pm:131> WARN - legacy month field 'July' in entry 'China_AI_Policy_2023' is not an integer - this will probably not sort properly.
+[394] Biber.pm:131> WARN - legacy month field 'October' in entry 'WhiteHouse_AI_ExecOrder_2023' is not an integer - this will probably not sort properly.
+[394] Biber.pm:131> WARN - legacy month field 'December' in entry 'Grynbaum_Mac_2023_Times_Sues_OpenAI' is not an integer - this will probably not sort properly.
+[395] Biber.pm:133> INFO - WARNINGS: 4

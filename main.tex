@@ -601,15 +601,6 @@ These core processes involved in audio modification, demonstrating how AI algori
 \label{methods}
 
 \section{Workflow}
-\paragraph{The workflow of this video-creating project is shown below: \\
-1: Write the storyline of the video, including the description prompt of each scene and the narrative flow. I used ChatGPT to polish them to make them more concise and coherent.\\
-2: Generate and edit the image stills by using MidJourney. \\
-3: Use Runway Gen-2 to generate the video that based on the footage as the key frames.\\
-4: Edit and combine the video clips on CapCut. \\
-5: Use ElevenLabs to clone my voice and train the text to speech model.\\
-5: Add voice over, music and sound effects. \\
-6: Use Topaz Video AI to improve the video quality like (change the frame rate from 60 FPS to 120 FPS)
-6: Publish the video on social media. (like YouTube and Instagram)\\}
 
 \begin{figure}[H]
 \centering
@@ -622,7 +613,7 @@ These core processes involved in audio modification, demonstrating how AI algori
     \node [block] (storyline) {Write the storyline with ChatGPT};
     \node [block, below of=storyline] (imagegen) {Generate images with MidJourney};
     \node [block, below of=imagegen] (videogen) {Create videos with Runway Gen-2};
-    \node [block, below of=videogen] (voiceover) {Add voice over with ElevenLabs};
+    \node [block, below of=videogen] (voiceover) {Add voice-over with ElevenLabs};
     \node [block, below of=voiceover] (videoedit) {Edit and combine clips on CapCut};
     \node [block, below of=videoedit] (videoquality) {Enhance video quality with Topaz AI};
     \node [block, below of=videoquality] (publish) {Publish the video on social media};
@@ -642,7 +633,7 @@ These core processes involved in audio modification, demonstrating how AI algori
 \centering
 \begin{tikzpicture}[node distance=5cm, auto]
     % Define the style for the nodes
-    \tikzstyle{main} = [circle, thick, draw, fill=blue!30, text width=3em, text centered, minimum height=3em]
+    \tikzstyle{main} = [circle, thick, draw, fill=blue!30, text width=3em, text centered, minimum height=5em]
     \tikzstyle{line} = [draw, -latex', thick]
     
     % Place the nodes
@@ -669,9 +660,39 @@ These core processes involved in audio modification, demonstrating how AI algori
 \caption{Relationships in a Multimodal System}
 \end{figure}
 
-
 \section{ChatGPT}
-\paragraph{ChatGPT, a state-of-the-art language model developed by OpenAI, operates on the transformer architecture, a breakthrough in deep learning that has revolutionized natural language processing (NLP). It is pre-trained on a diverse corpus of text from the internet, enabling it to grasp a wide array of language nuances, styles, and topics. This pre-training involves unsupervised learning on vast datasets, followed by fine-tuning for specific tasks, which allows ChatGPT to generate coherent, contextually relevant text across many domains without task-specific data. The model's architecture, consisting of multiple layers of transformer blocks, employs self-attention mechanisms to process input text in parallel, significantly improving efficiency and understanding of complex language patterns. Its large parameter count, in the order of billions, captures deep linguistic structures, making it adept at a range of tasks from simple text generation to complex question-answering and summarization without needing explicit programming for each task. The transformer model \cite{vaswani2017attention} and subsequent innovations by OpenAI, including GPT-3's methodology \cite{brown2020language}, underscore the technical foundation and advanced capabilities of ChatGPT, making it a quintessential tool in advancing AI's role in understanding and generating human language.}
+
+GPT-4 model emphasizes using Reinforcement Learning from Human Feedback (RLHF) to align the model's outputs with human preferences. 
+
+The objective of RLHF is to optimize the policy $\pi$ to maximize the expected reward, which is indicative of the alignment between generated outputs and human preferences:
+
+\begin{equation}
+\max_{\pi} \mathbb{E}_{\tau \sim \pi} [R(\tau)]
+\end{equation}
+
+where $\tau = (s_0, a_0, ..., s_{T-1}, a_{T-1}, s_T)$ represents a trajectory of states and actions, and $R(\tau)$ is the cumulative reward for trajectory $\tau$.
+
+Human feedback is used to train a reward model $R_{\theta}(s,a)$, parameterized by $\theta$, which estimates the reward of taking action $a$ in state $s$:
+
+\begin{equation}
+R_{\theta}(s,a) = \text{HumanFeedback}(s, a)
+\end{equation}
+
+The policy $\pi_{\phi}$, parameterized by $\phi$, is optimized using the reward model as a surrogate for the true human feedback:
+
+\begin{equation}
+\phi^{*} = \arg\max_{\phi} \mathbb{E}_{\tau \sim \pi_{\phi}} [R_{\theta}(s,a)]
+\end{equation}
+
+Typically, Proximal Policy Optimization (PPO) or a similar algorithm is employed for policy optimization, ensuring stable and efficient learning:
+
+\begin{equation}
+L(\phi) = \hat{\mathbb{E}}_t \left[ \min(r_t(\phi) \hat{A}_t, \text{clip}(r_t(\phi), 1-\epsilon, 1+\epsilon) \hat{A}_t) \right]
+\end{equation}
+
+where $r_t(\phi) = \frac{\pi_{\phi}(a_t|s_t)}{\pi_{\phi_{old}}(a_t|s_t)}$ is the probability ratio, $\hat{A}_t$ is the advantage estimate at time $t$, and $\epsilon$ is a hyperparameter that controls clipping to reduce variance.
+
+All the processes above indicate how RLHF is mathematically conceptualized in the context of improving GPT models, focusing on optimizing a policy model to generate text that aligns with human preferences based on feedback.
 
 \begin{figure}[htbp]
   \centering
@@ -696,7 +717,6 @@ These core processes involved in audio modification, demonstrating how AI algori
   \includegraphics[width=\textwidth]{Runway.png}
   \caption{Using the "Image + Text" mode in Runway Gen-2 to generate the video, with the help of motion brush function to control how the characters move}
 \end{figure}
-
 
 \section{ElevenLabs}
 \paragraph{ElevenLabs leverages advanced deep learning techniques to create highly realistic and customizable synthetic voices. At its core, the technology utilizes state-of-the-art voice synthesis models, which are trained on vast datasets of human speech. These models, often based on variants of the transformer neural network architecture, enable the generation of speech that closely mimics human intonation, emotion, and nuances. The process involves two main stages: voice cloning \cite{arik2018neural}, where a target voice is replicated from a small sample, and text-to-speech (TTS) synthesis, where the cloned voice is used to convert written text into spoken words. This sophisticated approach ensures a high degree of vocal fidelity and naturalness, making it suitable for applications in audiobooks, virtual assistants, and more. The methodology behind ElevenLabs' technology draws upon recent advancements in machine learning and NLP, emphasizing the importance of ethical considerations and user consent in voice cloning.}

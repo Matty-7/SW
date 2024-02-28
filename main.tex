@@ -9,6 +9,10 @@
 \usepackage{float}
 \usepackage{algorithm}
 \usepackage{algorithmic}
+\usepackage{tikz}
+\usepackage{amssymb}
+
+\usetikzlibrary{shapes.geometric, arrows}
 
 \usepackage{titlesec}
 \titleformat{\chapter}[display]
@@ -195,33 +199,32 @@ Finally, I would like to thank my family and friends for their support and encou
 \label{introduction}
 
 \section{Artificial Intelligence (AI)}
-\paragraph{Artificial Intelligence (AI) is an expansive field that integrates principles from computer science, mathematics, and neuroscience to set up systems capable of simulating human cognitive functions and executing tasks traditionally requiring human intellect \cite{russell2010artificial}. 
+Artificial Intelligence (AI) is an expansive field that integrates principles from computer science, mathematics, and neuroscience to set up systems capable of simulating human cognitive functions and executing tasks traditionally requiring human intellect \cite{russell2010artificial}. 
 This interdisciplinary approach transforms AI from a mere conceptual framework into an indispensable tool across diverse sectors such as technology, finance, and entertainment. 
 The core of AI's functionality is its ability to learn from data and make decisions autonomously, without hard coding the explicit instructions. 
 One of the foundational models in AI's evolution is machine learning \cite{jordan2015machine}, which includes techniques for classification, regression, and clustering \cite{huang2022large}. 
 These methods allow computers to learn patterns and make predictions from data, forming the basis for many early AI applications. 
 As the field matured, researchers developed more sophisticated models, including neural networks \cite{abiodun2018state}, which imitate the structure and function of the human brain to perform complex pattern recognition tasks \cite{schmidhuber2015deep}.
-}
-\paragraph{The evolution of AI is marked by significant milestones, particularly with the advent of deep learning \cite{lecun2015deep} techniques, which have revolutionized areas like computer vision \cite{voulodimos2018deep} and natural language processing (NLP) \cite{chowdhary2020natural}. 
+
+The evolution of AI is marked by significant milestones, particularly with the advent of deep learning \cite{lecun2015deep} techniques, which have revolutionized areas like computer vision \cite{voulodimos2018deep} and natural language processing (NLP) \cite{chowdhary2020natural}. 
 Deep learning, a subset of machine learning, employs complex neural networks with multiple layers of processing units, enabling the extraction of high-level features from raw input data. 
 It improved the performance of AI systems in tasks ranging from image and speech recognition to language translation \cite{goodfellow2016deep}.
 Recent years some specialized architectures have further pushed the boundaries of what AI can achieve. 
-Variational Autoencoders (VAE), \cite{rezende2014stochastic, kingma2013auto}, Generative Adversarial Networks (GANs), \cite{goodfellow2014generative, vondrick2016generating, tulyakov2018mocogan, clark2019adversarial, brooks2022generating}, and diffusion models \cite{rombach2022high, ho2022imagen, blattmann2023align, gupta2023photorealistic} represent the forefront of AI research in data generation. 
+Variational Autoencoders (VAE), \cite{rezende2014stochastic, kingma2013auto}, Generative Adversarial Networks (GANs)~\cite{goodfellow2014generative, vondrick2016generating, tulyakov2018mocogan, clark2019adversarial, brooks2022generating}, and diffusion models \cite{rombach2022high, ho2022imagen, blattmann2023align, gupta2023photorealistic} represent the forefront of AI research in data generation. 
 GANs consist of two neural networks—the generator and the discriminator—competing against each other to generate new, synthetic instances of data that are indistinguishable from real data. 
 This has proven especially powerful in the fields of vision and sound generation, enabling the creation of photorealistic images, videos, and lifelike synthetic audio \cite{granot2022drop}.
-}
 
-\paragraph{The advancements in AI have not only expanded the horizons of what is technically feasible but have also paved the way for innovations in digital content creation that were previously unimaginable. 
+The advancements in AI have not only expanded the horizons of what is technically feasible but have also paved the way for innovations in digital content creation that were previously unimaginable. 
 The development and application of StyleGAN \cite{karras2019style} and its successors have been pivotal in pushing the limits of image generation technologies. 
 These models have the remarkable ability to produce images of astonishing realism, manipulate facial expressions with precision, and even venture into the realm of digital art creation \cite{patashnik2021styleclip}. 
 Similarly, the advent of diffusion models marks a significant leap in the quality of generated content, setting unprecedented standards for both image and sound generation \cite{rombach2022high}. 
 These models operate by iteratively refining data inputs through a process that progressively reduces noise, allowing for the creation of outputs that are not only highly detailed but also deeply resonant with the nuances of real-world sensory experiences. 
 Such advancements underscore the multifaceted impact of AI in the digital domain, where the synergy between complex neural networks and deep learning techniques is not just enhancing the visual and auditory quality of synthetic media but is also broadening the scope of creative expression and immersion in virtual environments. 
-This ongoing evolution in AI-driven content generation reflects a convergence of insights from across computer science, mathematics, and neuroscience, highlighting the interdisciplinary effort that underpins AI's capability to reinterpret and reimagine the way machines understand and interact with the world around us \cite{silver2016mastering}.}
+This ongoing evolution in AI-driven content generation reflects a convergence of insights from across computer science, mathematics, and neuroscience, highlighting the interdisciplinary effort that underpins AI's capability to reinterpret and reimagine the way machines understand and interact with the world around us \cite{silver2016mastering}.
 
 \section{Artificial Intelligence Generated Content (AIGC)}
 
-\paragraph{In the field of Artificial Intelligence Generated Content (AIGC), platforms like ChatGPT \cite{leiter2023chatgpt} \cite{openai2023gpt}, MidJourney \cite{MidjourneyExplore}, Runway \cite{runwayml}, and ElevenLabs \cite{elevenlabs} are redefining the boundaries of creative expression. 
+In the field of Artificial Intelligence Generated Content (AIGC), platforms like ChatGPT \cite{leiter2023chatgpt} \cite{openai2023gpt}, MidJourney \cite{MidjourneyExplore}, Runway \cite{runwayml}, and ElevenLabs \cite{elevenlabs} are redefining the boundaries of creative expression. 
 ChatGPT, with its sophisticated large language model, excels in generating text that mocks human-like understanding and creativity, making it a helpful tool for crafting compelling narratives, dialogues, and even complex literary works. 
 Its ability to process and produce coherent, contextually relevant content on a vast array of topics has democratized content creation, enabling writers and creators to generate high-quality text-based content efficiently. 
 Similarly, MidJourney revolutionizes the visual aspect of content creation by transforming textual descriptions into detailed, high-resolution images, and also style transformation.
@@ -231,16 +234,65 @@ This not only streamlines the video production process but also opens up new ave
 ElevenLabs, with its state-of-the-art voice synthesis technology, provides solutions for text to speech and speech to text, changing the language of a speech, and even cloning the voice.
 Whether for dubbing, voiceovers, or virtual assistants, ElevenLabs offers unparalleled customization, allowing for the creation of unique vocal identities that can speak in multiple languages and tones. 
 The combination of these AI models—ChatGPT, MidJourney, Runway, and ElevenLabs prelude a new age in digital content creation, where the fusion of text, image, video, and voice generated through AI not only enriches the content landscape but also offers creators the tools to craft experiences that were once unimaginable.
-}
 
-\paragraph{However, AIGC technology has also sparked ethical debates concerning the creation and use of AI-generated content. 
+However, AIGC technology has also sparked ethical debates concerning the creation and use of AI-generated content. 
 Deepfakes \cite{westerlund2019emergence}, which involve altering videos and images to the point of being indistinguishable from authentic media, have the potential to distort reality and spread misinformation. 
 The manipulation of media content raises concerns about the impact on individuals' reputations and the broader implications for societal and political discourse. 
 As artificial intelligence capabilities grow, the need for ethical guidelines that ensure transparency and prevent biases becomes more urgent.
 Coupled with the ethical concerns surrounding deepfakes is the issue of copyright in AI-generated images and videos. \cite{hristov2016artificial}
 The legal system is currently unprepared to tackle questions of ownership and violation when content is created by an AI. 
 This prompts a discussion about the originality of AI-generated works and the ethical use of AI in creative processes. 
-As AI becomes more pervasive, it will challenge traditional copyright laws, necessitating continuous research and the development of legal measures that keep pace with AI evolution.}
+As AI becomes more pervasive, it will challenge traditional copyright laws, necessitating continuous research and the development of legal measures that keep pace with AI evolution.
+
+
+\section{Current Development Trends}
+
+The evolution of generative AI has unfolded with unexpected speed.
+The transition from large, centralized systems to more accessible and powerful technologies has seen generative AI quickly reach a phase where enthusiasts and professionals can experiment and innovate with considerable autonomy. 
+The proliferation of smaller, more efficient foundation models, such as Meta's LLaMa family \cite{touvron2023llama}, StableLM \cite{StabilityAI_StableLM}, and Mistral \cite{jiang2023mistral}, indicate a move towards greater performance with reduced resource requirements. 
+These applications, alongside the increasing availability of open-source models, are democratizing AI by enabling a wider array of users to access state-of-the-art capabilities, fostering a more inclusive AI ecosystem.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.9\textwidth]{timeline.png}
+  \caption{A comprehensive overview of key milestones and product launches in the generative AI video domain throughout the year 2023, with a notable concentration of developments occurring in the fourth quarter. \cite{a16zAI2023}}
+\end{figure}
+
+As the demand for AI capabilities continues to surge, the AI industry faces practical challenges such as GPU shortages and rising cloud costs. 
+This situation is pushing developers to innovate with hardware-efficient models and explore new deployment environments.
+The ability to run smaller models locally on devices is particularly significant, offering privacy advantages and opening up possibilities for edge computing and IoT applications. 
+The ability to customize and fine-tune AI models is becoming increasingly important for businesses looking to differentiate their services. 
+Open-source models offer the flexibility to develop tailored AI solutions, trained on proprietary data and optimized for specific industry needs. 
+This approach is particularly relevant in sectors like healthcare, legal, and finance, which require specialized knowledge and expertise to generate high-quality content.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.9\textwidth]{products.png}
+  \caption{Comparative analysis of various AI video product offerings as of December 2023, detailing generation types, maximum length of generated clips, and additional features such as camera and motion control, showcasing the diversity and capabilities within the current market landscape.\cite{a16zAI2023}}
+\end{figure}
+
+The regulatory environment for AI is rapidly evolving, with significant developments in the EU, China, and the US. 
+The EU's provisional agreement on the AI Act \cite{eu_ai_act_2023}, China's measures to regulate AI usage \cite{China_AI_Policy_2023}, and the US's executive order on AI governance \cite{WhiteHouse_AI_ExecOrder_2023} reflect a global movement towards establishing legal frameworks to ensure responsible AI development and deployment. 
+The outcome of ongoing legal battles, such as the New York Times' lawsuit against OpenAI \cite{Grynbaum_Mac_2023_Times_Sues_OpenAI}, may have far-reaching implications for the future of AI regulation and its impact on innovation and deployment. 
+As we look towards the future, the most impactful developments in AI may well be centered around governance, middleware, and data pipelines that make generative AI more trustworthy and accessible. 
+With a more refined understanding of AI capabilities, businesses are now focusing on integrating AI tools into existing services to enhance rather than revolutionize established processes. 
+The challenge lies in striking a balance between leveraging the unique opportunities presented by AI while managing realistic expectations about its role in reshaping business practices.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.9\textwidth]{models.png}
+  \caption{Progression of generative modeling techniques from 2016 to 2022, showcasing the evolution and scaling of model parameters in GAN, Transformer, and Diffusion methods, each color-coded by method type.\cite{bie2023renaissance}}
+\end{figure}
+
+In the field of image generation, models like MidJourney, DALL-E 3, and Stable Diffusion 3 have been at the forefront. 
+Video generation has also seen substantial growth, with platforms such as Runway Gen-2, Pika, and Sora pushing the boundaries of what can be achieved in AI-generated cinematography. 
+In the audio domain, AI's capability to replicate and generate human-like speech has made significant strides with models such as ElevenLabs, Speechify, and Whisper. 
+These tools have not only democratized voice-over and audio content production but have also raised the bar for what can be expected from synthetic speech in terms of clarity, emotion, and expressiveness. 
+The geographical landscape of AI development is also noteworthy, with the United States and China emerging as the primary incubators of AI innovation. 
+Leading internet companies in these countries, including tech giants like Google, Meta, Alibaba, and ByteDance, have been instrumental in driving forward the development of AI technologies. 
+Their investments have resulted in state-of-the-art models that, while most of them are not open-source.
+
+\chapter{Related Work}
 
 \section{AIGC in Image and Video}
 
@@ -340,36 +392,33 @@ The training of diffusion models, as outlined in Algorithm 1, involves adjusting
 
 Diffusion models have been applied to a variety of tasks beyond image generation, such as super-resolution and inpainting, demonstrating their versatility and potential in numerous domains of generative modeling.
 
-
 \subsection{Mitigating Biases in Generative Systems}
 
-\paragraph{The development of generative text-to-image models has brought forth the challenge of mitigating social biases that these models may perpetuate. 
+The development of generative text-to-image models has brought forth the challenge of mitigating social biases that these models may perpetuate. 
 Notably, biases towards certain genders or skin tones have been observed in the outcomes of these image generation models. 
 To offset this, a novel approach has been proposed \cite{esposito2023mitigating}, which involves fine-tuning text-to-image models on synthetic data constructed from diverse text prompts. 
 These prompts include a variety of perceived skin tones, genders, ethnicities, professions, and age groups, resulting in a more inclusive synthetic dataset. 
 Fine-tuning models with this diverse data has shown to substantially improve group fairness metrics, reducing biases by significant margins.
 The process begins with the construction of text prompts through multiplicative combinations of various social qualifiers, which are then used to synthesize images that showcase a broad spectrum of human diversity. 
-This method has proven to be effective, with diversity-finetuned models not only generating content that is more representative of darker skin tones and female genders but also improving overall fairness in model outcomes.}
+This method has proven to be effective, with diversity-finetuned models not only generating content that is more representative of darker skin tones and female genders but also improving overall fairness in model outcomes.
 
-\paragraph{Furthermore, the evaluation of biases in text-to-image models is formulated within a group fairness framework, which assesses whether model outputs unfairly favor certain subgroups over others. 
+Furthermore, the evaluation of biases in text-to-image models is formulated within a group fairness framework, which assesses whether model outputs unfairly favor certain subgroups over others. 
 By adopting this framework, the research moves beyond merely measuring bias to actively promoting fairness in AI-generated content. 
 This is complemented by user studies that validate the absence of undesirable visual artifacts in finetuned models' outputs.
 This approach not only showcases the capability to generate more inclusive content but also highlights the potential for AI to serve as a tool for social change. 
 By actively mitigating biases, AI models can foster digital environments that are reflective of a wide spectrum of human experiences and perspectives, thereby promoting inclusivity and diversity.
 Future work need to address additional forms of biases and explore the applicability of mitigative strategies in video models, thereby extending the principles of fairness and inclusivity to broader multimedia contexts.
-}
-
 
 \subsection{Computational Efficiency and Resolution Enhancement in Visual Processing}
 
-\paragraph{In the rapidly evolving domain of image and video processing, implementations such as Skip-Convolutions \cite{habibian2021skip} have significantly improved computational efficiency, enabling high-quality visual outputs without compromising on speed or fidelity. 
+In the rapidly evolving domain of image and video processing, implementations such as Skip-Convolutions \cite{habibian2021skip} have significantly improved computational efficiency, enabling high-quality visual outputs without compromising on speed or fidelity. 
 These innovative methods bypass traditional linear processing pathways, allowing for selective data transmission across layers, thereby reducing the computational load while preserving or even enhancing the quality of video content. 
 This technique proves especially beneficial for tasks that demand real-time processing, including live streaming, augmented reality (AR) applications, and instant video communication platforms, by accelerating video editing and enhancement operations. 
 Furthermore, enhancing the resolution of images and videos has become increasingly crucial, with technologies like AI-based upscaling playing a pivotal role. 
 AI upscaling techniques intelligently increase the resolution of digital media, ensuring that even content produced at lower resolutions can meet the current standards expected by consumers, without the need for extensive computational resources. \cite{ignatov2021real}
 By integrating such approaches, Skip-Convolutions, along with AI upscaling, address the growing demand for premium video content that can be swiftly produced, edited, and shared, marking a shift towards more efficient content creation paradigms. 
 Consequently, these advancements not only elevate the technical capabilities of video processing software but also substantially contribute to the broader field of digital media, where speed, efficiency, and enhanced resolution are extremely important. 
-This progress highlights the ongoing necessity for innovation in computational methodologies to navigate the challenges presented by the increasing demand for multiple video content across various digital platforms.}
+This progress highlights the ongoing necessity for innovation in computational methodologies to navigate the challenges presented by the increasing demand for multiple video content across various digital platforms.
 
 
 \section{AIGC in Sound}
@@ -472,8 +521,6 @@ The output at each timestep $t$, $y_t$, is predicted based on the previous outpu
 
 By training on sequences of audio samples, autoregressive Transformers learn to generate new sound sequences sample by sample, offering a powerful framework for high-quality sound synthesis, including music composition and speech generation, with the ability to capture the long-range dependencies characteristic of audio signals.
 
-
-
 \subsection{Voice Cloning \& Text-to-Speech (TTS)}
 
 The applications of AI-driven voice synthesis, particularly through voice cloning and text-to-speech (TTS) technologies like ElevenLabs \cite{elevenlabs} and Whisper \cite{OpenAIWhisper}, has apparently closed the gap between synthetic and human speech. 
@@ -548,57 +595,10 @@ where $\hat{S}$ is the enhanced audio waveform, $S_{processed}$ is the audio sig
 
 These core processes involved in audio modification, demonstrating how AI algorithms can significantly improve the clarity, fidelity, and overall quality of sound recordings. 
 
-\section{Current Development Trends}
-
-\paragraph{The evolution of generative AI has unfolded with unexpected speed.
-The transition from large, centralized systems to more accessible and powerful technologies has seen generative AI quickly reach a phase where enthusiasts and professionals can experiment and innovate with considerable autonomy. 
-The proliferation of smaller, more efficient foundation models, such as Meta's LLaMa family \cite{touvron2023llama}, StableLM \cite{StabilityAI_StableLM}, and Mistral \cite{jiang2023mistral}, indicate a move towards greater performance with reduced resource requirements. 
-These applications, alongside the increasing availability of open-source models, are democratizing AI by enabling a wider array of users to access state-of-the-art capabilities, fostering a more inclusive AI ecosystem.}
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.9\textwidth]{timeline.png}
-  \caption{A comprehensive overview of key milestones and product launches in the generative AI video domain throughout the year 2023, with a notable concentration of developments occurring in the fourth quarter. \cite{a16zAI2023}}
-\end{figure}
-
-\paragraph{As the demand for AI capabilities continues to surge, the AI industry faces practical challenges such as GPU shortages and rising cloud costs. 
-This situation is pushing developers to innovate with hardware-efficient models and explore new deployment environments.
-The ability to run smaller models locally on devices is particularly significant, offering privacy advantages and opening up possibilities for edge computing and IoT applications. 
-The ability to customize and fine-tune AI models is becoming increasingly important for businesses looking to differentiate their services. 
-Open-source models offer the flexibility to develop tailored AI solutions, trained on proprietary data and optimized for specific industry needs. 
-This approach is particularly relevant in sectors like healthcare, legal, and finance, which require specialized knowledge and expertise to generate high-quality content.}
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.9\textwidth]{products.png}
-  \caption{Comparative analysis of various AI video product offerings as of December 2023, detailing generation types, maximum length of generated clips, and additional features such as camera and motion control, showcasing the diversity and capabilities within the current market landscape.\cite{a16zAI2023}}
-\end{figure}
-
-\paragraph{The regulatory environment for AI is rapidly evolving, with significant developments in the EU, China, and the US. 
-The EU's provisional agreement on the AI Act \cite{eu_ai_act_2023}, China's measures to regulate AI usage \cite{China_AI_Policy_2023}, and the US's executive order on AI governance \cite{WhiteHouse_AI_ExecOrder_2023} reflect a global movement towards establishing legal frameworks to ensure responsible AI development and deployment. 
-The outcome of ongoing legal battles, such as the New York Times' lawsuit against OpenAI \cite{Grynbaum_Mac_2023_Times_Sues_OpenAI}, may have far-reaching implications for the future of AI regulation and its impact on innovation and deployment. 
-As we look towards the future, the most impactful developments in AI may well be centered around governance, middleware, and data pipelines that make generative AI more trustworthy and accessible. 
-With a more refined understanding of AI capabilities, businesses are now focusing on integrating AI tools into existing services to enhance rather than revolutionize established processes. 
-The challenge lies in striking a balance between leveraging the unique opportunities presented by AI while managing realistic expectations about its role in reshaping business practices.}
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.9\textwidth]{models.png}
-  \caption{Progression of generative modeling techniques from 2016 to 2022, showcasing the evolution and scaling of model parameters in GAN, Transformer, and Diffusion methods, each color-coded by method type.\cite{bie2023renaissance}}
-\end{figure}
-
-\paragraph{In the field of image generation, models like MidJourney, DALL-E 3, and Stable Diffusion 3 have been at the forefront. 
-Video generation has also seen substantial growth, with platforms such as Runway Gen-2, Pika, and Sora pushing the boundaries of what can be achieved in AI-generated cinematography. 
-In the audio domain, AI's capability to replicate and generate human-like speech has made significant strides with models such as ElevenLabs, Speechify, and Whisper. 
-These tools have not only democratized voice-over and audio content production but have also raised the bar for what can be expected from synthetic speech in terms of clarity, emotion, and expressiveness. 
-The geographical landscape of AI development is also noteworthy, with the United States and China emerging as the primary incubators of AI innovation. 
-Leading internet companies in these countries, including tech giants like Google, Meta, Alibaba, and ByteDance, have been instrumental in driving forward the development of AI technologies. 
-Their investments have resulted in state-of-the-art models that, while most of them are not open-source.}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Material and Methods}
-\label{material-and-methods}
+\chapter{Methods}
+\label{methods}
 
 \section{Workflow}
 \paragraph{The workflow of this video-creating project is shown below: \\
@@ -610,6 +610,64 @@ Their investments have resulted in state-of-the-art models that, while most of t
 5: Add voice over, music and sound effects. \\
 6: Use Topaz Video AI to improve the video quality like (change the frame rate from 60 FPS to 120 FPS)
 6: Publish the video on social media. (like YouTube and Instagram)\\}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[node distance=2cm, auto]
+    % Define the style for the nodes
+    \tikzstyle{block} = [rectangle, draw, fill=blue!20, text width=10em, text centered, rounded corners, minimum height=4em]
+    \tikzstyle{line} = [draw, -latex', thick]
+    
+    % Place the nodes
+    \node [block] (storyline) {Write the storyline with ChatGPT};
+    \node [block, below of=storyline] (imagegen) {Generate images with MidJourney};
+    \node [block, below of=imagegen] (videogen) {Create videos with Runway Gen-2};
+    \node [block, below of=videogen] (voiceover) {Add voice over with ElevenLabs};
+    \node [block, below of=voiceover] (videoedit) {Edit and combine clips on CapCut};
+    \node [block, below of=videoedit] (videoquality) {Enhance video quality with Topaz AI};
+    \node [block, below of=videoquality] (publish) {Publish the video on social media};
+    
+    % Connect the nodes with paths
+    \path [line] (storyline) -- (imagegen);
+    \path [line] (imagegen) -- (videogen);
+    \path [line] (videogen) -- (voiceover);
+    \path [line] (voiceover) -- (videoedit);
+    \path [line] (videoedit) -- (videoquality);
+    \path [line] (videoquality) -- (publish);
+\end{tikzpicture}
+\caption{Workflow of the video-creating project}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[node distance=5cm, auto]
+    % Define the style for the nodes
+    \tikzstyle{main} = [circle, thick, draw, fill=blue!30, text width=3em, text centered, minimum height=3em]
+    \tikzstyle{line} = [draw, -latex', thick]
+    
+    % Place the nodes
+    \node [main] (text) {Text};
+    \node [main, right of=text] (image) {Image};
+    \node [main, below of=image] (video) {Video};
+    \node [main, left of=video] (audio) {Audio};
+  
+    % Connect the nodes with paths
+    \path [line] (text) -- node[above] {MidJourney} (image);
+    \path [line] (image) -- (text);
+    \path [line] (text) -- (audio);
+    \path [line] (text) -- node[sloped, above] {Runway} (video);
+    \path [line] (image) -- node[right] {Runway} (video);
+    \path [line] (audio) -- node[above] {Voice-over} (video);
+    \path [line] (audio) -- node[left] {ElevenLabs} (text);
+
+    \path [line] (text) edge [loop above] node {ChatGPT} (text);
+    \path [line] (image) edge [loop above] node {Topaz Photo AI} (image);
+    \path [line] (video) edge [loop below] node {Topaz Video AI} (video);
+    \path [line] (audio) edge [loop below] node {Whisper} (audio);
+  
+\end{tikzpicture}
+\caption{Relationships in a Multimodal System}
+\end{figure}
 
 
 \section{ChatGPT}
@@ -666,7 +724,7 @@ Their investments have resulted in state-of-the-art models that, while most of t
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Results}
+\chapter{Results \& Discussion}
 \label{results}
 \section{Overview of Project Outcome}
 
@@ -718,8 +776,6 @@ Their investments have resulted in state-of-the-art models that, while most of t
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Discussion}
-\label{discussion}
 \paragraph{The roadmap for future development in AI's application to image, video, and now sound generation encapsulates a journey from foundational models to the cusp of groundbreaking innovations, illustrating a trajectory that is as diverse as it is profound. This progression can be dissected into several key stages, each marking significant milestones in the evolution of AI technologies and their applications.}
 
 \section{Foundational Models}
@@ -739,8 +795,6 @@ Their investments have resulted in state-of-the-art models that, while most of t
 
 \section{Future Directions}
 \paragraph{Looking ahead, the trajectory of Artificial Intelligence (AI) development is increasingly oriented towards the integration and unification of diverse AI methodologies to forge comprehensive and holistic solutions, a direction that promises to significantly broaden the scope and impact of AI applications. This forward-thinking approach aims not only to enhance existing capabilities in image and video synthesis but also to extend AI's prowess into the realms of 3D object generation and the simulation of functional machines, thereby pushing the boundaries of digital creation into new dimensions. Moreover, the exploration of advanced applications in sound generation by leveraging AI techniques is set to further dissolve the distinctions between AI-generated content and the tangible reality, offering experiences that are more immersive and indistinguishable from the natural world. Such unified AI systems, which amalgamate various techniques ranging from Generative Adversarial Networks (GANs) and Diffusion Models to Neural Cellular Automata, are poised to transform a wide array of fields including entertainment, education, healthcare, and manufacturing. By enabling the creation of dynamic, interactive, and highly realistic digital environments and objects, this integrative approach underscores the potential of AI to not just augment but fundamentally redefine the landscape of digital content creation. The envisioned future of AI, as a confluence of disparate techniques yielding seamlessly integrated solutions, heralds a new era of innovation where the lines between digital and physical realities are increasingly blurred, fostering unprecedented levels of creativity and interaction \cite{esser2022towards}.}
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

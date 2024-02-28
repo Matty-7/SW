@@ -294,6 +294,73 @@ Their investments have resulted in state-of-the-art models that, while most of t
 
 \chapter{Related Work}
 
+\section{AIGC in Text}
+
+\subsection{Reinforcement Learning from Human Feedback (RLHF)}
+
+GPT-4 model emphasizes using Reinforcement Learning from Human Feedback (RLHF) \cite{christiano2017deep} to align the model's outputs with human preferences. 
+
+The objective of RLHF is to optimize the policy $\pi$ to maximize the expected reward, which is indicative of the alignment between generated outputs and human preferences:
+
+\begin{equation}
+\max_{\pi} \mathbb{E}_{\tau \sim \pi} [R(\tau)]
+\end{equation}
+
+where $\tau = (s_0, a_0, ..., s_{T-1}, a_{T-1}, s_T)$ represents a trajectory of states and actions, and $R(\tau)$ is the cumulative reward for trajectory $\tau$.
+
+Human feedback is used to train a reward model $R_{\theta}(s,a)$, parameterized by $\theta$, which estimates the reward of taking action $a$ in state $s$:
+
+\begin{equation}
+R_{\theta}(s,a) = \text{HumanFeedback}(s, a)
+\end{equation}
+
+The policy $\pi_{\phi}$, parameterized by $\phi$, is optimized using the reward model as a surrogate for the true human feedback:
+
+\begin{equation}
+\phi^{*} = \arg\max_{\phi} \mathbb{E}_{\tau \sim \pi_{\phi}} [R_{\theta}(s,a)]
+\end{equation}
+
+Typically, Proximal Policy Optimization (PPO) or a similar algorithm is employed for policy optimization, ensuring stable and efficient learning:
+
+\begin{equation}
+L(\phi) = \hat{\mathbb{E}}_t \left[ \min(r_t(\phi) \hat{A}_t, \text{clip}(r_t(\phi), 1-\epsilon, 1+\epsilon) \hat{A}_t) \right]
+\end{equation}
+
+where $r_t(\phi) = \frac{\pi_{\phi}(a_t|s_t)}{\pi_{\phi_{old}}(a_t|s_t)}$ is the probability ratio, $\hat{A}_t$ is the advantage estimate at time $t$, and $\epsilon$ is a hyperparameter that controls clipping to reduce variance.
+
+All the processes above indicate how RLHF is mathematically conceptualized in the context of improving GPT models, focusing on optimizing a policy model to generate text that aligns with human preferences based on feedback.
+
+\subsection{Transfer Learning}
+Given a pretrained model \(M\) with parameters \(\theta\), transfer learning \cite{torrey2010transfer} adjusts \(\theta\) to new parameters \(\theta'\) to better perform on a target task \(T\) with a smaller dataset \(D_{T}\). The objective is to minimize the loss function \(\mathcal{L}_{T}\) on \(D_{T}\), leveraging knowledge from the source task \(S\).
+
+The optimization problem can be formalized as:
+\[
+\theta' = \arg\min_{\theta} \mathcal{L}_{T}(f_{\theta}(D_{T})),
+\]
+where \(f_{\theta}\) denotes the model's prediction function parameterized by \(\theta\).
+
+The loss function \(\mathcal{L}_{T}\) often takes the form of cross-entropy in text-based tasks:
+\[
+\mathcal{L}_{T} = -\frac{1}{N}\sum_{i=1}^{N}\sum_{c=1}^{C} y_{ic}\log(p_{ic}),
+\]
+where \(N\) is the number of samples in \(D_{T}\), \(C\) is the number of classes, \(y_{ic}\) is a binary indicator of whether class \(c\) is the correct classification for observation \(i\), and \(p_{ic}\) is the predicted probability of observation \(i\) being in class \(c\).
+
+For fine-tuning, we update \(\theta\) with a learning rate \(\alpha\) specific to the target task:
+\[
+\theta' = \theta - \alpha \nabla_{\theta} \mathcal{L}_{T}(f_{\theta}(D_{T})).
+\]
+
+To prevent catastrophic forgetting, a regularization term \(\mathcal{R}(\theta)\) may be added, balancing the new task learning and retention of previously learned knowledge:
+\[
+\theta' = \arg\min_{\theta} \mathcal{L}_{T}(f_{\theta}(D_{T})) + \lambda \mathcal{R}(\theta),
+\]
+where \(\lambda\) controls the importance of the regularization term, and \(\mathcal{R}(\theta)\) can be defined as the difference between the new parameters \(\theta'\) and the original pretrained parameters \(\theta\), such as in elastic weight consolidation (EWC):
+\[
+\mathcal{R}(\theta) = \sum_{i} \frac{1}{2} \Omega_{i} (\theta_{i} - \theta_{i}^{*})^2,
+\]
+with \(\Omega_{i}\) representing the importance of parameter \(i\) for the tasks learned during pretraining and \(\theta^{*}\) denoting the parameters after pretraining.
+
+
 \section{AIGC in Image and Video}
 
 \subsection{Variational Autoencoders (VAE)}
@@ -660,43 +727,9 @@ These core processes involved in audio modification, demonstrating how AI algori
 \caption{Relationships in a Multimodal System}
 \end{figure}
 
-\section{ChatGPT}
-
-GPT-4 model emphasizes using Reinforcement Learning from Human Feedback (RLHF) to align the model's outputs with human preferences. 
-
-The objective of RLHF is to optimize the policy $\pi$ to maximize the expected reward, which is indicative of the alignment between generated outputs and human preferences:
-
-\begin{equation}
-\max_{\pi} \mathbb{E}_{\tau \sim \pi} [R(\tau)]
-\end{equation}
-
-where $\tau = (s_0, a_0, ..., s_{T-1}, a_{T-1}, s_T)$ represents a trajectory of states and actions, and $R(\tau)$ is the cumulative reward for trajectory $\tau$.
-
-Human feedback is used to train a reward model $R_{\theta}(s,a)$, parameterized by $\theta$, which estimates the reward of taking action $a$ in state $s$:
-
-\begin{equation}
-R_{\theta}(s,a) = \text{HumanFeedback}(s, a)
-\end{equation}
-
-The policy $\pi_{\phi}$, parameterized by $\phi$, is optimized using the reward model as a surrogate for the true human feedback:
-
-\begin{equation}
-\phi^{*} = \arg\max_{\phi} \mathbb{E}_{\tau \sim \pi_{\phi}} [R_{\theta}(s,a)]
-\end{equation}
-
-Typically, Proximal Policy Optimization (PPO) or a similar algorithm is employed for policy optimization, ensuring stable and efficient learning:
-
-\begin{equation}
-L(\phi) = \hat{\mathbb{E}}_t \left[ \min(r_t(\phi) \hat{A}_t, \text{clip}(r_t(\phi), 1-\epsilon, 1+\epsilon) \hat{A}_t) \right]
-\end{equation}
-
-where $r_t(\phi) = \frac{\pi_{\phi}(a_t|s_t)}{\pi_{\phi_{old}}(a_t|s_t)}$ is the probability ratio, $\hat{A}_t$ is the advantage estimate at time $t$, and $\epsilon$ is a hyperparameter that controls clipping to reduce variance.
-
-All the processes above indicate how RLHF is mathematically conceptualized in the context of improving GPT models, focusing on optimizing a policy model to generate text that aligns with human preferences based on feedback.
-
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=\textwidth]{ChatGPT.png}
+  \includegraphics[width=0.9\textwidth]{ChatGPT.png}
   \caption{Using ChatGPT to generate vivid description prompt and prepare for creating the image stills.}
 \end{figure}
 
@@ -705,7 +738,7 @@ All the processes above indicate how RLHF is mathematically conceptualized in th
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=\textwidth]{mj.png}
+  \includegraphics[width=0.9\textwidth]{mj.png}
   \caption{Using ChatGPT's prompts to generate good quality image stills using MidJourney, and then upload them as the key framesto Runway Gen-2 for video clip generation.}
 \end{figure}
 

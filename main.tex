@@ -292,9 +292,69 @@ The geographical landscape of AI development is also noteworthy, with the United
 Leading internet companies in these countries, including tech giants like Google, Meta, Alibaba, and ByteDance, have been instrumental in driving forward the development of AI technologies. 
 Their investments have resulted in state-of-the-art models that, while most of them are not open-source.
 
-\chapter{Related Work}
+\chapter{Methods}
 
-\section{AIGC in Text}
+\section{Workflow}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[node distance=2cm, auto]
+    % Define the style for the nodes
+    \tikzstyle{block} = [rectangle, draw, fill=blue!20, text width=10em, text centered, rounded corners, minimum height=4em]
+    \tikzstyle{line} = [draw, -latex', thick]
+    
+    % Place the nodes
+    \node [block] (storyline) {Write the storyline with ChatGPT};
+    \node [block, below of=storyline] (imagegen) {Generate images with MidJourney};
+    \node [block, below of=imagegen] (videogen) {Create videos with Runway Gen-2};
+    \node [block, below of=videogen] (voiceover) {Add voice-over with ElevenLabs};
+    \node [block, below of=voiceover] (videoedit) {Edit and combine clips on CapCut};
+    \node [block, below of=videoedit] (videoquality) {Enhance video quality with Topaz AI};
+    \node [block, below of=videoquality] (publish) {Publish the video on social media};
+    
+    % Connect the nodes with paths
+    \path [line] (storyline) -- (imagegen);
+    \path [line] (imagegen) -- (videogen);
+    \path [line] (videogen) -- (voiceover);
+    \path [line] (voiceover) -- (videoedit);
+    \path [line] (videoedit) -- (videoquality);
+    \path [line] (videoquality) -- (publish);
+\end{tikzpicture}
+\caption{Workflow of the video-creating project}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[node distance=5cm, auto]
+    % Define the style for the nodes
+    \tikzstyle{main} = [circle, thick, draw, fill=blue!30, text width=3em, text centered, minimum height=5em]
+    \tikzstyle{line} = [draw, -latex', thick]
+    
+    % Place the nodes
+    \node [main] (text) {Text};
+    \node [main, right of=text] (image) {Image};
+    \node [main, below of=image] (video) {Video};
+    \node [main, left of=video] (audio) {Audio};
+  
+    % Connect the nodes with paths
+    \path [line] (text) -- node[above] {MidJourney} (image);
+    \path [line] (image) -- (text);
+    \path [line] (text) -- (audio);
+    \path [line] (text) -- node[sloped, above] {Runway} (video);
+    \path [line] (image) -- node[right] {Runway} (video);
+    \path [line] (audio) -- node[above] {Voice-over} (video);
+    \path [line] (audio) -- node[left] {ElevenLabs} (text);
+
+    \path [line] (text) edge [loop above] node {ChatGPT} (text);
+    \path [line] (image) edge [loop above] node {Topaz Photo AI} (image);
+    \path [line] (video) edge [loop below] node {Topaz Video AI} (video);
+    \path [line] (audio) edge [loop below] node {Whisper} (audio);
+  
+\end{tikzpicture}
+\caption{Relationships in a Multimodal System}
+\end{figure}
+
+\section{AIGC in Text (ChatGPT)}
 
 \subsection{Reinforcement Learning from Human Feedback (RLHF)}
 
@@ -360,8 +420,9 @@ where \(\lambda\) controls the importance of the regularization term, and \(\mat
 \]
 with \(\Omega_{i}\) representing the importance of parameter \(i\) for the tasks learned during pretraining and \(\theta^{*}\) denoting the parameters after pretraining.
 
+Thus, transfer learning efficiently leverages pre-existing knowledge, enabling models to adapt to new tasks with remarkable efficiency and minimal data, bridging the gap between general and specific task performances.
 
-\section{AIGC in Image and Video}
+\section{AIGC in Image and Video (MidJourney and Runway)}
 
 \subsection{Variational Autoencoders (VAE)}
 
@@ -459,36 +520,7 @@ The training of diffusion models, as outlined in Algorithm 1, involves adjusting
 
 Diffusion models have been applied to a variety of tasks beyond image generation, such as super-resolution and inpainting, demonstrating their versatility and potential in numerous domains of generative modeling.
 
-\subsection{Mitigating Biases in Generative Systems}
-
-The development of generative text-to-image models has brought forth the challenge of mitigating social biases that these models may perpetuate. 
-Notably, biases towards certain genders or skin tones have been observed in the outcomes of these image generation models. 
-To offset this, a novel approach has been proposed \cite{esposito2023mitigating}, which involves fine-tuning text-to-image models on synthetic data constructed from diverse text prompts. 
-These prompts include a variety of perceived skin tones, genders, ethnicities, professions, and age groups, resulting in a more inclusive synthetic dataset. 
-Fine-tuning models with this diverse data has shown to substantially improve group fairness metrics, reducing biases by significant margins.
-The process begins with the construction of text prompts through multiplicative combinations of various social qualifiers, which are then used to synthesize images that showcase a broad spectrum of human diversity. 
-This method has proven to be effective, with diversity-finetuned models not only generating content that is more representative of darker skin tones and female genders but also improving overall fairness in model outcomes.
-
-Furthermore, the evaluation of biases in text-to-image models is formulated within a group fairness framework, which assesses whether model outputs unfairly favor certain subgroups over others. 
-By adopting this framework, the research moves beyond merely measuring bias to actively promoting fairness in AI-generated content. 
-This is complemented by user studies that validate the absence of undesirable visual artifacts in finetuned models' outputs.
-This approach not only showcases the capability to generate more inclusive content but also highlights the potential for AI to serve as a tool for social change. 
-By actively mitigating biases, AI models can foster digital environments that are reflective of a wide spectrum of human experiences and perspectives, thereby promoting inclusivity and diversity.
-Future work need to address additional forms of biases and explore the applicability of mitigative strategies in video models, thereby extending the principles of fairness and inclusivity to broader multimedia contexts.
-
-\subsection{Computational Efficiency and Resolution Enhancement in Visual Processing}
-
-In the rapidly evolving domain of image and video processing, implementations such as Skip-Convolutions \cite{habibian2021skip} have significantly improved computational efficiency, enabling high-quality visual outputs without compromising on speed or fidelity. 
-These innovative methods bypass traditional linear processing pathways, allowing for selective data transmission across layers, thereby reducing the computational load while preserving or even enhancing the quality of video content. 
-This technique proves especially beneficial for tasks that demand real-time processing, including live streaming, augmented reality (AR) applications, and instant video communication platforms, by accelerating video editing and enhancement operations. 
-Furthermore, enhancing the resolution of images and videos has become increasingly crucial, with technologies like AI-based upscaling playing a pivotal role. 
-AI upscaling techniques intelligently increase the resolution of digital media, ensuring that even content produced at lower resolutions can meet the current standards expected by consumers, without the need for extensive computational resources. \cite{ignatov2021real}
-By integrating such approaches, Skip-Convolutions, along with AI upscaling, address the growing demand for premium video content that can be swiftly produced, edited, and shared, marking a shift towards more efficient content creation paradigms. 
-Consequently, these advancements not only elevate the technical capabilities of video processing software but also substantially contribute to the broader field of digital media, where speed, efficiency, and enhanced resolution are extremely important. 
-This progress highlights the ongoing necessity for innovation in computational methodologies to navigate the challenges presented by the increasing demand for multiple video content across various digital platforms.
-
-
-\section{AIGC in Sound}
+\section{AIGC in Sound (ElevenLabs)}
 
 \subsection{Recurrent Neural Networks (RNN)}
 
@@ -586,6 +618,26 @@ P(y_t | y_{<t}) = \text{softmax}(y_{t-1}W + b)
 \end{equation}
 The output at each timestep $t$, $y_t$, is predicted based on the previous outputs $y_{<t}$, where $W$ and $b$ are the weights and bias in the final linear layer that projects the decoder output to the space of possible audio samples. $P(y_t | y_{<t})$ represents the probability distribution over possible next samples given the previous samples.
 
+\subsection*{Training and Fine-tuning}
+
+ChatGPT is trained on a diverse and extensive dataset, encompassing a wide range of internet text. The training process involves two main phases: pre-training and fine-tuning.
+
+During pre-training, the model learns to predict the next word in a sentence given the previous words, using a masked language modeling objective:
+
+\begin{equation}
+L_{\text{MLM}} = -\sum_{i \in M} \log P(w_i | w_{\setminus i}; \Theta)
+\end{equation}
+
+where $M$ denotes the set of masked positions, $w_i$ is the word at position $i$, $w_{\setminus i}$ represents the sequence without the word at position $i$, and $\Theta$ are the model parameters.
+
+Fine-tuning adjusts the pre-trained model to specific tasks or datasets. This phase enhances the model's performance on tasks such as conversational responses, sentiment analysis, and text summarization:
+
+\begin{equation}
+L_{\text{task}} = \sum_{(x, y) \in D_{\text{task}}} \log P(y | x; \Theta')
+\end{equation}
+
+where $D_{\text{task}}$ is the task-specific dataset, $(x, y)$ are the input-output pairs, and $\Theta'$ are the fine-tuned model parameters.
+
 By training on sequences of audio samples, autoregressive Transformers learn to generate new sound sequences sample by sample, offering a powerful framework for high-quality sound synthesis, including music composition and speech generation, with the ability to capture the long-range dependencies characteristic of audio signals.
 
 \subsection{Voice Cloning \& Text-to-Speech (TTS)}
@@ -664,68 +716,10 @@ These core processes involved in audio modification, demonstrating how AI algori
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Methods}
-\label{methods}
+\section{ChatGPT}
 
-\section{Workflow}
+ChatGPT, built upon the Transformer architecture, utilizes a combination of self-attention mechanisms and feed-forward neural networks to process and generate text. The Transformer model is defined as follows:
 
-\begin{figure}[H]
-\centering
-\begin{tikzpicture}[node distance=2cm, auto]
-    % Define the style for the nodes
-    \tikzstyle{block} = [rectangle, draw, fill=blue!20, text width=10em, text centered, rounded corners, minimum height=4em]
-    \tikzstyle{line} = [draw, -latex', thick]
-    
-    % Place the nodes
-    \node [block] (storyline) {Write the storyline with ChatGPT};
-    \node [block, below of=storyline] (imagegen) {Generate images with MidJourney};
-    \node [block, below of=imagegen] (videogen) {Create videos with Runway Gen-2};
-    \node [block, below of=videogen] (voiceover) {Add voice-over with ElevenLabs};
-    \node [block, below of=voiceover] (videoedit) {Edit and combine clips on CapCut};
-    \node [block, below of=videoedit] (videoquality) {Enhance video quality with Topaz AI};
-    \node [block, below of=videoquality] (publish) {Publish the video on social media};
-    
-    % Connect the nodes with paths
-    \path [line] (storyline) -- (imagegen);
-    \path [line] (imagegen) -- (videogen);
-    \path [line] (videogen) -- (voiceover);
-    \path [line] (voiceover) -- (videoedit);
-    \path [line] (videoedit) -- (videoquality);
-    \path [line] (videoquality) -- (publish);
-\end{tikzpicture}
-\caption{Workflow of the video-creating project}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\begin{tikzpicture}[node distance=5cm, auto]
-    % Define the style for the nodes
-    \tikzstyle{main} = [circle, thick, draw, fill=blue!30, text width=3em, text centered, minimum height=5em]
-    \tikzstyle{line} = [draw, -latex', thick]
-    
-    % Place the nodes
-    \node [main] (text) {Text};
-    \node [main, right of=text] (image) {Image};
-    \node [main, below of=image] (video) {Video};
-    \node [main, left of=video] (audio) {Audio};
-  
-    % Connect the nodes with paths
-    \path [line] (text) -- node[above] {MidJourney} (image);
-    \path [line] (image) -- (text);
-    \path [line] (text) -- (audio);
-    \path [line] (text) -- node[sloped, above] {Runway} (video);
-    \path [line] (image) -- node[right] {Runway} (video);
-    \path [line] (audio) -- node[above] {Voice-over} (video);
-    \path [line] (audio) -- node[left] {ElevenLabs} (text);
-
-    \path [line] (text) edge [loop above] node {ChatGPT} (text);
-    \path [line] (image) edge [loop above] node {Topaz Photo AI} (image);
-    \path [line] (video) edge [loop below] node {Topaz Video AI} (video);
-    \path [line] (audio) edge [loop below] node {Whisper} (audio);
-  
-\end{tikzpicture}
-\caption{Relationships in a Multimodal System}
-\end{figure}
 
 \begin{figure}[htbp]
   \centering
@@ -739,7 +733,7 @@ These core processes involved in audio modification, demonstrating how AI algori
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.9\textwidth]{mj.png}
-  \caption{Using ChatGPT's prompts to generate good quality image stills using MidJourney, and then upload them as the key framesto Runway Gen-2 for video clip generation.}
+  \caption{Using ChatGPT's prompts to generate good quality image stills using MidJourney, and then upload them as the key frames to Runway Gen-2 for video clip generation.}
 \end{figure}
 
 \section{Runway Gen-2}
@@ -747,7 +741,7 @@ These core processes involved in audio modification, demonstrating how AI algori
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=\textwidth]{Runway.png}
+  \includegraphics[width=0.9\textwidth]{Runway.png}
   \caption{Using the "Image + Text" mode in Runway Gen-2 to generate the video, with the help of motion brush function to control how the characters move}
 \end{figure}
 
@@ -756,13 +750,19 @@ These core processes involved in audio modification, demonstrating how AI algori
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=\textwidth]{Voice Cloning.png}
+  \includegraphics[width=0.9\textwidth]{Voice Cloning.png}
   \caption{Using Professinal Voice Cloning from ElevenLabs to apply text to speech and add the voice over to the video}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=\textwidth]{ElevenLabs.png}
+  \includegraphics[width=0.9\textwidth]{Voice Cloning2.png}
+  \caption{Using Professinal Voice Cloning from ElevenLabs to apply text to speech and add the voice over to the video}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.9\textwidth]{ElevenLabs.png}
   \caption{Using my clone voice to generate the voice over for the video, I recorded the training set by reading one chapter from the book Elon Musk, the audio file is 14 mins.}
 \end{figure}
 
@@ -771,13 +771,13 @@ These core processes involved in audio modification, demonstrating how AI algori
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=\textwidth]{TopazPhoto.png}
+  \includegraphics[width=0.9\textwidth]{TopazPhoto.png}
   \caption{Using Topaz AI to upscale and improve the video quality, like changing the frame rate from 60 FPS to 120 FPS, removing noise, and sharpen the subject.}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Results \& Discussion}
+\chapter{Results}
 \label{results}
 \section{Overview of Project Outcome}
 
@@ -848,6 +848,38 @@ These core processes involved in audio modification, demonstrating how AI algori
 
 \section{Future Directions}
 \paragraph{Looking ahead, the trajectory of Artificial Intelligence (AI) development is increasingly oriented towards the integration and unification of diverse AI methodologies to forge comprehensive and holistic solutions, a direction that promises to significantly broaden the scope and impact of AI applications. This forward-thinking approach aims not only to enhance existing capabilities in image and video synthesis but also to extend AI's prowess into the realms of 3D object generation and the simulation of functional machines, thereby pushing the boundaries of digital creation into new dimensions. Moreover, the exploration of advanced applications in sound generation by leveraging AI techniques is set to further dissolve the distinctions between AI-generated content and the tangible reality, offering experiences that are more immersive and indistinguishable from the natural world. Such unified AI systems, which amalgamate various techniques ranging from Generative Adversarial Networks (GANs) and Diffusion Models to Neural Cellular Automata, are poised to transform a wide array of fields including entertainment, education, healthcare, and manufacturing. By enabling the creation of dynamic, interactive, and highly realistic digital environments and objects, this integrative approach underscores the potential of AI to not just augment but fundamentally redefine the landscape of digital content creation. The envisioned future of AI, as a confluence of disparate techniques yielding seamlessly integrated solutions, heralds a new era of innovation where the lines between digital and physical realities are increasingly blurred, fostering unprecedented levels of creativity and interaction \cite{esser2022towards}.}
+
+\chapter{Discussion}
+\label{discussion}
+
+\section{Mitigating Biases in Generative Systems}
+
+The development of generative text-to-image models has brought forth the challenge of mitigating social biases that these models may perpetuate. 
+Notably, biases towards certain genders or skin tones have been observed in the outcomes of these image generation models. 
+To offset this, a novel approach has been proposed \cite{esposito2023mitigating}, which involves fine-tuning text-to-image models on synthetic data constructed from diverse text prompts. 
+These prompts include a variety of perceived skin tones, genders, ethnicities, professions, and age groups, resulting in a more inclusive synthetic dataset. 
+Fine-tuning models with this diverse data has shown to substantially improve group fairness metrics, reducing biases by significant margins.
+The process begins with the construction of text prompts through multiplicative combinations of various social qualifiers, which are then used to synthesize images that showcase a broad spectrum of human diversity. 
+This method has proven to be effective, with diversity-finetuned models not only generating content that is more representative of darker skin tones and female genders but also improving overall fairness in model outcomes.
+
+Furthermore, the evaluation of biases in text-to-image models is formulated within a group fairness framework, which assesses whether model outputs unfairly favor certain subgroups over others. 
+By adopting this framework, the research moves beyond merely measuring bias to actively promoting fairness in AI-generated content. 
+This is complemented by user studies that validate the absence of undesirable visual artifacts in finetuned models' outputs.
+This approach not only showcases the capability to generate more inclusive content but also highlights the potential for AI to serve as a tool for social change. 
+By actively mitigating biases, AI models can foster digital environments that are reflective of a wide spectrum of human experiences and perspectives, thereby promoting inclusivity and diversity.
+Future work need to address additional forms of biases and explore the applicability of mitigative strategies in video models, thereby extending the principles of fairness and inclusivity to broader multimedia contexts.
+
+\section{Computational Efficiency and Resolution Enhancement in Visual Processing}
+
+In the rapidly evolving domain of image and video processing, implementations such as Skip-Convolutions \cite{habibian2021skip} have significantly improved computational efficiency, enabling high-quality visual outputs without compromising on speed or fidelity. 
+These innovative methods bypass traditional linear processing pathways, allowing for selective data transmission across layers, thereby reducing the computational load while preserving or even enhancing the quality of video content. 
+This technique proves especially beneficial for tasks that demand real-time processing, including live streaming, augmented reality (AR) applications, and instant video communication platforms, by accelerating video editing and enhancement operations. 
+Furthermore, enhancing the resolution of images and videos has become increasingly crucial, with technologies like AI-based upscaling playing a pivotal role. 
+AI upscaling techniques intelligently increase the resolution of digital media, ensuring that even content produced at lower resolutions can meet the current standards expected by consumers, without the need for extensive computational resources. \cite{ignatov2021real}
+By integrating such approaches, Skip-Convolutions, along with AI upscaling, address the growing demand for premium video content that can be swiftly produced, edited, and shared, marking a shift towards more efficient content creation paradigms. 
+Consequently, these advancements not only elevate the technical capabilities of video processing software but also substantially contribute to the broader field of digital media, where speed, efficiency, and enhanced resolution are extremely important. 
+This progress highlights the ongoing necessity for innovation in computational methodologies to navigate the challenges presented by the increasing demand for multiple video content across various digital platforms.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

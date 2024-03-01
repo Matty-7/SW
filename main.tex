@@ -162,13 +162,20 @@ Marcia B. France, Dean of Undergraduate Studies
 \label{acknowledgements}
 \addcontentsline{toc}{chapter}{Acknowledgements}
 
-\instructions{I would like to express my sincere gratitude to my SW mentor, Prof. Peng Sun, 
-for his invaluable guidance throughout this research. 
-Also, I am grateful to the other members of the SW team for their support and guidance. 
-In the end, I would like to thank the SW office for their support and guidance, 
-and also extend my thanks to the generous funding provided by SW grants, ¥1800, which made the experiential learning part possible. 
-Finally, I would like to thank my family and friends for their support and encouragement. 
-}
+I would like to express my sincere gratitude to my SW mentor, Prof. Peng Sun, 
+for his invaluable guidance, patience, and insight throughout the duration of this project.
+His expertise and encouragement were instrumental in navigating the challenges encountered during this journey. 
+I also extend my gratitude to Xiaoqi Su in the SW team, whose support and advice enriched my research experience significantly.
+
+Special thanks to the SW office for their support and SW grants, amounting to ¥1800, which was crucial for the experiential learning component of my project. 
+This financial support was essential in realizing the objectives of my research, and I am deeply appreciative of their generosity.
+
+Additionally, I wish to express my thanks to my family and friends for their encouragement and belief in my abilities. 
+Their constant motivation and the confidence they placed in me were the foundation upon which I built my perseverance and dedication to this project.
+
+Lastly, I acknowledge the contributions of the broader academic and research community whose works have provided the inspiration for this study. 
+Their efforts in the field of AI have paved the way for emerging researchers to explore new frontiers and contribute to the ongoing dialogue in this dynamic and ever-evolving domain.
+
 
 \newpage
 
@@ -267,7 +274,7 @@ This approach is particularly relevant in sectors like healthcare, legal, and fi
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.9\textwidth]{products.png}
+  \includegraphics[width=0.8\textwidth]{products.png}
   \caption{Comparative analysis of various AI video product offerings as of December 2023, detailing generation types, maximum length of generated clips, and additional features such as camera and motion control, showcasing the diversity and capabilities within the current market landscape.\cite{a16zAI2023}}
 \end{figure}
 
@@ -280,7 +287,7 @@ The challenge lies in striking a balance between leveraging the unique opportuni
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.9\textwidth]{models.png}
+  \includegraphics[width=0.8\textwidth]{models.png}
   \caption{Progression of generative modeling techniques from 2016 to 2022, showcasing the evolution and scaling of model parameters in GAN, Transformer, and Diffusion methods, each color-coded by method type.\cite{bie2023renaissance}}
 \end{figure}
 
@@ -363,7 +370,7 @@ GPT-4 model emphasizes using Reinforcement Learning from Human Feedback (RLHF) \
 The objective of RLHF is to optimize the policy $\pi$ to maximize the expected reward, which is indicative of the alignment between generated outputs and human preferences:
 
 \begin{equation}
-\max_{\pi} \mathbb{E}_{\tau \sim \pi} [R(\tau)]
+\max_{\pi} \mathbb{E}_{\tau \sim \pi} [R(\tau)],
 \end{equation}
 
 where $\tau = (s_0, a_0, ..., s_{T-1}, a_{T-1}, s_T)$ represents a trajectory of states and actions, and $R(\tau)$ is the cumulative reward for trajectory $\tau$.
@@ -371,24 +378,30 @@ where $\tau = (s_0, a_0, ..., s_{T-1}, a_{T-1}, s_T)$ represents a trajectory of
 Human feedback is used to train a reward model $R_{\theta}(s,a)$, parameterized by $\theta$, which estimates the reward of taking action $a$ in state $s$:
 
 \begin{equation}
-R_{\theta}(s,a) = \text{HumanFeedback}(s, a)
+R_{\theta}(s,a) = \text{HumanFeedback}(s, a).
 \end{equation}
 
 The policy $\pi_{\phi}$, parameterized by $\phi$, is optimized using the reward model as a surrogate for the true human feedback:
 
 \begin{equation}
-\phi^{*} = \arg\max_{\phi} \mathbb{E}_{\tau \sim \pi_{\phi}} [R_{\theta}(s,a)]
+\phi^{*} = \arg\max_{\phi} \mathbb{E}_{\tau \sim \pi_{\phi}} [R_{\theta}(s,a)].
 \end{equation}
 
 Typically, Proximal Policy Optimization (PPO) or a similar algorithm is employed for policy optimization, ensuring stable and efficient learning:
 
 \begin{equation}
-L(\phi) = \hat{\mathbb{E}}_t \left[ \min(r_t(\phi) \hat{A}_t, \text{clip}(r_t(\phi), 1-\epsilon, 1+\epsilon) \hat{A}_t) \right]
+L(\phi) = \hat{\mathbb{E}}_t \left[ \min(r_t(\phi) \hat{A}_t, \text{clip}(r_t(\phi), 1-\epsilon, 1+\epsilon) \hat{A}_t) \right],
 \end{equation}
 
 where $r_t(\phi) = \frac{\pi_{\phi}(a_t|s_t)}{\pi_{\phi_{old}}(a_t|s_t)}$ is the probability ratio, $\hat{A}_t$ is the advantage estimate at time $t$, and $\epsilon$ is a hyperparameter that controls clipping to reduce variance.
 
 All the processes above indicate how RLHF is mathematically conceptualized in the context of improving GPT models, focusing on optimizing a policy model to generate text that aligns with human preferences based on feedback.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{ChatGPT.png}
+  \caption{Using ChatGPT to generate vivid description prompt and prepare for creating the image stills.}
+\end{figure}
 
 \subsection{Transfer Learning}
 Given a pretrained model \(M\) with parameters \(\theta\), transfer learning \cite{torrey2010transfer} adjusts \(\theta\) to new parameters \(\theta'\) to better perform on a target task \(T\) with a smaller dataset \(D_{T}\). The objective is to minimize the loss function \(\mathcal{L}_{T}\) on \(D_{T}\), leveraging knowledge from the source task \(S\).
@@ -452,6 +465,12 @@ Furthermore, the ELBO can be decomposed into two terms: the first being the Kull
 
 Despite their advantages for generative tasks, VAEs have limitations, particularly for image generation. Directly sampling from the Gaussian distribution often results in blurred images. Moreover, there is an information loss when projecting the data to a lower-dimensional latent space, which affects the quality of the reconstruction. However, VAEs find extensive applications in feature extraction and dimensionality reduction, and they can be particularly effective when combined with other generative models such as Generative Adversarial Networks (GANs) or diffusion models.
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{mj.png}
+  \caption{Using ChatGPT's prompts to generate good quality image stills using MidJourney, and then upload them as the key frames to Runway Gen-2 for video clip generation.}
+\end{figure}
+
 \subsection{Generative Adversarial Networks (GAN)}
 
 Generative Adversarial Networks (GANs) represent a class of generative models that has significantly impacted the field of synthetic image generation. A GAN is composed of two distinct neural network models: a \textit{generator} ($G$) and a \textit{discriminator} ($D$). The generator attempts to produce data that is indistinguishable from genuine data, while the discriminator evaluates the authenticity of the data, distinguishing between actual and generated samples.
@@ -473,6 +492,12 @@ and the gradient descent step for $G$:
 for a minibatch of $m$ samples.
 
 GANs have been utilized to generate high-fidelity images, outperforming other generative models in visual quality. However, they often struggle with mode collapse -- a phenomenon where the generator produces a limited variety of outputs. Despite these challenges, GANs have shown impressive results in tasks beyond image generation, such as image super-resolution \cite{denton2015deep}and object detection \cite{goodfellow2014generative}.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{Runway.png}
+  \caption{Using the "Image + Text" mode in Runway Gen-2 to generate the video, with the help of motion brush function to control how the characters move}
+\end{figure}
 
 \subsection{Diffusion Models}
 
@@ -520,6 +545,12 @@ The training of diffusion models, as outlined in Algorithm 1, involves adjusting
 
 Diffusion models have been applied to a variety of tasks beyond image generation, such as super-resolution and inpainting, demonstrating their versatility and potential in numerous domains of generative modeling.
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{TopazPhoto.png}
+  \caption{Using Topaz AI to upscale and improve the video quality, like changing the frame rate from 60 FPS to 120 FPS, removing noise, and sharpen the subject.}
+\end{figure}
+
 \section{AIGC in Sound (ElevenLabs)}
 
 \subsection{Recurrent Neural Networks (RNN)}
@@ -530,18 +561,30 @@ This characteristic is leveraged in sound synthesis to model the temporal depend
 
 The fundamental equation governing the operation of a basic RNN unit for sound synthesis can be described as follows:
 \begin{equation}
-h_t = \sigma(W_{ih} x_t + W_{hh} h_{t-1} + b_h)
+h_t = \sigma(W_{ih} x_t + W_{hh} h_{t-1} + b_h),
 \end{equation}
 where $h_t$ represents the hidden state at time $t$, $x_t$ is the input vector at time $t$, $W_{ih}$ and $W_{hh}$ are the weights of the input-to-hidden and hidden-to-hidden connections, respectively, $b_h$ is the bias, and $\sigma$ denotes the activation function, often a non-linear function such as the tanh or ReLU.
 
 The output of the RNN, which corresponds to the synthesized sound at each timestep, is computed as:
 \begin{equation}
-y_t = W_{ho} h_t + b_o
+y_t = W_{ho} h_t + b_o,
 \end{equation}
 where $y_t$ is the output vector at time $t$, $W_{ho}$ represents the weights of the hidden-to-output connections, and $b_o$ is the output bias. \\
 To enhance the model's capacity to handle long-term dependencies, which are prevalent in complex sound sequences, Long Short-Term Memory (LSTM) \cite{yu2019review} units or Gated Recurrent Units (GRUs) \cite{dey2017gate} can be incorporated. 
 These advanced variants of RNNs introduce mechanisms such as forget gates (in LSTMs) and update gates (in GRUs) that allow the network to selectively remember or forget information. 
 This capability significantly improves the network's ability to model sequences with long-range temporal dependencies, making it highly effective for tasks like sound synthesis where the coherence over time is crucial.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.6\textwidth]{Voice Cloning.png}
+  \caption{Using Professinal Voice Cloning from ElevenLabs to apply text to speech and add the voice over to the video}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.6\textwidth]{Voice Cloning2.png}
+  \caption{Using Professinal Voice Cloning from ElevenLabs to apply text to speech and add the voice over to the video}
+\end{figure}
 
 \subsection{Long Short-Term Memory (LSTM)}
 
@@ -549,31 +592,31 @@ Long Short-Term Memory (LSTM) units are a specific type of Recurrent Neural Netw
 
 Forget Gate:
 \begin{equation}
-f_t = \sigma(W_{f} \cdot [h_{t-1}, x_t] + b_f)
+f_t = \sigma(W_{f} \cdot [h_{t-1}, x_t] + b_f).
 \end{equation}
 It decides which information from the cell state is to be discarded. $f_t$ represents the forget gate's activation at time $t$. $\sigma$ is the sigmoid function, $W_{f}$ is the weight matrix for the forget gate, $h_{t-1}$ is the previous hidden state, $x_t$ is the current input, and $b_f$ is the bias.
 
 Input Gate:
 \begin{equation}
-i_t = \sigma(W_{i} \cdot [h_{t-1}, x_t] + b_i)
+i_t = \sigma(W_{i} \cdot [h_{t-1}, x_t] + b_i),
 \end{equation}
 \begin{equation}
-\tilde{C}_t = \tanh(W_{C} \cdot [h_{t-1}, x_t] + b_C)
+\tilde{C}_t = \tanh(W_{C} \cdot [h_{t-1}, x_t] + b_C).
 \end{equation}
 It controls the extent to which new information is stored in the cell state. $i_t$ is the input gate's activation, and $\tilde{C}_t$ is the candidate value for addition to the cell state. $W_{i}$ and $W_{C}$ are the weight matrices, and $b_i$ and $b_C$ are biases.
 
 Cell State Update:
 \begin{equation}
-C_t = f_t \ast C_{t-1} + i_t \ast \tilde{C}_t
+C_t = f_t \ast C_{t-1} + i_t \ast \tilde{C}_t.
 \end{equation}
 It is updated by removing information deemed unnecessary by the forget gate and adding new candidate values scaled by the input gate's activation.
 
 Output Gate:
 \begin{equation}
-o_t = \sigma(W_{o} \cdot [h_{t-1}, x_t] + b_o)
+o_t = \sigma(W_{o} \cdot [h_{t-1}, x_t] + b_o),
 \end{equation}
 \begin{equation}
-h_t = o_t \ast \tanh(C_t)
+h_t = o_t \ast \tanh(C_t).
 \end{equation}
 It determines the next hidden state $h_t$, which contains information about the current input and the previous state, to be passed to the network. The output gate's activation $o_t$ scales the tanh of the updated cell state, deciding the part of the cell state to output.
 
@@ -587,34 +630,34 @@ The core concept of the Transformer architecture in sound synthesis can be descr
 
 Input Embedding and Positional Encoding:
 \begin{equation}
-X' = X + PE
+X' = X + PE,
 \end{equation}
 where $X$ is the input sequence of sound samples or features, and $PE$ is the positional encoding added to $X$ to retain positional information.
 
 Self-Attention Mechanism:
 \begin{equation}
-\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
+\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V,
 \end{equation}
 where $Q$, $K$, and $V$ represent the queries, keys, and values matrices obtained from $X'$, respectively, and $d_k$ is the dimension of the key vectors. This equation calculates the attention weights and applies them to the values to produce an output that highlights important features of the input sequence.
 
 Multi-Head Attention:
 \begin{equation}
-\text{MultiHead}(Q, K, V) = \text{Concat}(\text{head}_1, \ldots, \text{head}_h)W^O
+\text{MultiHead}(Q, K, V) = \text{Concat}(\text{head}_1, \ldots, \text{head}_h)W^O,
 \end{equation}
 \begin{equation}
-\text{head}_i = \text{Attention}(QW^Q_i, KW^K_i, VW^V_i)
+\text{head}_i = \text{Attention}(QW^Q_i, KW^K_i, VW^V_i).
 \end{equation}
 Multi-head attention allows the model to focus on different positions, capturing various aspects of the sound sequence. $W^Q_i$, $W^K_i$, $W^V_i$, and $W^O$ are parameter matrices for each head $i$ and the output projection, respectively.
 
 Position-wise Feed-Forward Networks:
 \begin{equation}
-\text{FFN}(x) = \max(0, xW_1 + b_1)W_2 + b_2
+\text{FFN}(x) = \max(0, xW_1 + b_1)W_2 + b_2.
 \end{equation}
 Each layer in the Transformer includes a feed-forward network applied to each position separately and identically. This consists of two linear transformations with a ReLU activation in between.
 
 Output Generation:
 \begin{equation}
-P(y_t | y_{<t}) = \text{softmax}(y_{t-1}W + b)
+P(y_t | y_{<t}) = \text{softmax}(y_{t-1}W + b).
 \end{equation}
 The output at each timestep $t$, $y_t$, is predicted based on the previous outputs $y_{<t}$, where $W$ and $b$ are the weights and bias in the final linear layer that projects the decoder output to the space of possible audio samples. $P(y_t | y_{<t})$ represents the probability distribution over possible next samples given the previous samples.
 
@@ -625,7 +668,7 @@ ChatGPT is trained on a diverse and extensive dataset, encompassing a wide range
 During pre-training, the model learns to predict the next word in a sentence given the previous words, using a masked language modeling objective:
 
 \begin{equation}
-L_{\text{MLM}} = -\sum_{i \in M} \log P(w_i | w_{\setminus i}; \Theta)
+L_{\text{MLM}} = -\sum_{i \in M} \log P(w_i | w_{\setminus i}; \Theta),
 \end{equation}
 
 where $M$ denotes the set of masked positions, $w_i$ is the word at position $i$, $w_{\setminus i}$ represents the sequence without the word at position $i$, and $\Theta$ are the model parameters.
@@ -633,7 +676,7 @@ where $M$ denotes the set of masked positions, $w_i$ is the word at position $i$
 Fine-tuning adjusts the pre-trained model to specific tasks or datasets. This phase enhances the model's performance on tasks such as conversational responses, sentiment analysis, and text summarization:
 
 \begin{equation}
-L_{\text{task}} = \sum_{(x, y) \in D_{\text{task}}} \log P(y | x; \Theta')
+L_{\text{task}} = \sum_{(x, y) \in D_{\text{task}}} \log P(y | x; \Theta'),
 \end{equation}
 
 where $D_{\text{task}}$ is the task-specific dataset, $(x, y)$ are the input-output pairs, and $\Theta'$ are the fine-tuned model parameters.
@@ -649,28 +692,28 @@ The process can be described by the following stages:
 
 Feature Extraction:
 \begin{equation}
-F = \text{MFCC}(S)
+F = \text{MFCC}(S),
 \end{equation}
 where $F$ represents the feature matrix extracted from the input speech signal $S$, and MFCC denotes the Mel-Frequency Cepstral Coefficients, a common feature used in voice synthesis to capture the timbral aspects of the speech.
 
 Acoustic Modeling:
 \begin{equation}
-H = \text{Encoder}(F; \theta_e)
+H = \text{Encoder}(F; \theta_e),
 \end{equation}
 \begin{equation}
-\tilde{F} = \text{Decoder}(H; \theta_d)
+\tilde{F} = \text{Decoder}(H; \theta_d).
 \end{equation}
 where $H$ is the encoded representation of the speech features, $\theta_e$ and $\theta_d$ are the parameters of the encoder and decoder networks, respectively, and $\tilde{F}$ is the reconstructed feature matrix. The encoder-decoder framework is often implemented using deep neural networks, where the encoder learns a compressed representation of the speech features, and the decoder reconstructs the features, potentially in the target voice's style.
 
 Voice Conversion:
 \begin{equation}
-V_t = \text{Conversion}(H_t; \theta_c)
+V_t = \text{Conversion}(H_t; \theta_c),
 \end{equation}
 where $V_t$ represents the target voice features, $H_t$ is the encoded representation of the target speech, and $\theta_c$ are the parameters of the conversion model that transforms the source voice into the target voice.
 
 Waveform Generation:
 \begin{equation}
-\hat{S} = \text{WaveNet}(V_t; \theta_w)
+\hat{S} = \text{WaveNet}(V_t; \theta_w),
 \end{equation}
 where $\hat{S}$ is the synthesized speech waveform, and $\theta_w$ are the parameters of a WaveNet \cite{oord2016wavenet} model trained to convert the feature representation $V_t$ back into the time-domain signal. WaveNet, a deep generative model of raw audio waveforms, is particularly effective in generating high-fidelity speech with natural intonations and expressions.
 
@@ -683,6 +726,12 @@ where $\hat{S}$ is the synthesized speech waveform, and $\theta_w$ are the param
 The process of voice cloning and modification enables the generation of synthetic speech that closely resembles a target human voice. 
 By capturing the subtle nuances of speech, AI-driven voice synthesis technologies have opened new avenues for creating engaging and emotionally resonant digital communication experiences. 
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{ElevenLabs.png}
+  \caption{Using my clone voice to generate the voice over for the video, I recorded the training set by reading one chapter from the book \textit{Elon Musk}, the audio file is 14 mins.}
+\end{figure}
+
 \subsection{Audio Modification}
 
 There are several methods to tackle audio modification challenges such as noise reduction, sound separation, and audio restoration \cite{godsill2002digital}. 
@@ -690,25 +739,25 @@ The processes are shown below:
 
 Noise reduction aims to eliminate unwanted background noise from audio recordings, enhancing the clarity of the sound. This can be mathematically represented by:
 \begin{equation}
-S_{clean} = S_{noisy} - N
+S_{clean} = S_{noisy} - N,
 \end{equation}
 where $S_{clean}$ is the clean audio signal, $S_{noisy}$ is the original noisy signal, and $N$ represents the noise component. Advanced AI models, such as Deep Neural Networks (DNNs), are trained to estimate $N$ accurately from $S_{noisy}$, allowing for effective noise removal.
 
 Sound separation involves isolating individual sound sources from a mixed audio signal. This can be expressed as:
 \begin{equation}
-S_i = F(S_{mix}; \theta_i)
+S_i = F(S_{mix}; \theta_i),
 \end{equation}
 where $S_i$ is the isolated sound of source $i$, $S_{mix}$ is the mixed audio signal, and $F$ is a function modeled by the AI system with parameters $\theta_i$ tailored to extract the $i^{th}$ sound source.
 
 Audio restoration focuses on recovering the original quality of degraded audio recordings. The process can be conceptualized as:
 \begin{equation}
-S_{restored} = R(S_{degraded}; \theta_r)
+S_{restored} = R(S_{degraded}; \theta_r),
 \end{equation}
 where $S_{restored}$ is the restored audio signal, $S_{degraded}$ is the degraded audio signal, and $R$ represents the restoration function implemented by the AI with parameters $\theta_r$. This function aims to reconstruct lost or corrupted signal components, effectively restoring the audio to its original state.
 
 The final step often involves enhancing the waveform directly to improve the overall audio quality, which can be mathematically described by:
 \begin{equation}
-\hat{S} = G(S_{processed}; \theta_g)
+\hat{S} = G(S_{processed}; \theta_g),
 \end{equation}
 where $\hat{S}$ is the enhanced audio waveform, $S_{processed}$ is the audio signal after noise reduction, sound separation, and restoration, and $G$ is the enhancement function driven by AI with parameters $\theta_g$. Models like WaveNet are examples of generative networks that can be used for this purpose, fine-tuning the audio quality by adjusting the waveform directly.
 
@@ -720,60 +769,20 @@ These core processes involved in audio modification, demonstrating how AI algori
 
 ChatGPT, built upon the Transformer architecture, utilizes a combination of self-attention mechanisms and feed-forward neural networks to process and generate text. The Transformer model is defined as follows:
 
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.9\textwidth]{ChatGPT.png}
-  \caption{Using ChatGPT to generate vivid description prompt and prepare for creating the image stills.}
-\end{figure}
-
 \section{MidJourney}
 \paragraph{MidJourney is an innovative AI model that specializes in generating highly detailed and creative visual content, operating on a complex framework that leverages deep learning techniques to interpret and visualize textual descriptions into compelling images. It utilizes a variant of generative adversarial networks (GANs), where two neural networks work in tandem; one generates images based on textual input, while the other evaluates these images against real-world examples to enhance fidelity and creativity. This iterative process, rooted in the adversarial training methodology, allows MidJourney to produce images that are not only visually stunning but also contextually aligned with the input prompts. The model's architecture is designed to understand and interpret a wide range of descriptive languages, enabling users to guide the creative process through detailed prompts. Advances in GANs and their application in image generation \cite{goodfellow2014generative} \cite{karras2019style}, underpin MidJourney's capabilities. These foundational studies demonstrate the technical and theoretical framework that allows MidJourney to push the boundaries of AI-driven creativity, showcasing its potential to transform visual content generation across various domains.}
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.9\textwidth]{mj.png}
-  \caption{Using ChatGPT's prompts to generate good quality image stills using MidJourney, and then upload them as the key frames to Runway Gen-2 for video clip generation.}
-\end{figure}
 
 \section{Runway Gen-2}
 \paragraph{Runway Gen-2 is an advanced machine learning platform designed for creative and generative tasks, leveraging cutting-edge models and frameworks to facilitate the creation of digital art, design, and multimedia content. At its core, Runway Gen-2 incorporates a variety of pre-trained models, including those based on GANs (Generative Adversarial Networks) and VAEs (Variational Autoencoders) \cite{kingma2013auto}, allowing users to generate highly detailed and diverse outputs. The platform is built on a modular architecture that supports seamless integration of new models and customizations, making it adaptable to evolving creative needs. It employs a user-friendly interface that democratizes access to complex AI technologies, enabling artists, designers, and creators to experiment with AI without deep technical knowledge. Significant advancements in Runway Gen-2's underlying technology include the optimization of model training and inference processes, which are crucial for real-time performance and high-quality generation capabilities. This optimization is supported by efficient data processing and model deployment strategies, ensuring that users can work with large datasets and complex models effectively.}
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.9\textwidth]{Runway.png}
-  \caption{Using the "Image + Text" mode in Runway Gen-2 to generate the video, with the help of motion brush function to control how the characters move}
-\end{figure}
-
 \section{ElevenLabs}
 \paragraph{ElevenLabs leverages advanced deep learning techniques to create highly realistic and customizable synthetic voices. At its core, the technology utilizes state-of-the-art voice synthesis models, which are trained on vast datasets of human speech. These models, often based on variants of the transformer neural network architecture, enable the generation of speech that closely mimics human intonation, emotion, and nuances. The process involves two main stages: voice cloning \cite{arik2018neural}, where a target voice is replicated from a small sample, and text-to-speech (TTS) synthesis, where the cloned voice is used to convert written text into spoken words. This sophisticated approach ensures a high degree of vocal fidelity and naturalness, making it suitable for applications in audiobooks, virtual assistants, and more. The methodology behind ElevenLabs' technology draws upon recent advancements in machine learning and NLP, emphasizing the importance of ethical considerations and user consent in voice cloning.}
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.9\textwidth]{Voice Cloning.png}
-  \caption{Using Professinal Voice Cloning from ElevenLabs to apply text to speech and add the voice over to the video}
-\end{figure}
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.9\textwidth]{Voice Cloning2.png}
-  \caption{Using Professinal Voice Cloning from ElevenLabs to apply text to speech and add the voice over to the video}
-\end{figure}
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.9\textwidth]{ElevenLabs.png}
-  \caption{Using my clone voice to generate the voice over for the video, I recorded the training set by reading one chapter from the book Elon Musk, the audio file is 14 mins.}
-\end{figure}
 
 \section{Topaz AI}
 \paragraph{Topaz AI represents a suite of cutting-edge tools designed to enhance image and video quality through deep residual learning \cite{he2016deep}. At its core, Topaz AI utilizes deep learning algorithms to perform tasks such as upscaling, denoising, and sharpening images and videos. The technology is based on convolutional neural networks (CNNs), a type of deep neural network particularly effective for processing visual data. These networks are trained on vast datasets of images, allowing the models to learn how to identify and correct imperfections in new images with remarkable accuracy.}
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.9\textwidth]{TopazPhoto.png}
-  \caption{Using Topaz AI to upscale and improve the video quality, like changing the frame rate from 60 FPS to 120 FPS, removing noise, and sharpen the subject.}
-\end{figure}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

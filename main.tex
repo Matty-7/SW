@@ -365,7 +365,7 @@ Their investments have resulted in state-of-the-art models that, while most of t
 
 \subsection{Reinforcement Learning from Human Feedback (RLHF)}
 
-GPT-4 model emphasizes using Reinforcement Learning from Human Feedback (RLHF) \cite{christiano2017deep} to align the model's outputs with human preferences. 
+Reinforcement Learning from Human Feedback (RLHF) \cite{christiano2017deep} can align the model's outputs with human preferences. 
 
 The objective of RLHF is to optimize the policy $\pi$ to maximize the expected reward, which is indicative of the alignment between generated outputs and human preferences:
 
@@ -395,13 +395,7 @@ L(\phi) = \hat{\mathbb{E}}_t \left[ \min(r_t(\phi) \hat{A}_t, \text{clip}(r_t(\p
 
 where $r_t(\phi) = \frac{\pi_{\phi}(a_t|s_t)}{\pi_{\phi_{old}}(a_t|s_t)}$ is the probability ratio, $\hat{A}_t$ is the advantage estimate at time $t$, and $\epsilon$ is a hyperparameter that controls clipping to reduce variance.
 
-All the processes above indicate how RLHF is mathematically conceptualized in the context of improving GPT models, focusing on optimizing a policy model to generate text that aligns with human preferences based on feedback.
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.8\textwidth]{ChatGPT.png}
-  \caption{Using ChatGPT to generate vivid description prompt and prepare for creating the image stills.}
-\end{figure}
+All the processes above indicate how RLHF is mathematically conceptualized in the context of improving GPT models, focusing on optimizing the model to generate text that aligns with human preferences based on feedback.
 
 \subsection{Transfer Learning}
 Given a pretrained model \(M\) with parameters \(\theta\), transfer learning \cite{torrey2010transfer} adjusts \(\theta\) to new parameters \(\theta'\) to better perform on a target task \(T\) with a smaller dataset \(D_{T}\). The objective is to minimize the loss function \(\mathcal{L}_{T}\) on \(D_{T}\), leveraging knowledge from the source task \(S\).
@@ -433,9 +427,22 @@ where \(\lambda\) controls the importance of the regularization term, and \(\mat
 \]
 with \(\Omega_{i}\) representing the importance of parameter \(i\) for the tasks learned during pretraining and \(\theta^{*}\) denoting the parameters after pretraining.
 
-Thus, transfer learning efficiently leverages pre-existing knowledge, enabling models to adapt to new tasks with remarkable efficiency and minimal data, bridging the gap between general and specific task performances.
+Thus, transfer learning efficiently leverages pre-existing knowledge of GPT-4, enabling it to adapt to new tasks with remarkable efficiency and minimal data, bridging the gap between general and specific task performances.
 
-\section{AIGC in Image and Video (MidJourney and Runway)}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{ChatGPT.png}
+  \caption{Using ChatGPT to generate vivid description prompt and prepare for creating the image stills.}
+\end{figure}
+
+ChatGPT utilizes Reinforcement Learning from Human Feedback (RLHF) and Transfer Learning to create a highly adaptive and user-aligned conversational model. 
+Through RLHF, ChatGPT continuously refines its responses based on broad human feedback, optimizing its conversational results to align more closely with human preferences and expectations. 
+This process ensures that the model's outputs are not only relevant but also resonate with users on a more personal level. 
+Meanwhile, by employing Transfer Learning, ChatGPT can efficiently adapt to a wide range of conversational contexts and domains with relatively small amounts of task-specific data. 
+This dual approach allows ChatGPT to maintain a broad understanding of language and context, gained from its initial training on diverse datasets, while also being able to specialize and improve in specific areas or topics as directed by user interactions and feedback. 
+Thus, the integration of RLHF and Transfer Learning enables ChatGPT to offer conversational experiences that are both deeply informed and highly customized, making it a versatile tool for a variety of applications.
+
+\section{AIGC in Image and Video (MidJourney Runway Topaz)}
 
 \subsection{Variational Autoencoders (VAE)}
 
@@ -551,6 +558,12 @@ Diffusion models have been applied to a variety of tasks beyond image generation
   \caption{Using Topaz AI to upscale and improve the video quality, like changing the frame rate from 60 FPS to 120 FPS, removing noise, and sharpen the subject.}
 \end{figure}
 
+MidJourney, Runway, and Topaz, while not explicitly disclosing which models they employ, potentially make use of advanced generative models like Variational Autoencoders (VAEs), Generative Adversarial Networks (GANs), and Diffusion Models to offer cutting-edge image and video generation, enhancement, and editing capabilities. 
+VAEs could be used to understand and encode the vast complexity of visual data into a manageable latent space, allowing these platforms to efficiently generate or modify content with a deep understanding of visual structures. 
+GANs, known for their ability to produce high-quality synthetic images, might be instrumental in enabling these tools to create realistic images and videos that are difficult to distinguish from real ones, enhancing the authenticity and visual appeal of generated content. 
+Diffusion Models can be implemented by generating high-fidelity images through iterative refinement and producing coherent visual outputs, particularly useful in tasks like image super-resolution, denoising, and text-to-image (TTI) synthesis. 
+The theoretical integration of these models would enable MidJourney, Runway, and Topaz to harness the strengths of each, offering users a versatile tools for creating, enhancing digital media in ways that were previously unimaginable, thus pushing the boundaries of creative and technical possibilities in digital content creation.
+
 \section{AIGC in Sound (ElevenLabs)}
 
 \subsection{Recurrent Neural Networks (RNN)}
@@ -661,9 +674,7 @@ P(y_t | y_{<t}) = \text{softmax}(y_{t-1}W + b).
 \end{equation}
 The output at each timestep $t$, $y_t$, is predicted based on the previous outputs $y_{<t}$, where $W$ and $b$ are the weights and bias in the final linear layer that projects the decoder output to the space of possible audio samples. $P(y_t | y_{<t})$ represents the probability distribution over possible next samples given the previous samples.
 
-\subsection*{Training and Fine-tuning}
-
-ChatGPT is trained on a diverse and extensive dataset, encompassing a wide range of internet text. The training process involves two main phases: pre-training and fine-tuning.
+Training and Fine-tuning:
 
 During pre-training, the model learns to predict the next word in a sentence given the previous words, using a masked language modeling objective:
 
@@ -726,11 +737,7 @@ where $\hat{S}$ is the synthesized speech waveform, and $\theta_w$ are the param
 The process of voice cloning and modification enables the generation of synthetic speech that closely resembles a target human voice. 
 By capturing the subtle nuances of speech, AI-driven voice synthesis technologies have opened new avenues for creating engaging and emotionally resonant digital communication experiences. 
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.8\textwidth]{ElevenLabs.png}
-  \caption{Using my clone voice to generate the voice over for the video, I recorded the training set by reading one chapter from the book \textit{Elon Musk}, the audio file is 14 mins.}
-\end{figure}
+
 
 \subsection{Audio Modification}
 
@@ -763,26 +770,18 @@ where $\hat{S}$ is the enhanced audio waveform, $S_{processed}$ is the audio sig
 
 These core processes involved in audio modification, demonstrating how AI algorithms can significantly improve the clarity, fidelity, and overall quality of sound recordings. 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{ElevenLabs.png}
+  \caption{Using my clone voice to generate the voice over for the video, I recorded the training set by reading one chapter from the book \textit{Elon Musk}, the audio file is 14 mins.}
+\end{figure}
 
-\section{ChatGPT}
-
-ChatGPT, built upon the Transformer architecture, utilizes a combination of self-attention mechanisms and feed-forward neural networks to process and generate text. The Transformer model is defined as follows:
-
-\section{MidJourney}
-\paragraph{MidJourney is an innovative AI model that specializes in generating highly detailed and creative visual content, operating on a complex framework that leverages deep learning techniques to interpret and visualize textual descriptions into compelling images. It utilizes a variant of generative adversarial networks (GANs), where two neural networks work in tandem; one generates images based on textual input, while the other evaluates these images against real-world examples to enhance fidelity and creativity. This iterative process, rooted in the adversarial training methodology, allows MidJourney to produce images that are not only visually stunning but also contextually aligned with the input prompts. The model's architecture is designed to understand and interpret a wide range of descriptive languages, enabling users to guide the creative process through detailed prompts. Advances in GANs and their application in image generation \cite{goodfellow2014generative} \cite{karras2019style}, underpin MidJourney's capabilities. These foundational studies demonstrate the technical and theoretical framework that allows MidJourney to push the boundaries of AI-driven creativity, showcasing its potential to transform visual content generation across various domains.}
-
-\section{Runway Gen-2}
-\paragraph{Runway Gen-2 is an advanced machine learning platform designed for creative and generative tasks, leveraging cutting-edge models and frameworks to facilitate the creation of digital art, design, and multimedia content. At its core, Runway Gen-2 incorporates a variety of pre-trained models, including those based on GANs (Generative Adversarial Networks) and VAEs (Variational Autoencoders) \cite{kingma2013auto}, allowing users to generate highly detailed and diverse outputs. The platform is built on a modular architecture that supports seamless integration of new models and customizations, making it adaptable to evolving creative needs. It employs a user-friendly interface that democratizes access to complex AI technologies, enabling artists, designers, and creators to experiment with AI without deep technical knowledge. Significant advancements in Runway Gen-2's underlying technology include the optimization of model training and inference processes, which are crucial for real-time performance and high-quality generation capabilities. This optimization is supported by efficient data processing and model deployment strategies, ensuring that users can work with large datasets and complex models effectively.}
-
-\section{ElevenLabs}
-\paragraph{ElevenLabs leverages advanced deep learning techniques to create highly realistic and customizable synthetic voices. At its core, the technology utilizes state-of-the-art voice synthesis models, which are trained on vast datasets of human speech. These models, often based on variants of the transformer neural network architecture, enable the generation of speech that closely mimics human intonation, emotion, and nuances. The process involves two main stages: voice cloning \cite{arik2018neural}, where a target voice is replicated from a small sample, and text-to-speech (TTS) synthesis, where the cloned voice is used to convert written text into spoken words. This sophisticated approach ensures a high degree of vocal fidelity and naturalness, making it suitable for applications in audiobooks, virtual assistants, and more. The methodology behind ElevenLabs' technology draws upon recent advancements in machine learning and NLP, emphasizing the importance of ethical considerations and user consent in voice cloning.}
-
-
-\section{Topaz AI}
-\paragraph{Topaz AI represents a suite of cutting-edge tools designed to enhance image and video quality through deep residual learning \cite{he2016deep}. At its core, Topaz AI utilizes deep learning algorithms to perform tasks such as upscaling, denoising, and sharpening images and videos. The technology is based on convolutional neural networks (CNNs), a type of deep neural network particularly effective for processing visual data. These networks are trained on vast datasets of images, allowing the models to learn how to identify and correct imperfections in new images with remarkable accuracy.}
-
-
+ElevenLabs, positioned at the forefront of AI-driven audio synthesis, particularly in voice cloning and text-to-speech (TTS) technologies, likely utilizes Recurrent Neural Networks (RNNs), Long Short-Term Memory (LSTM) units, and Autoregressive Transformers. 
+These models excel in understanding and generating the temporal sequences crucial in replicating human speech's nuanced dynamics. 
+While ElevenLabs has not publicly disclosed the specific models underpinning its technology, the theoretical basis of these models provides a clue to the sophisticated mechanism that enables ElevenLabs to produce highly realistic and expressive voice outputs. 
+RNNs and LSTMs could be instrumental in modeling the sequential nature of speech, capturing the temporal dependencies necessary for coherent speech generation. 
+Autoregressive Transformers, with their powerful self-attention mechanisms, offer a means to process long sequences in parallel, potentially enhancing the system's ability to manage the structure of speech at scale. 
+Together, these models could form the basis of ElevenLabs’ ability to analyze and replicate the unique attributes of individual voices, offering voice synthesis capabilities that find applications in entertainment, education, and beyond.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

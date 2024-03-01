@@ -2228,88 +2228,6 @@
       \field{title}{Digital audio restoration}
       \field{year}{2002}
     \endentry
-    \entry{arik2018neural}{article}{}
-      \name{author}{5}{}{%
-        {{hash=22c5e08fb31874790e8bed0aa6207bc4}{%
-           family={Arik},
-           familyi={A\bibinitperiod},
-           given={Sercan},
-           giveni={S\bibinitperiod}}}%
-        {{hash=802e815ed5fcef558fc2d859ea49149b}{%
-           family={Chen},
-           familyi={C\bibinitperiod},
-           given={Jitong},
-           giveni={J\bibinitperiod}}}%
-        {{hash=c28840954d84f29a56a0fa0f0ce231bb}{%
-           family={Peng},
-           familyi={P\bibinitperiod},
-           given={Kainan},
-           giveni={K\bibinitperiod}}}%
-        {{hash=fe56a97aca48de3bbb0b53f223fd5015}{%
-           family={Ping},
-           familyi={P\bibinitperiod},
-           given={Wei},
-           giveni={W\bibinitperiod}}}%
-        {{hash=83a9e81d976cada23775106b303c4247}{%
-           family={Zhou},
-           familyi={Z\bibinitperiod},
-           given={Yanqi},
-           giveni={Y\bibinitperiod}}}%
-      }
-      \strng{namehash}{59c8902722d20b85a1949951ce3800a1}
-      \strng{fullhash}{d955e31caa535f6c670ae18aa4cfb349}
-      \strng{bibnamehash}{59c8902722d20b85a1949951ce3800a1}
-      \strng{authorbibnamehash}{59c8902722d20b85a1949951ce3800a1}
-      \strng{authornamehash}{59c8902722d20b85a1949951ce3800a1}
-      \strng{authorfullhash}{d955e31caa535f6c670ae18aa4cfb349}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Advances in neural information processing systems}
-      \field{title}{Neural voice cloning with a few samples}
-      \field{volume}{31}
-      \field{year}{2018}
-    \endentry
-    \entry{he2016deep}{inproceedings}{}
-      \name{author}{4}{}{%
-        {{hash=6b4b60e909e78633945f3f9c9dc83e01}{%
-           family={He},
-           familyi={H\bibinitperiod},
-           given={Kaiming},
-           giveni={K\bibinitperiod}}}%
-        {{hash=5e72bc22dbcf0984c6d113d280e36990}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Xiangyu},
-           giveni={X\bibinitperiod}}}%
-        {{hash=bb295293acacd54387339079ebbe4ead}{%
-           family={Ren},
-           familyi={R\bibinitperiod},
-           given={Shaoqing},
-           giveni={S\bibinitperiod}}}%
-        {{hash=f85751488058842b5777c7b4074077b5}{%
-           family={Sun},
-           familyi={S\bibinitperiod},
-           given={Jian},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{6edb98fe38401d2fe4a026f5ce6e8451}
-      \strng{fullhash}{42c4b52dc3a62cebabbc11c73e1afb53}
-      \strng{bibnamehash}{6edb98fe38401d2fe4a026f5ce6e8451}
-      \strng{authorbibnamehash}{6edb98fe38401d2fe4a026f5ce6e8451}
-      \strng{authornamehash}{6edb98fe38401d2fe4a026f5ce6e8451}
-      \strng{authorfullhash}{42c4b52dc3a62cebabbc11c73e1afb53}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the IEEE conference on computer vision and pattern recognition}
-      \field{title}{Deep residual learning for image recognition}
-      \field{year}{2016}
-      \field{pages}{770\bibrangedash 778}
-      \range{pages}{9}
-    \endentry
     \entry{esposito2023mitigating}{article}{}
       \name{author}{4}{}{%
         {{hash=f22f95b73ccf23f23aa9e5701290145c}{%
@@ -2447,8 +2365,8 @@
       \strng{authorbibnamehash}{befb5e92a4482876bb8117f47418b4aa}
       \strng{authornamehash}{befb5e92a4482876bb8117f47418b4aa}
       \strng{authorfullhash}{d3007cb5d9e46f5bff8b8456458341c5}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}

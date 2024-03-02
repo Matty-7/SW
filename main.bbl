@@ -41,8 +41,8 @@
       \strng{authorbibnamehash}{a4f50258a14156905c8d2b1b4704be30}
       \strng{authornamehash}{a4f50258a14156905c8d2b1b4704be30}
       \strng{authorfullhash}{a4f50258a14156905c8d2b1b4704be30}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Artificial intelligence a modern approach}
@@ -70,8 +70,8 @@
       \strng{authorbibnamehash}{d3d8da60975e2b388cca53d2bd755d35}
       \strng{authornamehash}{d3d8da60975e2b388cca53d2bd755d35}
       \strng{authorfullhash}{d3d8da60975e2b388cca53d2bd755d35}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Science}
@@ -126,8 +126,8 @@
       \strng{authorbibnamehash}{a254fa1b687d9d72c26d2a9eda59fc40}
       \strng{authornamehash}{a254fa1b687d9d72c26d2a9eda59fc40}
       \strng{authorfullhash}{017db0b2a47d1a06c1b4bc6f738441c3}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2210.11610}
@@ -176,8 +176,8 @@
       \strng{authorbibnamehash}{2d51d624998098779746987b6ea71ae8}
       \strng{authornamehash}{2d51d624998098779746987b6ea71ae8}
       \strng{authorfullhash}{a7d51748bf44099cb8ab27208194576d}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Heliyon}
@@ -203,8 +203,8 @@
       \strng{authorbibnamehash}{288bdbcfe1b91ad7484d7a24f74f99ed}
       \strng{authornamehash}{288bdbcfe1b91ad7484d7a24f74f99ed}
       \strng{authorfullhash}{288bdbcfe1b91ad7484d7a24f74f99ed}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Neural networks}
@@ -241,8 +241,8 @@
       \strng{authorbibnamehash}{c6c75bd00ce5a488e91a749d8383b3df}
       \strng{authornamehash}{c6c75bd00ce5a488e91a749d8383b3df}
       \strng{authorfullhash}{c6c75bd00ce5a488e91a749d8383b3df}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{nature}
@@ -287,8 +287,8 @@
       \strng{authorbibnamehash}{a8f0140359111d9936c91aab7826f512}
       \strng{authornamehash}{a8f0140359111d9936c91aab7826f512}
       \strng{authorfullhash}{0a2ad3d64dca595a2029b5b5f5780c65}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Computational intelligence and neuroscience}
@@ -318,8 +318,8 @@
       \strng{authorbibnamehash}{54d532863c7e166fafc6619ad499538b}
       \strng{authornamehash}{54d532863c7e166fafc6619ad499538b}
       \strng{authorfullhash}{54d532863c7e166fafc6619ad499538b}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Fundamentals of artificial intelligence}
@@ -355,8 +355,8 @@
       \strng{authorbibnamehash}{3ae53fe582e8a815b118d26947eaa326}
       \strng{authornamehash}{3ae53fe582e8a815b118d26947eaa326}
       \strng{authorfullhash}{3ae53fe582e8a815b118d26947eaa326}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Deep learning}
@@ -1068,8 +1068,8 @@
       \strng{authorbibnamehash}{4ccacac34637df06f749428b6ec5052e}
       \strng{authornamehash}{4ccacac34637df06f749428b6ec5052e}
       \strng{authorfullhash}{69c03a0bfbe9e391fbbd7797a2debcbf}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{nature}
@@ -1124,8 +1124,8 @@
       \strng{authorbibnamehash}{62289facb776d266bb151779b46ffc1c}
       \strng{authornamehash}{62289facb776d266bb151779b46ffc1c}
       \strng{authorfullhash}{c5437470dd34aeb0d823736d8821e1f1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2302.13795}
@@ -1147,8 +1147,8 @@
       \strng{authornamehash}{f516051d73434fcc17483bfac7031223}
       \strng{authorfullhash}{f516051d73434fcc17483bfac7031223}
       \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{View in Article}
@@ -1341,8 +1341,8 @@
       \strng{authorbibnamehash}{57da0a89f365731f93fa82d5a77e8d93}
       \strng{authornamehash}{57da0a89f365731f93fa82d5a77e8d93}
       \strng{authorfullhash}{57da0a89f365731f93fa82d5a77e8d93}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{GitHub repository}
@@ -1416,8 +1416,8 @@
       \strng{authorbibnamehash}{066da2bf78c9b2e3d4c5f5a2cc6c4bff}
       \strng{authornamehash}{066da2bf78c9b2e3d4c5f5a2cc6c4bff}
       \strng{authorfullhash}{a4de410ef4d31ee762a947028055bdcb}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2310.06825}
@@ -1438,8 +1438,8 @@
       \strng{authorbibnamehash}{66af7b0a342d302921c8bf61fc538ddb}
       \strng{authornamehash}{66af7b0a342d302921c8bf61fc538ddb}
       \strng{authorfullhash}{66af7b0a342d302921c8bf61fc538ddb}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://a16z.com/why-2023-was-ai-videos-breakout-year-and-what-to-expect-in-2024/}}
@@ -1602,8 +1602,8 @@
       \strng{authorbibnamehash}{d01041661d94ee839bc627c190df7607}
       \strng{authornamehash}{d01041661d94ee839bc627c190df7607}
       \strng{authorfullhash}{31e7c90f0a546f0d8180f8b41cb88b2a}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2309.00810}
@@ -1649,8 +1649,8 @@
       \strng{authorbibnamehash}{8a8c08b4246603b7fdda0a9ac2b3fae8}
       \strng{authornamehash}{8a8c08b4246603b7fdda0a9ac2b3fae8}
       \strng{authorfullhash}{28b3cacc56b59e8f61dabab2a5f9ff02}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Advances in neural information processing systems}
@@ -1680,8 +1680,8 @@
       \strng{authorbibnamehash}{a4b38793f8bb379bcb242dcf389f1112}
       \strng{authornamehash}{a4b38793f8bb379bcb242dcf389f1112}
       \strng{authorfullhash}{a4b38793f8bb379bcb242dcf389f1112}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Handbook of research on machine learning applications and trends: algorithms, methods, and techniques}
@@ -1866,8 +1866,8 @@
       \strng{authorbibnamehash}{e014422884ce13dadd24d0680c295f64}
       \strng{authornamehash}{e014422884ce13dadd24d0680c295f64}
       \strng{authorfullhash}{e014422884ce13dadd24d0680c295f64}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{International conference on machine learning}
@@ -1905,8 +1905,8 @@
       \strng{authorbibnamehash}{a42098d587b3921b37e2fda2579a0060}
       \strng{authornamehash}{a42098d587b3921b37e2fda2579a0060}
       \strng{authorfullhash}{9cd54a934c8963d72b95ef46dee224c5}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:1704.02254}
@@ -1932,8 +1932,8 @@
       \strng{authorbibnamehash}{ac33097a207e3840f68fa6e4bd34710c}
       \strng{authornamehash}{ac33097a207e3840f68fa6e4bd34710c}
       \strng{authorfullhash}{ac33097a207e3840f68fa6e4bd34710c}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:1803.10122}
@@ -1972,8 +1972,8 @@
       \strng{authorbibnamehash}{4972dc455da6f1318b6136d215d7d53e}
       \strng{authornamehash}{4972dc455da6f1318b6136d215d7d53e}
       \strng{authorfullhash}{265b947d51b59b1e4e6250ca124ff41a}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Neural computation}
@@ -2006,8 +2006,8 @@
       \strng{authorbibnamehash}{0ffcc0752db5a42176e68e794ddc16f3}
       \strng{authornamehash}{0ffcc0752db5a42176e68e794ddc16f3}
       \strng{authorfullhash}{0ffcc0752db5a42176e68e794ddc16f3}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2017 IEEE 60th international midwest symposium on circuits and systems (MWSCAS)}
@@ -2045,8 +2045,8 @@
       \strng{authorbibnamehash}{c69b4edeadac179da54049718f881a6f}
       \strng{authornamehash}{c69b4edeadac179da54049718f881a6f}
       \strng{authorfullhash}{b6376cec9ca01f734ea17eb243744d58}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2104.10157}
@@ -2100,8 +2100,8 @@
       \strng{authorbibnamehash}{53e10737a94d55b063c2ecf951f9e7a2}
       \strng{authornamehash}{53e10737a94d55b063c2ecf951f9e7a2}
       \strng{authorfullhash}{ab52bc336d1c868a91216520b1335154}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{European conference on computer vision}
@@ -2257,123 +2257,118 @@
       \strng{authorbibnamehash}{45ba725b71739e6c71a9f062454318c1}
       \strng{authornamehash}{45ba725b71739e6c71a9f062454318c1}
       \strng{authorfullhash}{0be0bec35e7d135edea2af9b28a50265}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2310.06904}
       \field{title}{Mitigating stereotypical biases in text to image generative systems}
       \field{year}{2023}
     \endentry
-    \entry{habibian2021skip}{inproceedings}{}
-      \name{author}{4}{}{%
-        {{hash=62de7d76b6e2e0a1b28680ae957a2b78}{%
-           family={Habibian},
-           familyi={H\bibinitperiod},
-           given={Amirhossein},
-           giveni={A\bibinitperiod}}}%
-        {{hash=076a6efa1efe5a6ddef8279ebfcc28e4}{%
-           family={Abati},
-           familyi={A\bibinitperiod},
-           given={Davide},
-           giveni={D\bibinitperiod}}}%
-        {{hash=edf134d8390d35f2ca53bbf823ba961e}{%
-           family={Cohen},
-           familyi={C\bibinitperiod},
-           given={Taco\bibnamedelima S},
-           giveni={T\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=f987896353259256bf36394a6f90255e}{%
-           family={Bejnordi},
+    \entry{buolamwini2018gender}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=694238e772e190a6c1c2e0c1e68ee000}{%
+           family={Buolamwini},
            familyi={B\bibinitperiod},
-           given={Babak\bibnamedelima Ehteshami},
-           giveni={B\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+           given={Joy},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f2b0ffb56c5d1e4220c16c0258e02eae}{%
+           family={Gebru},
+           familyi={G\bibinitperiod},
+           given={Timnit},
+           giveni={T\bibinitperiod}}}%
       }
-      \strng{namehash}{8bfe81841d52c8c08ff73de8d529b94b}
-      \strng{fullhash}{488c0c5bb21d237379d8f21da69b2cac}
-      \strng{bibnamehash}{8bfe81841d52c8c08ff73de8d529b94b}
-      \strng{authorbibnamehash}{8bfe81841d52c8c08ff73de8d529b94b}
-      \strng{authornamehash}{8bfe81841d52c8c08ff73de8d529b94b}
-      \strng{authorfullhash}{488c0c5bb21d237379d8f21da69b2cac}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \list{organization}{1}{%
+        {PMLR}%
+      }
+      \strng{namehash}{1d3df5a4e120235c82cc5c5428e6a913}
+      \strng{fullhash}{1d3df5a4e120235c82cc5c5428e6a913}
+      \strng{bibnamehash}{1d3df5a4e120235c82cc5c5428e6a913}
+      \strng{authorbibnamehash}{1d3df5a4e120235c82cc5c5428e6a913}
+      \strng{authornamehash}{1d3df5a4e120235c82cc5c5428e6a913}
+      \strng{authorfullhash}{1d3df5a4e120235c82cc5c5428e6a913}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}
-      \field{title}{Skip-convolutions for efficient video processing}
-      \field{year}{2021}
-      \field{pages}{2695\bibrangedash 2704}
-      \range{pages}{10}
+      \field{booktitle}{Conference on fairness, accountability and transparency}
+      \field{title}{Gender shades: Intersectional accuracy disparities in commercial gender classification}
+      \field{year}{2018}
+      \field{pages}{77\bibrangedash 91}
+      \range{pages}{15}
     \endentry
-    \entry{esser2022towards}{article}{}
-      \name{author}{3}{}{%
-        {{hash=e61c1cb5e29d764299a12d1ab334cdc2}{%
-           family={Esser},
-           familyi={E\bibinitperiod},
-           given={Patrick},
-           giveni={P\bibinitperiod}}}%
-        {{hash=02fceba970ef61f83ea68faec287b8b4}{%
-           family={Michael},
-           familyi={M\bibinitperiod},
-           given={Peter},
-           giveni={P\bibinitperiod}}}%
-        {{hash=cc47e417434372368ba183c1ffb435a1}{%
-           family={Sengupta},
+    \entry{selbst2019fairness}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=a507057780ea66f8ee407163b7cec8ff}{%
+           family={Selbst},
            familyi={S\bibinitperiod},
-           given={Soumyadip},
+           given={Andrew\bibnamedelima D},
+           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=aa83546a4ffeaf9a6253c84cd1f620a1}{%
+           family={Boyd},
+           familyi={B\bibinitperiod},
+           given={Danah},
+           giveni={D\bibinitperiod}}}%
+        {{hash=b2b40e7a0fdfbdbcf9af2da7c8e59417}{%
+           family={Friedler},
+           familyi={F\bibinitperiod},
+           given={Sorelle\bibnamedelima A},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=aaeb9142f2e1590450061f637edb6845}{%
+           family={Venkatasubramanian},
+           familyi={V\bibinitperiod},
+           given={Suresh},
            giveni={S\bibinitperiod}}}%
+        {{hash=70aa4f0b1c06a74398ce5c0db21c1348}{%
+           family={Vertesi},
+           familyi={V\bibinitperiod},
+           given={Janet},
+           giveni={J\bibinitperiod}}}%
       }
-      \strng{namehash}{e5b7b352cc66063b1c1793bdb61ac011}
-      \strng{fullhash}{e5b7b352cc66063b1c1793bdb61ac011}
-      \strng{bibnamehash}{e5b7b352cc66063b1c1793bdb61ac011}
-      \strng{authorbibnamehash}{e5b7b352cc66063b1c1793bdb61ac011}
-      \strng{authornamehash}{e5b7b352cc66063b1c1793bdb61ac011}
-      \strng{authorfullhash}{e5b7b352cc66063b1c1793bdb61ac011}
+      \strng{namehash}{b35a175406c2402a1f0a7f788937cebb}
+      \strng{fullhash}{2d8f06a3913378c38ada14cd76da7afb}
+      \strng{bibnamehash}{b35a175406c2402a1f0a7f788937cebb}
+      \strng{authorbibnamehash}{b35a175406c2402a1f0a7f788937cebb}
+      \strng{authornamehash}{b35a175406c2402a1f0a7f788937cebb}
+      \strng{authorfullhash}{2d8f06a3913378c38ada14cd76da7afb}
       \field{sortinit}{6}
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:2205.09731}
-      \field{title}{Towards Unified Keyframe Propagation Models}
-      \field{year}{2022}
-    \endentry
-    \entry{ignatov2021real}{inproceedings}{}
-      \name{author}{4}{}{%
-        {{hash=4011379a09871383d80487950f2cb481}{%
-           family={Ignatov},
-           familyi={I\bibinitperiod},
-           given={Andrey},
-           giveni={A\bibinitperiod}}}%
-        {{hash=4e47cc4cb2809d75eb8428600d511cb3}{%
-           family={Romero},
-           familyi={R\bibinitperiod},
-           given={Andres},
-           giveni={A\bibinitperiod}}}%
-        {{hash=33e1ad9613ce4052cef114c9db48c119}{%
-           family={Kim},
-           familyi={K\bibinitperiod},
-           given={Heewon},
-           giveni={H\bibinitperiod}}}%
-        {{hash=740c788a36355395a6809932b5f84ab5}{%
-           family={Timofte},
-           familyi={T\bibinitperiod},
-           given={Radu},
-           giveni={R\bibinitperiod}}}%
-      }
-      \strng{namehash}{befb5e92a4482876bb8117f47418b4aa}
-      \strng{fullhash}{d3007cb5d9e46f5bff8b8456458341c5}
-      \strng{bibnamehash}{befb5e92a4482876bb8117f47418b4aa}
-      \strng{authorbibnamehash}{befb5e92a4482876bb8117f47418b4aa}
-      \strng{authornamehash}{befb5e92a4482876bb8117f47418b4aa}
-      \strng{authorfullhash}{d3007cb5d9e46f5bff8b8456458341c5}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}
-      \field{title}{Real-time video super-resolution on smartphones with deep learning, mobile ai 2021 challenge: Report}
-      \field{year}{2021}
-      \field{pages}{2535\bibrangedash 2544}
+      \field{booktitle}{Proceedings of the conference on fairness, accountability, and transparency}
+      \field{title}{Fairness and abstraction in sociotechnical systems}
+      \field{year}{2019}
+      \field{pages}{59\bibrangedash 68}
       \range{pages}{10}
+    \endentry
+    \entry{diakopoulos2016accountability}{article}{}
+      \name{author}{1}{}{%
+        {{hash=edb1431e456c90b99c8fd8807aba73af}{%
+           family={Diakopoulos},
+           familyi={D\bibinitperiod},
+           given={Nicholas},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM New York, NY, USA}%
+      }
+      \strng{namehash}{edb1431e456c90b99c8fd8807aba73af}
+      \strng{fullhash}{edb1431e456c90b99c8fd8807aba73af}
+      \strng{bibnamehash}{edb1431e456c90b99c8fd8807aba73af}
+      \strng{authorbibnamehash}{edb1431e456c90b99c8fd8807aba73af}
+      \strng{authornamehash}{edb1431e456c90b99c8fd8807aba73af}
+      \strng{authorfullhash}{edb1431e456c90b99c8fd8807aba73af}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Communications of the ACM}
+      \field{number}{2}
+      \field{title}{Accountability in algorithmic decision making}
+      \field{volume}{59}
+      \field{year}{2016}
+      \field{pages}{56\bibrangedash 62}
+      \range{pages}{7}
     \endentry
   \enddatalist
 \endrefsection

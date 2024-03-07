@@ -1,20 +1,20 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'main.blg'
-[37] biber-darwin:340> INFO - === Thu Mar  7, 2024, 17:46:44
-[46] Biber.pm:419> INFO - Reading 'main.bcf'
-[93] Biber.pm:979> INFO - Found 62 citekeys in bib section 0
-[100] Biber.pm:4419> INFO - Processing section 0
-[107] Biber.pm:4610> INFO - Looking for bibtex file 'bibfile.bib' for section 0
-[108] bibtex.pm:1713> INFO - LaTeX decoding ...
-[137] bibtex.pm:1519> INFO - Found BibTeX data source 'bibfile.bib'
-[348] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[348] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[348] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[348] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[369] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[390] bbl.pm:763> INFO - Output to main.bbl
-[390] Biber.pm:131> WARN - legacy year field 'Oct 5, 2023' in entry 'StabilityAI_StableLM' is not an integer - this will probably not sort properly.
-[390] Biber.pm:131> WARN - legacy month field 'July' in entry 'China_AI_Policy_2023' is not an integer - this will probably not sort properly.
-[390] Biber.pm:131> WARN - legacy month field 'October' in entry 'WhiteHouse_AI_ExecOrder_2023' is not an integer - this will probably not sort properly.
-[390] Biber.pm:131> WARN - legacy month field 'December' in entry 'Grynbaum_Mac_2023_Times_Sues_OpenAI' is not an integer - this will probably not sort properly.
-[390] Biber.pm:133> INFO - WARNINGS: 4
+[36] biber-darwin:340> INFO - === Thu Mar  7, 2024, 18:05:17
+[45] Biber.pm:419> INFO - Reading 'main.bcf'
+[91] Biber.pm:979> INFO - Found 62 citekeys in bib section 0
+[98] Biber.pm:4419> INFO - Processing section 0
+[104] Biber.pm:4610> INFO - Looking for bibtex file 'bibfile.bib' for section 0
+[106] bibtex.pm:1713> INFO - LaTeX decoding ...
+[135] bibtex.pm:1519> INFO - Found BibTeX data source 'bibfile.bib'
+[342] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[342] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[342] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[342] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[364] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[385] bbl.pm:763> INFO - Output to main.bbl
+[386] Biber.pm:131> WARN - legacy year field 'Oct 5, 2023' in entry 'StabilityAI_StableLM' is not an integer - this will probably not sort properly.
+[386] Biber.pm:131> WARN - legacy month field 'July' in entry 'China_AI_Policy_2023' is not an integer - this will probably not sort properly.
+[386] Biber.pm:131> WARN - legacy month field 'October' in entry 'WhiteHouse_AI_ExecOrder_2023' is not an integer - this will probably not sort properly.
+[386] Biber.pm:131> WARN - legacy month field 'December' in entry 'Grynbaum_Mac_2023_Times_Sues_OpenAI' is not an integer - this will probably not sort properly.
+[386] Biber.pm:133> INFO - WARNINGS: 4

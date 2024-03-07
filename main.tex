@@ -209,6 +209,41 @@ Their efforts in the field of AI have paved the way for emerging researchers to 
 
 % Main matter
 
+\chapter*{Abbreviations List}
+\label{appendix-abbreviations}
+
+Below is a list of abbreviations used in this document with their corresponding full names.
+
+\begin{longtable}{ll}
+\textbf{Abbreviation} & \textbf{Full Name} \\
+\endhead
+% Add your abbreviations here - Example format
+AIGC & Artificial Intelligence Generated Content \\
+AI & Artificial Intelligence \\
+ASR & Automatic Speech Recognition \\
+CNN & Convolutional Neural Network \\
+DNN & Deep Neural Network \\
+DDPM & Denoising Diffusion Probabilistic Model \\
+ELBO & Evidence Lower Bound \\
+EWC & Elastic Weight Consolidation \\
+FPS & Frames Per Second \\
+GAN & Generative Adversarial Network \\
+GPU & Graphics Processing Unit \\
+GRU & Gated Recurrent Unit \\
+GPT & Generative Pretrained Transformer \\
+IoT & Internet of Things \\
+LSTM & Long Short-Term Memory \\
+MFCC & Mel-Frequency Cepstral Coefficients \\
+NLP & Natural Language Processing \\
+RLHF & Reinforcement Learning from Human Feedback \\
+RNN & Recurrent Neural Network \\
+SDE & Stochastic Differential Equation \\
+SOTA & State of the Art \\
+SW & Signature Work \\
+TTS & Text-to-Speech \\
+VAE & Variational Autoencoder \\
+\end{longtable}
+
 \clearpage
 \pagenumbering{arabic}
 
@@ -229,7 +264,7 @@ The evolution of AI is marked by significant milestones, particularly with the a
 Deep learning, a subset of machine learning, employs complex neural networks with multiple layers of processing units, enabling the extraction of high-level features from raw input data. 
 It improved the performance of AI systems in tasks ranging from image and speech recognition to language translation \cite{goodfellow2016deep}.
 Recent years some specialized architectures have further pushed the boundaries of what AI can achieve. 
-Variational Autoencoders (VAE), \cite{rezende2014stochastic, kingma2013auto}, Generative Adversarial Networks (GANs)~\cite{goodfellow2014generative, vondrick2016generating, tulyakov2018mocogan, clark2019adversarial, brooks2022generating}, and diffusion models \cite{rombach2022high, ho2022imagen, blattmann2023align, gupta2023photorealistic} represent the forefront of AI research in data generation. 
+Variational Autoencoders (VAE), \cite{rezende2014stochastic, kingma2013auto}, Generative Adversarial Networks (GANs) \cite{goodfellow2014generative, vondrick2016generating, tulyakov2018mocogan, clark2019adversarial, brooks2022generating}, and diffusion models \cite{rombach2022high, ho2022imagen, blattmann2023align, gupta2023photorealistic} represent the forefront of AI research in data generation. 
 GANs consist of two neural networks—the generator and the discriminator—competing against each other to generate new, synthetic instances of data that are indistinguishable from real data. 
 This has proven especially powerful in the fields of vision and sound generation, enabling the creation of photorealistic images, videos, and lifelike synthetic audio \cite{granot2022drop}.
 
@@ -258,7 +293,7 @@ However, AIGC technology has also sparked ethical debates concerning the creatio
 Deepfakes \cite{westerlund2019emergence}, which involve altering videos and images to the point of being indistinguishable from authentic media, have the potential to distort reality and spread misinformation. 
 The manipulation of media content raises concerns about the impact on individuals' reputations and the broader implications for societal and political discourse. 
 As artificial intelligence capabilities grow, the need for ethical guidelines that ensure transparency and prevent biases becomes more urgent.
-Coupled with the ethical concerns surrounding deepfakes is the issue of copyright in AI-generated images and videos. \cite{hristov2016artificial}
+Coupled with the ethical concerns surrounding deepfakes is the issue of copyright in AI-generated images and videos \cite{hristov2016artificial}.
 The legal system is currently unprepared to tackle questions of ownership and violation when content is created by an AI. 
 This prompts a discussion about the originality of AI-generated works and the ethical use of AI in creative processes. 
 As AI becomes more pervasive, it will challenge traditional copyright laws, necessitating continuous research and the development of legal measures that keep pace with AI evolution.
@@ -274,7 +309,7 @@ These applications, alongside the increasing availability of open-source models,
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.9\textwidth]{timeline.png}
-  \caption{A comprehensive overview of key milestones and product launches in the generative AI video domain throughout the year 2023, with a notable concentration of developments occurring in the fourth quarter. \cite{a16zAI2023}}
+  \caption{A comprehensive overview of key milestones and product launches in the generative AI video domain throughout the year 2023, with a notable concentration of developments occurring in the fourth quarter \cite{a16zAI2023}.}
 \end{figure}
 
 As the demand for AI capabilities continues to surge, the AI industry faces practical challenges such as GPU shortages and rising cloud costs. 
@@ -287,7 +322,7 @@ This approach is particularly relevant in sectors like healthcare, legal, and fi
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.8\textwidth]{products.png}
-  \caption{Comparative analysis of various AI video product offerings as of December 2023, detailing generation types, maximum length of generated clips, and additional features such as camera and motion control, showcasing the diversity and capabilities within the current market landscape.\cite{a16zAI2023}}
+  \caption{Comparative analysis of various AI video product offerings as of December 2023, detailing generation types, maximum length of generated clips, and additional features such as camera and motion control, showcasing the diversity and capabilities within the current market landscape \cite{a16zAI2023}.}
 \end{figure}
 
 The regulatory environment for AI is rapidly evolving, with significant developments in the EU, China, and the US. 
@@ -300,7 +335,7 @@ The challenge lies in striking a balance between leveraging the unique opportuni
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.8\textwidth]{models.png}
-  \caption{Progression of generative modeling techniques from 2016 to 2022, showcasing the evolution and scaling of model parameters in GAN, Transformer, and Diffusion methods, each color-coded by method type.\cite{bie2023renaissance}}
+  \caption{Progression of generative modeling techniques from 2016 to 2022, showcasing the evolution and scaling of model parameters in GAN, Transformer, and Diffusion methods, each color-coded by method type \cite{bie2023renaissance}.}
 \end{figure}
 
 In the field of image generation, models like Midjourney, DALL-E 3, and Stable Diffusion 3 have been at the forefront. 
@@ -754,7 +789,7 @@ where $\hat{S}$ is the synthesized speech waveform, and $\theta_w$ are the param
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.75\textwidth]{whisper.png}
-  \caption{Autoregressive transformer model architecture used for audio processing tasks like transcription and voice synthesis. The model utilizes a stack of encoder and decoder blocks, with sinusoidal positional encodings and learned positional encodings for sequence representation. \cite{OpenAIWhisper}}
+  \caption{Autoregressive transformer model architecture used for audio processing tasks like transcription and voice synthesis. The model utilizes a stack of encoder and decoder blocks, with sinusoidal positional encodings and learned positional encodings for sequence representation \cite{OpenAIWhisper}.}
 \end{figure}
 
 The process of voice cloning and modification enables the generation of synthetic speech that closely resembles a target human voice. 

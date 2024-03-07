@@ -309,7 +309,7 @@ These applications, alongside the increasing availability of open-source models,
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.9\textwidth]{timeline.png}
-  \caption{A comprehensive overview of key milestones and product launches in the generative AI video domain throughout the year 2023, with a notable concentration of developments occurring in the fourth quarter \cite{a16zAI2023}.}
+  \caption{A comprehensive overview of key milestones and product launches in the generative AI video domain throughout the year 2023 \cite{a16zAI2023}.}
 \end{figure}
 
 As the demand for AI capabilities continues to surge, the AI industry faces practical challenges such as GPU shortages and rising cloud costs. 
@@ -322,7 +322,7 @@ This approach is particularly relevant in sectors like healthcare, legal, and fi
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.8\textwidth]{products.png}
-  \caption{Comparative analysis of various AI video product offerings as of December 2023, detailing generation types, maximum length of generated clips, and additional features such as camera and motion control, showcasing the diversity and capabilities within the current market landscape \cite{a16zAI2023}.}
+  \caption{Comparative analysis of various AI video product offerings as of December 2023, detailing generation types, maximum length of generated clips, and additional features \cite{a16zAI2023}.}
 \end{figure}
 
 The regulatory environment for AI is rapidly evolving, with significant developments in the EU, China, and the US. 
@@ -359,11 +359,10 @@ In the end, this project highlights how human creativity combined with AI's effi
 
 \chapter{Methods}
 
-This chapter provides a comprehensive overview of the methodologies and tools utilized in this study to explore the potential of Artificial Intelligence Generated Content (AIGC) across various domains including text, image, video, and sound synthesis. 
+This chapter provides a comprehensive overview of the methodologies and tools utilized in this study to explore the potential of AIGC across various domains including text, image, video, and sound synthesis. 
 It outlines the step-by-step process of employing advanced AI models such as GPT-4 for text generation, Midjourney for image creation, Runway Gen-2 for video production, ElevenLabs for voice cloning, and Topaz AI for enhancing visual quality. 
 The chapter delves into the technical frameworks underpinning these tools, including Variational Autoencoders (VAE), Generative Adversarial Networks (GAN), and Recurrent Neural Networks (RNN) among others, to illustrate how they contribute to the generation and manipulation of digital content. 
-It also addresses the methodological approach for evaluating and mitigating biases within AI-generated content, highlighting ethical considerations and the importance of fairness in AI applications. 
-Through a detailed exposition of the workflow, from concept development to content creation and enhancement, this chapter sets the foundation for understanding the capabilities and limitations of current AIGC technologies, paving the way for further exploration in the Results and Discussion chapters.
+Through a detailed exposition of the workflow, from concept development to content creation and enhancement, this chapter sets the foundation for understanding the capabilities of current AIGC technologies, paving the way for further exploration in the Results and Discussion chapters.
 
 \section{Workflow}
 
@@ -391,7 +390,7 @@ Through a detailed exposition of the workflow, from concept development to conte
     \path [line] (videoedit) -- (videoquality);
     \path [line] (videoquality) -- (publish);
 \end{tikzpicture}
-\caption{Workflow of the video-creating project}
+\caption{Workflow of the video-creating project.}
 \end{figure}
 
 \begin{figure}[H]
@@ -422,8 +421,11 @@ Through a detailed exposition of the workflow, from concept development to conte
     \path [line] (audio) edge [loop below] node {Whisper} (audio);
   
 \end{tikzpicture}
-\caption{Relationships in a Multimodal System}
+\caption{Relationships in a Multimodal System.}
 \end{figure}
+Figures 2.1 and 2.2 collectively capture the workflow and the interdependent relationships involved in a multimodal AIGC system. 
+Figure 2.1 outlines the sequential workflow, initiating with the drafting of a storyline via ChatGPT, proceeding to image generation with Midjourney, followed by video creation with Runway Gen-2, voice-over addition via ElevenLabs, and concluding with the enhancement of video quality with Topaz AI before the final content is published on social media. 
+This flowchart shows the linear progression of tasks, highlighting how each stage builds upon the previous to contribute to the final multimedia product.
 
 \section{AIGC in Text (ChatGPT)}
 
@@ -562,12 +564,18 @@ and the gradient descent step for $G$:
 \end{align}
 for a minibatch of $m$ samples.
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{GAN.png}
+  \caption{The fundamental architecture of a Generative Adversarial Network (GAN) \cite{SemiEngineering2023GAN}.}
+\end{figure}
+
 GANs have been utilized to generate high-fidelity images, outperforming other generative models in visual quality. However, they often struggle with mode collapse -- a phenomenon where the generator produces a limited variety of outputs. Despite these challenges, GANs have shown impressive results in tasks beyond image generation, such as image super-resolution \cite{denton2015deep}and object detection \cite{goodfellow2014generative}.
 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.8\textwidth]{Runway.png}
-  \caption{Using the "Image + Text" mode in Runway Gen-2 to generate the video, with the help of motion brush function to control how the characters move}
+  \caption{Using the "Image + Text" mode in Runway Gen-2 to generate the video, with the help of motion brush function to control how the characters move.}
 \end{figure}
 
 \subsection{Diffusion Models}
@@ -654,18 +662,24 @@ This capability significantly improves the network's ability to model sequences 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.6\textwidth]{Voice Cloning.png}
-  \caption{Using Professinal Voice Cloning from ElevenLabs to apply text to speech and add the voice over to the video}
+  \caption{Using Professinal Voice Cloning from ElevenLabs to apply text to speech and add the voice over to the video.}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.6\textwidth]{Voice Cloning2.png}
-  \caption{Using Professinal Voice Cloning from ElevenLabs to apply text to speech and add the voice over to the video}
+  \caption{Using Professinal Voice Cloning from ElevenLabs to apply text to speech and add the voice over to the video.}
 \end{figure}
 
 \subsection{Long Short-Term Memory (LSTM)}
 
 Long Short-Term Memory (LSTM) units are a specific type of Recurrent Neural Network (RNN) architecture designed to overcome the limitations of traditional RNNs, particularly in handling long-term dependencies. LSTMs are adept at modeling the temporal relationships inherent in complex sound sequences, making them highly effective for sound synthesis tasks. The LSTM's architecture includes several key components—forget gate, input gate, cell state, and output gate—that work together to regulate the flow of information through the unit. These components allow the LSTM to retain or discard information over long sequences, enabling the generation of coherent and dynamic audio content. The following equations provide a detailed mathematical representation of the LSTM's operation:
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.6\textwidth]{LSTM.png}
+  \caption{The fundamental structure of LSTM model \cite{wikidocs2023deeplearning}.}
+\end{figure}
 
 Forget Gate:
 \begin{equation}
@@ -795,7 +809,7 @@ where $\hat{S}$ is the synthesized speech waveform, and $\theta_w$ are the param
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.75\textwidth]{whisper.png}
-  \caption{Autoregressive transformer model architecture used for audio processing tasks like transcription and voice synthesis. The model utilizes a stack of encoder and decoder blocks, with sinusoidal positional encodings and learned positional encodings for sequence representation \cite{OpenAIWhisper}.}
+  \caption{Autoregressive transformer model architecture used for audio processing tasks like transcription and voice synthesis. The model utilizes a stack of encoder and decoder blocks \cite{OpenAIWhisper}.}
 \end{figure}
 
 The process of voice cloning and modification enables the generation of synthetic speech that closely resembles a target human voice. 
@@ -849,8 +863,8 @@ Together, these models could form the basis of ElevenLabs’ ability to analyze 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Results}
-\label{results}
+\chapter{Performance Evaluation}
+
 \section{Overview of Project Outcome}
 
 This video project is a mix of the latest AIGC tools and creative ideas, presents a narrative that is both visually stunning and thematically profound. 
@@ -868,90 +882,162 @@ The video's aesthetic and thematic achievements are underscored by Topaz AI, whi
 This project, through its combination of AI capabilities and creative narrative design, opens a dialogue on the future of storytelling in the age of artificial intelligence. 
 It stands as an example of how AI support to create content that is not just visually captivating, but also rich in thematic depth, challenging us to envision the limitless possibilities of creative expression in the digital era.
 
-\section{Deliverable}
+\section{Deliverable Analysis}
 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.9\textwidth]{AudioPreview.png}
-  \caption{An in-depth analysis of an MP3 file showcasing its spectral dynamics, waveform, and amplitude in a colorful sound engineering software interface.}
+  \caption{Spectral and waveform analysis of an MP3 file displayed in a sound engineering interface.}
 \end{figure}
+
+The image presents a visualization of an MP3 file's acoustic properties with details about a spectrum analyzer interface. 
+The vibrant colors map out varying degrees of sound intensity across a broad frequency range, while the graphical representations below reveal the waveforms and their amplitudes. 
+This visualization shows audio quality but also serves as a critical tool for engineers seeking to understand and manipulate the nuanced differences.
+
+\newpage
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.6\textwidth]{Start.png}
-  \caption{A pitch-black screen gradually reveals a soccer ball radiating a soft, ethereal glow. The light pulses gently, casting shadows that mimic fans gathered in a silent stadium, anticipation hanging in the air. }
+  \includegraphics[width=0.8\textwidth]{Start.png}
+  \caption{Silhouettes watching a glowing soccer ball, evoking pre-match anticipation.}
 \end{figure}
+
+A group of silhouetted crowds can be seen in this photograph looking toward a bright soccer ball.
+It seems as though there is a moment of silent expectancy. 
+The ball appears to be floating in a spotlight, acting as a focal point and scene-setter for an excitement.
+This silence creates an atmosphere of anxiety leading up to the game, as if everyone is holding their breath until it starts. 
+It shows the charm of soccer game, which brings together supporters worldwide.
+
+\newpage
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.6\textwidth]{Stadium.png}
-  \caption{A swift zoom through time brings us to the present, landing on the electric atmosphere of the 2026 World Cup stadium. The architecture is a marvel of modern design, with sweeping curves and glowing lights, packed to the brim with a sea of fans from across the globe. }
+  \includegraphics[width=0.8\textwidth]{Stadium.png}
+  \caption{The World Cup stadium, a modern architectural wonder with crazy fans.}
 \end{figure}
+
+The image captures the vibrant energy of a stadium filled with soccer fans. 
+The architecture is a modern engineering, with elegant curves and beams that arch towards the sky, illuminated by lights that cast a warm glow over the attendees. 
+The field is a bright patchwork of greens, set against the darker hues of the spectator stands.
+This is more than a stadium; it's a center of excitement, where every cheer and gasp is amplified, and every moment is considered as collective memory of the global soccer community.
+
+\newpage
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.6\textwidth]{Cheering.png}
-  \caption{Close-up shots dive into the crowd's heart, capturing faces painted in national colors, eyes sparkling with excitement. Fans in synchronized motion, creating a living tapestry of support that breathes life into the stadium's structure.}
+  \includegraphics[width=0.8\textwidth]{Cheering.png}
+  \caption{Excited fans painted in team colors cheer passionately at a soccer match.}
 \end{figure}
+
+The photograph showcases a jubilant fan, her face is like a canvas of vibrant national colors.
+Their excitement collectively embodies the passionate heart of the soccer world. 
+This display of emotion and unity displays the profound connection between the fans and the beautiful game.
+
+\newpage
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.6\textwidth]{Star.png}
-  \caption{Transition to the crystal-clear, high-definition 2010s, where the speed and emotion of the game captivate. A player's face is frozen in a moment of triumph, surrounded by a blur of teammates and confetti, encapsulating modern soccer's glory.}
+  \includegraphics[width=0.8\textwidth]{Star.png}
+  \caption{A soccer player in a celebration, symbolizing the sports success.}
 \end{figure}
+
+The image vividly captures the moment of victory. 
+As he looks towards the sky, the raw emotion of success washes over his features.
+Confetti rains down like colorful blessings, blending with the beads of sweat and tears of joy that mark this achievement. 
+It is a snapshot that touches upon the deeply human experience of reaching a long-sought goal.
+
+\newpage
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.6\textwidth]{Steal.png}
-  \caption{A midfielder weaves through the opposition with balletic grace, the ball seemingly tethered to their feet. Each touch is a testament to years of dedication, the culmination of a lifetime's passion for the game.}
+  \includegraphics[width=0.8\textwidth]{Steal.png}
+  \caption{A skilled midfielder skillfully navigating the opposition in a heated match.}
 \end{figure}
+
+The dynamic image showcases a midfielder in action.
+The player's hair is caught mid-flight, a wild mane that echoes their untamed skill.
+It is a ballet of athleticism, where precision meets passion, and the raw fervor of the game comes to life with every touch and turn.
+\newpage
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.6\textwidth]{Victory.png}
-  \caption{The climactic moment as the ball arcs beautifully into the net, the scorer's joy uncontainable as they sprint towards the roaring fans, arms spread wide, embodying the euphoria of triumph. Teammates converge in a jubilant huddle, a symbol of unity and success.}
+  \includegraphics[width=0.8\textwidth]{Victory.png}
+  \caption{A team celebrates a goal, uniting in victory under the stadium lights.}
 \end{figure}
+
+The photograph captures the zenith of a soccer match.
+It is a joy that spreads through the air like a wave, enveloping teammates in a tight circle of collective triumph. 
+It is a scene that concludes the shared passion and glory that is the spirit of the sport.
+\newpage
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.6\textwidth]{NewStadium.png}
-  \caption{The stadium, an architectural marvel, seamlessly blends organic designs with advanced technology. Bioluminescent structures illuminate the arena, while floating screens display live stats and player information. The atmosphere is electric, buzzing with anticipation for the historic final.}
+  \includegraphics[width=0.8\textwidth]{NewStadium.png}
+  \caption{A modern stadium glows under advanced lighting, ready for a historic soccer final.}
 \end{figure}
+
+Under the lights, the stadium emerges as a triumph of modern architecture. 
+Its design is a fusion of nature's curves and the sharp angles of contemporary technologies.
+Hovering displays pulse with data, providing a stream of information as tangible as the excitement that fills the air. 
+Here, every seat hums with the energy of thousands, all awaiting this miracle of soccer achievement.
+\newpage
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.6\textwidth]{Open.png}
-  \caption{Inside the stadium, two teams of robots engage in a pre-game warm-up, showcasing incredible precision and agility. Their movements are fluid yet unmistakably mechanical, with LED lights tracing patterns across their metallic frames, each robot adorned with the colors of their respective teams.}
+  \includegraphics[width=0.8\textwidth]{Open.png}
+  \caption{Robots in team colors perform a precise pre-game warm-up inside the stadium.}
 \end{figure}
+
+As the stadium buzzes with anticipation, a line of robots glides across the polished floor with the grace of seasoned athletes, these machines perform their pre-game routine. 
+Each robot, with team colors that gleam in the arena's lights, moves with a precision that belies the passionate chaos of the game to come. 
+This dance of steel and light is as much a part of the spectacle as the match itself, promising a competition where human creativity and robotic excellence meet.
+\newpage
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.6\textwidth]{Ball.png}
-  \caption{Focus on a uniquely designed soccer ball at the center circle, glowing with internal lights and equipped with smart technology that allows it to record and respond to the game's flow. A player approaches and gives it a gentle tap, setting it aglow, ready for kickoff.}
+  \includegraphics[width=0.8\textwidth]{Ball.png}
+  \caption{Smart soccer ball with glowing design, ready for kickoff at center circle.}
 \end{figure}
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.6\textwidth]{Kick.png}
-  \caption{The kickoff is a spectacle of technology, with a robotic player skillfully propelling the ball into play using a swift, calculated motion. The ball itself is equipped with smart tech, glowing softly as it moves across the pitch, data streaming off it in visual waves that are visible to the audience.}
-\end{figure}
+At the heart of the field lies a futuristic soccer ball, a centerpiece of innovation, poised at the center circle. 
+Its surface is a array of glowing patterns, signaling its smart capabilities that capture and interact with every play. 
+A player steps forward, foot grazing the ball in a light tap that sparks a radiant glow, signaling the start of something more than just a game; 
+it's a dance of agility and intelligence, where every movement is tracked and analyzed, ready to begin with the referee's whistle.
+\newpage
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.6\textwidth]{Green.png}
-  \caption{Human players are shown warming up on the field, executing stretches and drills with the backdrop of a stadium that blends organic and technological aesthetics. The turf is a perfect green, with embedded lighting that responds to the players' movements, illuminating their paths across the pitch.}
+  \includegraphics[width=0.8\textwidth]{Kick.png}
+  \caption{Robotic player and smart ball at the high-tech kickoff.}
 \end{figure}
+
+The commencement of the game is an exhibition of technological capabilities, as a robotic figure executes the initial kick with calculated precision. 
+The soccer ball reacts to the contact with a surge of internal light, its advanced circuitry capturing and broadcasting the game's dynamics. 
+The spectacle of lights and data animation not only signals the start of the match but also shows the fusion of sport and cutting-edge technology.
+\newpage
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.6\textwidth]{RobotCelebration.png}
-  \caption{The climax of the segment is a goal that feels both alien and familiar. A robot striker launches the ball with pinpoint accuracy from outside the penalty box, the ball tracing a perfect arc into the top corner of the goal. The net lights up, and digital fireworks explode overhead, celebrating the score in a dazzling display of light and color.}
+  \includegraphics[width=0.8\textwidth]{Green.png}
+  \caption{Players warm up on an interactive, light-responsive field.}
 \end{figure}
+
+As the stadium hums with anticipation, players take to the field, their silhouettes casting long shadows in the green glow of the technologically enriched turf. 
+They engage in a ballet of stretches and strategic drills, each movement traced by the intelligent lighting system beneath their feet, a dance of light and shadow playing out across this amazing stage.
+\newpage
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{RobotCelebration.png}
+  \caption{A robot scores with precision, celebrated by a light show.}
+\end{figure}
+
+In this electrifying scene, the fusion of advanced robotics and the game of soccer reaches its climax. 
+A robotic striker, with perfect precision, sends the ball soaring from the penalty box into the mesh of the net. 
+As the goal is scored, the stadium's net bursts into an animated light show, with digital fireworks in celebration. 
+\newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-\chapter{Discussion}
-\label{discussion}
 
 \section{Limitation of Current AIGC tools}
 
